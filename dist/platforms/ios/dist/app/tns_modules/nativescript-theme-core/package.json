@@ -21,7 +21,7 @@
   "_resolved": "https://registry.npmjs.org/nativescript-theme-core/-/nativescript-theme-core-1.0.4.tgz",
   "_shasum": "cf2880c7fbf2fe5f43e2235d309750790803efe1",
   "_spec": "nativescript-theme-core@^1.0.4",
-  "_where": "/root/app/FC5-ns/dist",
+  "_where": "/root/app/nsfc5/dist",
   "author": {
     "name": "Telerik",
     "email": "support@telerik.com"

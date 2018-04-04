@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a9b4c67e-311b-4209-aa3a-d6a55a1baeb4" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/assets/homepage/HomeBackground.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/assets/homepage/findgame.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/assets/homepage/manage.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/assets/homepage/searchplayer.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/assets/homepage/store.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/assets/topbar/fc5logo.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/assets/topbar/friends.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/assets/topbar/friends.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/assets/topbar/userlogo.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/fc5Topbar.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/pages/Home.vue" />
+      <change beforePath="$PROJECT_DIR$/dist/app/App_Resources/iOS/Info.plist" afterPath="$PROJECT_DIR$/dist/app/App_Resources/iOS/Info.plist" />
+      <change beforePath="$PROJECT_DIR$/dist/app/app.ios.css" afterPath="$PROJECT_DIR$/dist/app/app.ios.css" />
+      <change beforePath="$PROJECT_DIR$/dist/app/app.ios.js" afterPath="$PROJECT_DIR$/dist/app/app.ios.js" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/.nsprepareinfo" afterPath="$PROJECT_DIR$/dist/platforms/ios/.nsprepareinfo" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/dist.build/Debug-iphonesimulator/dist.build/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/dist.build/Debug-iphonesimulator/dist.build/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/dist.build/Debug-iphonesimulator/dist.build/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/dist.build/Debug-iphonesimulator/dist.build/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/dist.build/Debug-iphonesimulator/dist.build/Objects-normal/i386/dist" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/dist.build/Debug-iphonesimulator/dist.build/Objects-normal/i386/dist" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/dist.build/Debug-iphonesimulator/dist.build/Objects-normal/i386/dist.LinkFileList" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/dist.build/Debug-iphonesimulator/dist.build/Objects-normal/i386/dist.LinkFileList" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/dist.build/Debug-iphonesimulator/dist.build/Objects-normal/i386/dist_dependency_info.dat" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/dist.build/Debug-iphonesimulator/dist.build/Objects-normal/i386/dist_dependency_info.dat" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/dist.build/Debug-iphonesimulator/dist.build/Objects-normal/i386/main.d" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/dist.build/Debug-iphonesimulator/dist.build/Objects-normal/i386/main.d" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/dist.build/Debug-iphonesimulator/dist.build/Objects-normal/i386/main.o" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/dist.build/Debug-iphonesimulator/dist.build/Objects-normal/i386/main.o" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/dist.build/Debug-iphonesimulator/dist.build/Objects-normal/x86_64/dist" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/dist.build/Debug-iphonesimulator/dist.build/Objects-normal/x86_64/dist" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/dist.build/Debug-iphonesimulator/dist.build/Objects-normal/x86_64/dist.LinkFileList" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/dist.build/Debug-iphonesimulator/dist.build/Objects-normal/x86_64/dist.LinkFileList" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/dist.build/Debug-iphonesimulator/dist.build/Objects-normal/x86_64/dist_dependency_info.dat" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/dist.build/Debug-iphonesimulator/dist.build/Objects-normal/x86_64/dist_dependency_info.dat" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/dist.build/Debug-iphonesimulator/dist.build/Objects-normal/x86_64/main.d" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/dist.build/Debug-iphonesimulator/dist.build/Objects-normal/x86_64/main.d" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/dist.build/Debug-iphonesimulator/dist.build/Objects-normal/x86_64/main.o" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/dist.build/Debug-iphonesimulator/dist.build/Objects-normal/x86_64/main.o" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/dist.build/Debug-iphonesimulator/dist.build/assetcatalog_dependencies" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/dist.build/Debug-iphonesimulator/dist.build/assetcatalog_dependencies" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/dist.build/Debug-iphonesimulator/dist.build/dgph" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/dist.build/Debug-iphonesimulator/dist.build/dgph" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/dist.build/Debug-iphonesimulator/dist.build/dist-project-headers.hmap" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/dist.build/Debug-iphonesimulator/dist.build/dist-project-headers.hmap" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/dist.build/Debug-iphonesimulator/dist.build/dist.hmap" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/dist.build/Debug-iphonesimulator/dist.build/dist.hmap" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/.nsbuildinfo" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/.nsbuildinfo" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app.dSYM/Contents/Resources/DWARF/dist" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app.dSYM/Contents/Resources/DWARF/dist" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/Assets.car" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/Assets.car" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/Info.plist" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/Info.plist" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/_CodeSignature/CodeResources" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/_CodeSignature/CodeResources" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/app.css" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/app.css" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/app.js" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/app.js" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/nativescript-theme-core/package.json" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/nativescript-theme-core/package.json" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/nativescript-vue/package.json" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/nativescript-vue/package.json" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules-widgets/package.json" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules-widgets/package.json" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/package.json" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/package.json" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/dist" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/dist" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/metadata-generation-stderr-i386.txt" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/metadata-generation-stderr-i386.txt" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/metadata-generation-stderr-x86_64.txt" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/metadata-generation-stderr-x86_64.txt" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/metadata-i386.bin" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/metadata-i386.bin" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/metadata-x86_64.bin" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/metadata-x86_64.bin" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/umbrella-i386.h" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/umbrella-i386.h" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/umbrella-x86_64.h" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/umbrella-x86_64.h" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/sharedpch/dist-Prefix-aomzrpbwisfzbwebosqlbjnyyyii/dist-Prefix.pch.d" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/sharedpch/dist-Prefix-aomzrpbwisfzbwebosqlbjnyyyii/dist-Prefix.pch.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/sharedpch/dist-Prefix-aomzrpbwisfzbwebosqlbjnyyyii/dist-Prefix.pch.dia" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/sharedpch/dist-Prefix-aomzrpbwisfzbwebosqlbjnyyyii/dist-Prefix.pch.pch" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/sharedpch/dist-Prefix-aomzrpbwisfzbwebosqlbjnyyyii/dist-Prefix.pch.pch.hash-criteria" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/sharedpch/dist-Prefix-dtptzoqheerrdrdpgenmaddazlnl/dist-Prefix.pch.d" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/sharedpch/dist-Prefix-dtptzoqheerrdrdpgenmaddazlnl/dist-Prefix.pch.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/sharedpch/dist-Prefix-dtptzoqheerrdrdpgenmaddazlnl/dist-Prefix.pch.dia" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/sharedpch/dist-Prefix-dtptzoqheerrdrdpgenmaddazlnl/dist-Prefix.pch.pch" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/sharedpch/dist-Prefix-dtptzoqheerrdrdpgenmaddazlnl/dist-Prefix.pch.pch.hash-criteria" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/dist.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/dist/platforms/ios/dist.xcodeproj/project.pbxproj" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/dist/app/app.css" afterPath="$PROJECT_DIR$/dist/platforms/ios/dist/app/app.css" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/dist/app/app.js" afterPath="$PROJECT_DIR$/dist/platforms/ios/dist/app/app.js" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/nativescript-theme-core/package.json" afterPath="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/nativescript-theme-core/package.json" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/nativescript-vue/package.json" afterPath="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/nativescript-vue/package.json" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules-widgets/package.json" afterPath="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules-widgets/package.json" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/package.json" afterPath="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/package.json" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/dist/dist-Info.plist" afterPath="$PROJECT_DIR$/dist/platforms/ios/dist/dist-Info.plist" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
+      <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change beforePath="$PROJECT_DIR$/src/components/Counter.vue" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/components/HelloWorld.vue" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home.vue" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main.js" afterPath="$PROJECT_DIR$/src/main.js" />
+      <change beforePath="$PROJECT_DIR$/src/router/index.js" afterPath="$PROJECT_DIR$/src/router/index.js" />
+      <change beforePath="$PROJECT_DIR$/src/store/index.js" afterPath="$PROJECT_DIR$/src/store/index.js" />
+      <change beforePath="$PROJECT_DIR$/src/styles.scss" afterPath="$PROJECT_DIR$/src/styles.scss" />
+      <change beforePath="$PROJECT_DIR$/template/app/App_Resources/iOS/Info.plist" afterPath="$PROJECT_DIR$/template/app/App_Resources/iOS/Info.plist" />
+    </list>
+    <ignored path="$PROJECT_DIR$/dist/app/" />
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileColors">
+    <fileColor scope="Non-Project Files (Material Default)" color="2E3C43" />
+    <fileColor scope="Non-Project Files (Material Darker)" color="323232" />
+    <fileColor scope="Non-Project Files (Material Lighter)" color="eae8e8" />
+    <fileColor scope="Non-Project Files (Material Palenight)" color="2f2e43" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="styles.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/styles.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="398">
+              <caret line="22" column="1" lean-forward="false" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Home.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/pages/Home.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="348">
+              <caret line="48" column="32" lean-forward="false" selection-start-line="48" selection-start-column="32" selection-end-line="48" selection-end-column="32" />
+              <folding>
+                <element signature="e#717#742#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fc5Topbar.vue" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/fc5Topbar.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="193">
+              <caret line="11" column="44" lean-forward="false" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
+              <folding>
+                <element signature="e#1214#1239#0" expanded="true" />
+                <element signature="e#1525#2492#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Vue Single File Component" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>data</find>
+      <find>console</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/components/HelloWorld.vue" />
+        <option value="$PROJECT_DIR$/src/components/Home.vue" />
+        <option value="$PROJECT_DIR$/src/main.js" />
+        <option value="$PROJECT_DIR$/src/components/pages/SearchPlayer.vue" />
+        <option value="$PROJECT_DIR$/src/router/index.js" />
+        <option value="$PROJECT_DIR$/template/app/App_Resources/iOS/Info.plist" />
+        <option value="$PROJECT_DIR$/src/assets/topbar/fc5logo.svg" />
+        <option value="$PROJECT_DIR$/src/assets/topbar/friends.svg" />
+        <option value="$PROJECT_DIR$/src/styles.scss" />
+        <option value="$PROJECT_DIR$/src/store/index.js" />
+        <option value="$PROJECT_DIR$/src/components/pages/Home.vue" />
+        <option value="$PROJECT_DIR$/src/store/modules/user.js" />
+        <option value="$PROJECT_DIR$/src/components/fc5Topbar.vue" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
+    <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>false</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>false</other-services-enabled>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/dist/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1280" />
+    <option name="height" value="800" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="nsfc5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nsfc5" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nsfc5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nsfc5" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nsfc5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nsfc5" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nsfc5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nsfc5" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="topbar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nsfc5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nsfc5" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nsfc5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nsfc5" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nsfc5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nsfc5" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="store" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nsfc5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nsfc5" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="store" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Other File Types" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/local/bin/node" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="SearchEverywhereHistoryKey" value="info.pl&#9;FILE&#9;file:///root/app/nsfc5/template/app/App_Resources/iOS/Info.plist" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/pages" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets/homepage" />
+      <recent name="$PROJECT_DIR$/src/assets/" />
+      <recent name="$PROJECT_DIR$/src/components" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a9b4c67e-311b-4209-aa3a-d6a55a1baeb4" name="Default" comment="" />
+      <created>1522318796552</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1522318796552</updated>
+      <workItem from="1522318802372" duration="22983000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="22983000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19221604" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22925457" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="3" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/assets/homepage/store.svg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/topbar/friends.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Counter.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-51">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/HelloWorld.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/pages/SearchPlayer.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26680">
+          <caret line="1073" column="0" lean-forward="false" selection-start-line="1073" selection-start-column="0" selection-end-line="1073" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#35#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/app/App_Resources/iOS/Info.plist">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="6" column="54" lean-forward="false" selection-start-line="6" selection-start-column="54" selection-end-line="6" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="16" column="10" lean-forward="false" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#35#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/topbar/fc5logo.svg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/topbar/friends.svg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="0" column="433287" lean-forward="false" selection-start-line="0" selection-start-column="433287" selection-end-line="0" selection-end-column="433287" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#35#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/pages/Home.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="48" column="32" lean-forward="false" selection-start-line="48" selection-start-column="32" selection-end-line="48" selection-end-column="32" />
+          <folding>
+            <element signature="e#717#742#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/modules/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="24" column="12" lean-forward="true" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="33" />
+          <folding>
+            <element signature="e#1#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/modules/counter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="2" lean-forward="false" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="22" column="1" lean-forward="false" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/fc5Topbar.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="11" column="44" lean-forward="false" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
+          <folding>
+            <element signature="e#1214#1239#0" expanded="true" />
+            <element signature="e#1525#2492#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
