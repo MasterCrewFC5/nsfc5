@@ -21,7 +21,7 @@
   "_resolved": "https://registry.npmjs.org/tns-core-modules/-/tns-core-modules-3.4.1.tgz",
   "_shasum": "be6882cd04127296e8803eeb10eb7ebfd9afe717",
   "_spec": "tns-core-modules@~3.4.1",
-  "_where": "/root/app/FC5-ns/dist",
+  "_where": "/root/app/nsfc5/dist",
   "bundleDependencies": false,
   "dependencies": {
     "tns-core-modules-widgets": "3.4.0"

@@ -21,7 +21,7 @@
   "_resolved": "https://registry.npmjs.org/tns-core-modules-widgets/-/tns-core-modules-widgets-3.4.0.tgz",
   "_shasum": "3c1fa7f7f873e8508aa8cb6a866b1d8093279245",
   "_spec": "tns-core-modules-widgets@3.4.0",
-  "_where": "/root/app/FC5-ns/dist/node_modules/tns-core-modules",
+  "_where": "/root/app/nsfc5/dist/node_modules/tns-core-modules",
   "author": {
     "name": "NativeScript team"
   },

@@ -21,7 +21,7 @@
   "_resolved": "https://registry.npmjs.org/nativescript-vue/-/nativescript-vue-1.3.1.tgz",
   "_shasum": "ab156e9ab6fa23f1172f98d0e2decf7247b50c7c",
   "_spec": "nativescript-vue@^1.3.1",
-  "_where": "/root/app/FC5-ns/dist",
+  "_where": "/root/app/nsfc5/dist",
   "author": {
     "name": "Igor Randjelovic"
   },

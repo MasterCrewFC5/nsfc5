@@ -62,7 +62,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		qcYqr/0myG7OGEBzBS/6R/mNuls=
+		pVbDo9PWKCvmkeWNjJ3JS9tgxp4=
 		</data>
 		<key>Frameworks/NativeScript.framework/Info.plist</key>
 		<data>
@@ -90,7 +90,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		jFvjDT1SpukbYaEIA8uveq5j8BM=
+		qiTRg9gD+JkrtZbasZYPyJIDzh0=
 		</data>
 		<key>LaunchImage-1100-Landscape-2436h@3x.png</key>
 		<data>
@@ -166,7 +166,7 @@
 		</data>
 		<key>LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		K9O080Bneim2IU4NDt7x1RDEtiU=
+		Tmx+ex0trQVEQrMI1+LbPdo+Z1U=
 		</data>
 		<key>LaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -174,7 +174,7 @@
 		</data>
 		<key>LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		TqnmYv4Eg8267pI1z6hxZDW3Nik=
+		9K/BnSboaxhByIogT6koF9cIn2Q=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -182,11 +182,31 @@
 		</data>
 		<key>app/app.css</key>
 		<data>
-		YPv+53PkTlBU3udFEGbAm0lxcpE=
+		EjDYQpY/qk9Fxg4y4NP9WU8qufY=
 		</data>
 		<key>app/app.js</key>
 		<data>
-		C4u3uLeIRjygS5bzSL0FKAIMvlY=
+		PgWqIogKD9BKdcL3vkyB5EV2f14=
+		</data>
+		<key>app/homepage/HomeBackground.png</key>
+		<data>
+		EmrLbBsU13y31DTYZZS3vO+dNYw=
+		</data>
+		<key>app/homepage/findgame.svg</key>
+		<data>
+		Mxwws9Nk67gcPArTLeeotQIq6Ns=
+		</data>
+		<key>app/homepage/manage.svg</key>
+		<data>
+		nZ8JNqvfR54LdAZ89xQCcExWdP4=
+		</data>
+		<key>app/homepage/searchplayer.svg</key>
+		<data>
+		GMv76Pp9OOwHMJeImklm1uy9TYo=
+		</data>
+		<key>app/homepage/store.svg</key>
+		<data>
+		twYGgcMnbHRlIImYHd2YybaJpmY=
 		</data>
 		<key>app/images/NativeScript-Vue.png</key>
 		<data>
@@ -250,7 +270,7 @@
 		</data>
 		<key>app/tns_modules/nativescript-theme-core/package.json</key>
 		<data>
-		oF3MVZlJ48PeDF1Gv9mwKJE4cqY=
+		OWqUDNdiKbIKmIZuRbhNl8iuYM0=
 		</data>
 		<key>app/tns_modules/nativescript-theme-core/readme.md</key>
 		<data>
@@ -606,7 +626,7 @@
 		</data>
 		<key>app/tns_modules/nativescript-vue/package.json</key>
 		<data>
-		VGrE2GzmMVefondG4uY8ngqBkKQ=
+		YyF7yvcDIE/f08/99F1W4UbjR3s=
 		</data>
 		<key>app/tns_modules/tns-core-modules-widgets/LICENSE</key>
 		<data>
@@ -622,7 +642,7 @@
 		</data>
 		<key>app/tns_modules/tns-core-modules-widgets/package.json</key>
 		<data>
-		lsSF7C5orpwuvqXEGLAW0ZUcq8s=
+		cHlyMSOkuZTy2fTGWjzJODvH03Y=
 		</data>
 		<key>app/tns_modules/tns-core-modules/LICENSE</key>
 		<data>
@@ -910,7 +930,7 @@
 		</data>
 		<key>app/tns_modules/tns-core-modules/package.json</key>
 		<data>
-		lReRXAPdKdW8b3InOmGhBlXrZpY=
+		TtNWqB4JlyftGofesHEt95coIS4=
 		</data>
 		<key>app/tns_modules/tns-core-modules/platform/package.json</key>
 		<data>
@@ -1636,6 +1656,22 @@
 		<data>
 		IE4VL/0JSbGNFNPTxDKJNvG+Qk8=
 		</data>
+		<key>app/topbar/fc5logo.png</key>
+		<data>
+		FYggyEj6Qgt63E6AOaqbSj7oMQ8=
+		</data>
+		<key>app/topbar/friends.png</key>
+		<data>
+		I4JSDnhulSXs1+Fnj2Wh+MHnfzY=
+		</data>
+		<key>app/topbar/friends.svg</key>
+		<data>
+		+mPoyxU0c+Y21Y3+GJZpGEd5zNo=
+		</data>
+		<key>app/topbar/userlogo.png</key>
+		<data>
+		wvNXTTqzEEBleoh5prqMqe+no4Q=
+		</data>
 		<key>build.xcconfig</key>
 		<data>
 		RNL/GAS4TOxSHBwCBUOpAd1PTlk=
@@ -1810,11 +1846,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qcYqr/0myG7OGEBzBS/6R/mNuls=
+			pVbDo9PWKCvmkeWNjJ3JS9tgxp4=
 			</data>
 			<key>hash2</key>
 			<data>
-			/UDI0Xk+Xn3sJsuaS4hnVMf2ARBDhcYG9KsOrz/axoE=
+			76WJZPIfU8Frzes92+4NwGBwugcfxe63VN47zEyNtYo=
 			</data>
 		</dict>
 		<key>Frameworks/NativeScript.framework/Info.plist</key>
@@ -2085,11 +2121,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			K9O080Bneim2IU4NDt7x1RDEtiU=
+			Tmx+ex0trQVEQrMI1+LbPdo+Z1U=
 			</data>
 			<key>hash2</key>
 			<data>
-			Nr8hABvRT5J2yGYfTwMLzJB/IhYlOVn9cbD+Ab/cWqg=
+			ICoyTXSnCL7AtWYd9klOcSCSnXNO5i9EzS5WuVRg5Dw=
 			</data>
 		</dict>
 		<key>LaunchScreen.storyboardc/Info.plist</key>
@@ -2107,33 +2143,88 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TqnmYv4Eg8267pI1z6hxZDW3Nik=
+			9K/BnSboaxhByIogT6koF9cIn2Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			ndNjQX88BAj/w7ML9VjnX4RFCY5/o7YrGOPu28meup4=
+			9iibR+wWQ8dZRbvIFgHjMFs9OKWMxCDuC1VHcetx730=
 			</data>
 		</dict>
 		<key>app/app.css</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			YPv+53PkTlBU3udFEGbAm0lxcpE=
+			EjDYQpY/qk9Fxg4y4NP9WU8qufY=
 			</data>
 			<key>hash2</key>
 			<data>
-			IuoFxHWlNd6XkyjfeTdfcrvgRa+83KdOEVad5h6FoZU=
+			aLB6J+AIdwh1rvK1TAaK1xuIf2peZCcQQFTler/+33E=
 			</data>
 		</dict>
 		<key>app/app.js</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			C4u3uLeIRjygS5bzSL0FKAIMvlY=
+			PgWqIogKD9BKdcL3vkyB5EV2f14=
 			</data>
 			<key>hash2</key>
 			<data>
-			qWCbOY0JaCKpLE+xG0AsLoXLpJsM/metTSApuwVpffY=
+			ZKkGxlhf5H6dyg564vygNG26fGLUp6rtijZ65YXHNn4=
+			</data>
+		</dict>
+		<key>app/homepage/HomeBackground.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			EmrLbBsU13y31DTYZZS3vO+dNYw=
+			</data>
+			<key>hash2</key>
+			<data>
+			eDK5uk+M0MBIWEdIQ6Zmh1iCt18BhUtzXWH8Zq2l0TQ=
+			</data>
+		</dict>
+		<key>app/homepage/findgame.svg</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Mxwws9Nk67gcPArTLeeotQIq6Ns=
+			</data>
+			<key>hash2</key>
+			<data>
+			I7awmUt/hnBVMU4cV06dBFk42FGsne094qgnNQgVJ9g=
+			</data>
+		</dict>
+		<key>app/homepage/manage.svg</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			nZ8JNqvfR54LdAZ89xQCcExWdP4=
+			</data>
+			<key>hash2</key>
+			<data>
+			ILlPFBksHclbD2ImSsChGctg6uW5IEkkoKRiRPxMVBE=
+			</data>
+		</dict>
+		<key>app/homepage/searchplayer.svg</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GMv76Pp9OOwHMJeImklm1uy9TYo=
+			</data>
+			<key>hash2</key>
+			<data>
+			SMaN1XxW9gsDFrzbqfgnwK+4dv6TeCxz7H4t0HQhDPk=
+			</data>
+		</dict>
+		<key>app/homepage/store.svg</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			twYGgcMnbHRlIImYHd2YybaJpmY=
+			</data>
+			<key>hash2</key>
+			<data>
+			Dfqge+fPybqUxeQ9bXw1CrzFZB5lGtDvP5wSCwniN2o=
 			</data>
 		</dict>
 		<key>app/images/NativeScript-Vue.png</key>
@@ -2305,11 +2396,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			oF3MVZlJ48PeDF1Gv9mwKJE4cqY=
+			OWqUDNdiKbIKmIZuRbhNl8iuYM0=
 			</data>
 			<key>hash2</key>
 			<data>
-			/WUlAOGAlb0u2YpIp3v7AM+F7pXo1CmRPjOsDd4xKLE=
+			VYGKnz1mI8UCkauw+DzGmBexddhH6IiYstd+9IkYCVU=
 			</data>
 		</dict>
 		<key>app/tns_modules/nativescript-theme-core/readme.md</key>
@@ -3284,11 +3375,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			VGrE2GzmMVefondG4uY8ngqBkKQ=
+			YyF7yvcDIE/f08/99F1W4UbjR3s=
 			</data>
 			<key>hash2</key>
 			<data>
-			0y+qcQEmw6Mnp5aGDpu6w9rtGRSKGhXI9+uFp/6zHIg=
+			EV1ZGoLtXKZ7he3M+eUGzbWBQmwPfRRQTr66rFFU2JM=
 			</data>
 		</dict>
 		<key>app/tns_modules/tns-core-modules-widgets/LICENSE</key>
@@ -3328,11 +3419,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lsSF7C5orpwuvqXEGLAW0ZUcq8s=
+			cHlyMSOkuZTy2fTGWjzJODvH03Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			RcmJ9eWCVtBXzVGBQ77QaSSeHf/yblfxdV7xUk2s/qE=
+			XANIKDRmIOoFTaEa21ewRJulTLAde0zx8rIMW8EugbU=
 			</data>
 		</dict>
 		<key>app/tns_modules/tns-core-modules/LICENSE</key>
@@ -4120,11 +4211,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lReRXAPdKdW8b3InOmGhBlXrZpY=
+			TtNWqB4JlyftGofesHEt95coIS4=
 			</data>
 			<key>hash2</key>
 			<data>
-			ScfzrcFOrnKt1dzjddGGfqEsbtI9SeShf8pI+3e9DyU=
+			BWsBwVDT/8oZIsNfJazVK3GHqjcmrxKMDLktc0/L1FU=
 			</data>
 		</dict>
 		<key>app/tns_modules/tns-core-modules/platform/package.json</key>
@@ -6116,6 +6207,50 @@
 			<key>hash2</key>
 			<data>
 			J7v2mo9rLPSi3NPhBw2hwVLL2zy2KEKlZ9Bv+1bS+MA=
+			</data>
+		</dict>
+		<key>app/topbar/fc5logo.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FYggyEj6Qgt63E6AOaqbSj7oMQ8=
+			</data>
+			<key>hash2</key>
+			<data>
+			yiB16gqa2G/r+IykrEdug0305NxoZy1zLSL3AgOKr6o=
+			</data>
+		</dict>
+		<key>app/topbar/friends.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			I4JSDnhulSXs1+Fnj2Wh+MHnfzY=
+			</data>
+			<key>hash2</key>
+			<data>
+			i/QMT2sXTfBm2o6r7hCLVzHu8tomPXbAlxRTjmUUrA0=
+			</data>
+		</dict>
+		<key>app/topbar/friends.svg</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+mPoyxU0c+Y21Y3+GJZpGEd5zNo=
+			</data>
+			<key>hash2</key>
+			<data>
+			YrVGEzAu6SAvhVzbnVrKnI+qIEtS++DzyBZhzD789mY=
+			</data>
+		</dict>
+		<key>app/topbar/userlogo.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wvNXTTqzEEBleoh5prqMqe+no4Q=
+			</data>
+			<key>hash2</key>
+			<data>
+			CW/anG+oK46gid1i1o95jKn/566tswFdiWlwQ0AByiQ=
 			</data>
 		</dict>
 		<key>build.xcconfig</key>
