@@ -28,7 +28,6 @@
 <script>
     import axios from 'axios'
     import store from './../store/index.js'
-    import 'babel-polyfill';
     import http from 'http'
 
     export default{

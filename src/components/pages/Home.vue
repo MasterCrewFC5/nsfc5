@@ -19,6 +19,7 @@
 
 
 <script>
+    import 'babel-polyfill'
     import axios from 'axios'
     import store from '../../store/index'
     import fc5topbar from '../fc5Topbar.vue'

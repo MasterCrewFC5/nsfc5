@@ -62,7 +62,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		pVbDo9PWKCvmkeWNjJ3JS9tgxp4=
+		UszrlXq3i4iyq4G10g9jrWa5YR4=
 		</data>
 		<key>Frameworks/NativeScript.framework/Info.plist</key>
 		<data>
@@ -166,7 +166,7 @@
 		</data>
 		<key>LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		Tmx+ex0trQVEQrMI1+LbPdo+Z1U=
+		zqz3ookTKvwX6yK4I5LDYNVqejU=
 		</data>
 		<key>LaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -174,7 +174,7 @@
 		</data>
 		<key>LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		9K/BnSboaxhByIogT6koF9cIn2Q=
+		SnEEsLCuWlFnsXPbpGop0IWuSFw=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -182,11 +182,11 @@
 		</data>
 		<key>app/app.css</key>
 		<data>
-		EjDYQpY/qk9Fxg4y4NP9WU8qufY=
+		yX4LdfoDTt5UbQmiqugNwh9YU/w=
 		</data>
 		<key>app/app.js</key>
 		<data>
-		PgWqIogKD9BKdcL3vkyB5EV2f14=
+		IsrFfSjEf6bZ+5BplQsTGKPZKUo=
 		</data>
 		<key>app/homepage/HomeBackground.png</key>
 		<data>
@@ -1660,13 +1660,17 @@
 		<data>
 		FYggyEj6Qgt63E6AOaqbSj7oMQ8=
 		</data>
+		<key>app/topbar/fc5logo.svg</key>
+		<data>
+		D1E6Vch+n3LlDdjDK8ogMEsb9kQ=
+		</data>
 		<key>app/topbar/friends.png</key>
 		<data>
 		I4JSDnhulSXs1+Fnj2Wh+MHnfzY=
 		</data>
 		<key>app/topbar/friends.svg</key>
 		<data>
-		+mPoyxU0c+Y21Y3+GJZpGEd5zNo=
+		kmvvp9effCDDTGQ8M12+IJOoCSI=
 		</data>
 		<key>app/topbar/userlogo.png</key>
 		<data>
@@ -1846,11 +1850,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			pVbDo9PWKCvmkeWNjJ3JS9tgxp4=
+			UszrlXq3i4iyq4G10g9jrWa5YR4=
 			</data>
 			<key>hash2</key>
 			<data>
-			76WJZPIfU8Frzes92+4NwGBwugcfxe63VN47zEyNtYo=
+			6cyRxFt+62PxjRdSZaYNICgwjTCS+kcDk62leniNrFU=
 			</data>
 		</dict>
 		<key>Frameworks/NativeScript.framework/Info.plist</key>
@@ -2121,11 +2125,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Tmx+ex0trQVEQrMI1+LbPdo+Z1U=
+			zqz3ookTKvwX6yK4I5LDYNVqejU=
 			</data>
 			<key>hash2</key>
 			<data>
-			ICoyTXSnCL7AtWYd9klOcSCSnXNO5i9EzS5WuVRg5Dw=
+			ECAkyE1viWUZWX4jeU6Ibky3h55iw709iT6Gv0g9REA=
 			</data>
 		</dict>
 		<key>LaunchScreen.storyboardc/Info.plist</key>
@@ -2143,33 +2147,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9K/BnSboaxhByIogT6koF9cIn2Q=
+			SnEEsLCuWlFnsXPbpGop0IWuSFw=
 			</data>
 			<key>hash2</key>
 			<data>
-			9iibR+wWQ8dZRbvIFgHjMFs9OKWMxCDuC1VHcetx730=
+			OKtjX0w9J2pcuycY85yExFhGylo4ld1TmMru45LftNU=
 			</data>
 		</dict>
 		<key>app/app.css</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			EjDYQpY/qk9Fxg4y4NP9WU8qufY=
+			yX4LdfoDTt5UbQmiqugNwh9YU/w=
 			</data>
 			<key>hash2</key>
 			<data>
-			aLB6J+AIdwh1rvK1TAaK1xuIf2peZCcQQFTler/+33E=
+			cLscPHSf+W1/SXr/LcTozEfDOcQkqIpf2pDPtB+HcJQ=
 			</data>
 		</dict>
 		<key>app/app.js</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PgWqIogKD9BKdcL3vkyB5EV2f14=
+			IsrFfSjEf6bZ+5BplQsTGKPZKUo=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZKkGxlhf5H6dyg564vygNG26fGLUp6rtijZ65YXHNn4=
+			YK7xQJP2YXb7iIFmJGekPzYwLp/0jDCVK/IPiWmAVyA=
 			</data>
 		</dict>
 		<key>app/homepage/HomeBackground.png</key>
@@ -6220,6 +6224,17 @@
 			yiB16gqa2G/r+IykrEdug0305NxoZy1zLSL3AgOKr6o=
 			</data>
 		</dict>
+		<key>app/topbar/fc5logo.svg</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			D1E6Vch+n3LlDdjDK8ogMEsb9kQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			R1JY9hQRC+qRthvnUlli+EpBtz+jzjNDZRyoyobD4w0=
+			</data>
+		</dict>
 		<key>app/topbar/friends.png</key>
 		<dict>
 			<key>hash</key>
@@ -6235,11 +6250,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+mPoyxU0c+Y21Y3+GJZpGEd5zNo=
+			kmvvp9effCDDTGQ8M12+IJOoCSI=
 			</data>
 			<key>hash2</key>
 			<data>
-			YrVGEzAu6SAvhVzbnVrKnI+qIEtS++DzyBZhzD789mY=
+			3a95psEk9x2OJ1uX9W6lwcFj4r0ffdFKMlXOYZwjPoU=
 			</data>
 		</dict>
 		<key>app/topbar/userlogo.png</key>
