@@ -2,14 +2,14 @@
     <GridLayout columns="auto, *, auto" rows="45" backgroundColor="#F0F0F0">
 
         <GridLayout row="0" col="0" rows="*,*" columns="30,auto" >
-            <Image src="~/topbar/userlogo.png" stretch="aspectFit" class="userlogo" row="0" col="0" rowSpan="2" ></Image>
+            <Image src="~/topbar/userlogo.png" stretch="aspectFit" class="userlogo" row="0" col="0" rowSpan="2" verticalAlignment="center"></Image>
             <Label :text="user.username" class="test" row="0" col="1" />
             <Label :text="user.teamname" class="teamname" row="1" col="1" />
         </GridLayout>
 
 
         <StackLayout row="0" col="1" @tap="getUser">
-            <Image src="~/topbar/fc5logo.png" stretch="aspectFit" class="fc5logo"></Image>
+            <Image src="~/topbar/fc5logo.png" stretch="aspectFit" class="fc5logo" verticalAlignment="center" />
         </StackLayout>
 
 
@@ -28,7 +28,6 @@
 <script>
     import axios from 'axios'
     import store from './../store/index.js'
-    import http from 'http'
 
     export default{
         store: store,
@@ -38,28 +37,28 @@
                 message: "topbar",
                 user:
                     {
-                        "id": 1,
-                        "username": "Negoraaa",
-                        "teamname": "Olympique claqué",
-                        "friends": [
+                        id: 1,
+                        username: "Negoraaa",
+                        teamname: "Olympique claqué",
+                        friends: [
                             {
-                                "id": 1,
-                                "username": "Creemson",
-                                "teamname": "Arsemâle FC"
+                                id: 1,
+                                username: "Creemson",
+                                teamname: "Arsemâle FC"
                             }
                         ],
-                        "money": [
+                        money: [
                             {
-                                "id": 1,
-                                "dollars": 140000,
-                                "revenus": 32750,
-                                "fc5": 530
+                                id: 1,
+                                dollars: 140000,
+                                revenus: 32750,
+                                fc5: 530
                             }
                         ],
-                        "img": [
+                        img: [
                             {
-                                "id": 1,
-                                "src": "assets/userlogo.png"
+                                id: 1,
+                                src: "assets/userlogo.png"
                             }
                         ]
                     }
@@ -71,21 +70,25 @@
                 const dataReceived = await axios.get('http://localhost:3001/user', {
                     responseType: 'json'
                 });
-                console.dir(dataReceived);
-
-                this.user = dataReceived.data[0]
-                console.dir(this.user.username)
+                this.user = dataReceived
+                console.dir(this.user.toString())
             },
 
         },
         async created(){
-            const dataReceived = await axios.get('http://localhost:3001/user', {
-                responseType: 'json'
-            });
-            console.dir(dataReceived);
+            try {
+                const response = await axios.get('http://localhost:3001/user', {
+                    responseType: 'json'
+                });
+                console.dir("response: " + response);
 
-            this.user = dataReceived.data[0]
-            console.dir(this.user.username)
+                this.user = response
+                console.dir("user: " + this.user.username)
+
+            } catch (error) {
+                console.error(error)
+            }
+
 
         },
         computed: {}
@@ -105,7 +108,7 @@
         font-style: normal;
         font-weight: normal;
 
-        font-size: 13px;
+        font-size: 16px;
     }
 
     .revenus{
@@ -115,11 +118,13 @@
 
     .fc5logo{
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.24)) ;
-        height: 50%;
+        height: 80%;
+        margin-top: 10%;
     }
 
     .userlogo{
         padding: 5px;
+        margin: 5px;
     }
 /*
     $textgrey: #595555;

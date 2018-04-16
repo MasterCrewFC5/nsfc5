@@ -2,43 +2,164 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ffbd2b55-3792-492b-a8af-f619607a3fcb" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.babelrc" afterPath="$PROJECT_DIR$/.babelrc" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/dist/app/app.ios.js" afterPath="$PROJECT_DIR$/dist/app/app.ios.js" />
-      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/.nsprepareinfo" afterPath="$PROJECT_DIR$/dist/platforms/ios/.nsprepareinfo" />
-      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/dist.build/Debug-iphonesimulator/dist.build/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/dist.build/Debug-iphonesimulator/dist.build/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib" />
-      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/dist.build/Debug-iphonesimulator/dist.build/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/dist.build/Debug-iphonesimulator/dist.build/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib" />
-      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/dist.build/Debug-iphonesimulator/dist.build/Objects-normal/i386/dist" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/dist.build/Debug-iphonesimulator/dist.build/Objects-normal/i386/dist" />
-      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/dist.build/Debug-iphonesimulator/dist.build/Objects-normal/x86_64/dist" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/dist.build/Debug-iphonesimulator/dist.build/Objects-normal/x86_64/dist" />
-      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/dist.build/Debug-iphonesimulator/dist.build/dgph" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/dist.build/Debug-iphonesimulator/dist.build/dgph" />
-      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/.nsbuildinfo" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/.nsbuildinfo" />
-      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app.dSYM/Contents/Resources/DWARF/dist" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app.dSYM/Contents/Resources/DWARF/dist" />
-      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/Assets.car" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/Assets.car" />
-      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib" />
-      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib" />
-      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/_CodeSignature/CodeResources" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/_CodeSignature/CodeResources" />
-      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/app.css" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/app.css" />
-      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/app.js" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/app.js" />
-      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/topbar/friends.svg" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/topbar/friends.svg" />
-      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/dist" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/dist" />
-      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/metadata-i386.bin" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/metadata-i386.bin" />
-      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/metadata-x86_64.bin" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/metadata-x86_64.bin" />
-      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/sharedpch/dist-Prefix-fzbnlgpuhuglsrglqnpiodsozzqv/dist-Prefix.pch.data" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/sharedpch/dist-Prefix-fzbnlgpuhuglsrglqnpiodsozzqv/dist-Prefix.pch.data" />
-      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/sharedpch/dist-Prefix-fzbnlgpuhuglsrglqnpiodsozzqv/dist-Prefix.pch.pch" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/sharedpch/dist-Prefix-fzbnlgpuhuglsrglqnpiodsozzqv/dist-Prefix.pch.pch" />
-      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/sharedpch/dist-Prefix-gjjoqlcizkrxsubzojjalrgeklgx/dist-Prefix.pch.data" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/sharedpch/dist-Prefix-gjjoqlcizkrxsubzojjalrgeklgx/dist-Prefix.pch.data" />
-      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/sharedpch/dist-Prefix-gjjoqlcizkrxsubzojjalrgeklgx/dist-Prefix.pch.pch" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/sharedpch/dist-Prefix-gjjoqlcizkrxsubzojjalrgeklgx/dist-Prefix.pch.pch" />
-      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/dist.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/dist/platforms/ios/dist.xcodeproj/project.pbxproj" />
-      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/dist/app/app.js" afterPath="$PROJECT_DIR$/dist/platforms/ios/dist/app/app.js" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change beforePath="$PROJECT_DIR$/src/components/fc5Topbar.vue" afterPath="$PROJECT_DIR$/src/components/fc5Topbar.vue" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/Home.vue" afterPath="$PROJECT_DIR$/src/components/pages/Home.vue" />
-      <change beforePath="$PROJECT_DIR$/src/main.js" afterPath="$PROJECT_DIR$/src/main.js" />
-      <change beforePath="$PROJECT_DIR$/src/store/index.js" afterPath="$PROJECT_DIR$/src/store/index.js" />
-      <change beforePath="$PROJECT_DIR$/template/app/App_Resources/iOS/Info.plist" afterPath="$PROJECT_DIR$/template/app/App_Resources/iOS/Info.plist" />
-      <change beforePath="$PROJECT_DIR$/template/app/package.json" afterPath="$PROJECT_DIR$/template/app/package.json" />
-      <change beforePath="$PROJECT_DIR$/template/package.json" afterPath="$PROJECT_DIR$/template/package.json" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" afterPath="$PROJECT_DIR$/webpack.config.js" />
+      <change afterPath="$PROJECT_DIR$/template/app/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/fc5-app-icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/app/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/Contents.json" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/Contents.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/app/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-1024.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/app/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-29.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-29.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/app/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-29@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-29@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/app/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-29@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-29@3x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/app/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-40.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-40.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/app/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-40@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-40@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/app/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-40@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-40@3x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/app/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-60@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-60@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/app/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-60@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-60@3x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/app/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-76.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-76.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/app/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-76@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-76@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/app/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-83.5@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-83.5@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/app/App_Resources/iOS/Assets.xcassets/LaunchImage.launchimage/Default-1125h.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app/App_Resources/iOS/Assets.xcassets/LaunchImage.launchimage/Default-1125h.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/app/App_Resources/iOS/Assets.xcassets/LaunchImage.launchimage/Default-568h@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app/App_Resources/iOS/Assets.xcassets/LaunchImage.launchimage/Default-568h@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/app/App_Resources/iOS/Assets.xcassets/LaunchImage.launchimage/Default-667h@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app/App_Resources/iOS/Assets.xcassets/LaunchImage.launchimage/Default-667h@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/app/App_Resources/iOS/Assets.xcassets/LaunchImage.launchimage/Default-736h@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app/App_Resources/iOS/Assets.xcassets/LaunchImage.launchimage/Default-736h@3x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/app/App_Resources/iOS/Assets.xcassets/LaunchImage.launchimage/Default.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app/App_Resources/iOS/Assets.xcassets/LaunchImage.launchimage/Default.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/app/App_Resources/iOS/Assets.xcassets/LaunchImage.launchimage/Default@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app/App_Resources/iOS/Assets.xcassets/LaunchImage.launchimage/Default@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/app/App_Resources/iOS/Assets.xcassets/LaunchScreen.AspectFill.imageset/LaunchScreen-AspectFill.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app/App_Resources/iOS/Assets.xcassets/LaunchScreen.AspectFill.imageset/LaunchScreen-AspectFill.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/app/App_Resources/iOS/Assets.xcassets/LaunchScreen.AspectFill.imageset/LaunchScreen-AspectFill@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app/App_Resources/iOS/Assets.xcassets/LaunchScreen.AspectFill.imageset/LaunchScreen-AspectFill@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/app/App_Resources/iOS/Assets.xcassets/LaunchScreen.Center.imageset/LaunchScreen-Center.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app/App_Resources/iOS/Assets.xcassets/LaunchScreen.Center.imageset/LaunchScreen-Center.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/app/App_Resources/iOS/Assets.xcassets/LaunchScreen.Center.imageset/LaunchScreen-Center@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app/App_Resources/iOS/Assets.xcassets/LaunchScreen.Center.imageset/LaunchScreen-Center@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/app/App_Resources/iOS/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app/App_Resources/iOS/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/app/App_Resources/iOS/LaunchScreen.storyboard" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app/App_Resources/iOS/LaunchScreen.storyboard" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/app/app.ios.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app/app.ios.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/app/app.ios.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app/app.ios.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/app/homepage/store.svg" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app/homepage/store.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/dist/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/dist/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/.nsprepareinfo" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/.nsprepareinfo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/dist.build/Debug-iphonesimulator/dist.build/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/dist.build/Debug-iphonesimulator/dist.build/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/dist.build/Debug-iphonesimulator/dist.build/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/dist.build/Debug-iphonesimulator/dist.build/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/dist.build/Debug-iphonesimulator/dist.build/Objects-normal/i386/dist" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/dist.build/Debug-iphonesimulator/dist.build/Objects-normal/i386/dist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/dist.build/Debug-iphonesimulator/dist.build/Objects-normal/i386/dist_dependency_info.dat" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/dist.build/Debug-iphonesimulator/dist.build/Objects-normal/i386/dist_dependency_info.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/dist.build/Debug-iphonesimulator/dist.build/Objects-normal/i386/main.o" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/dist.build/Debug-iphonesimulator/dist.build/Objects-normal/i386/main.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/dist.build/Debug-iphonesimulator/dist.build/Objects-normal/x86_64/dist" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/dist.build/Debug-iphonesimulator/dist.build/Objects-normal/x86_64/dist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/dist.build/Debug-iphonesimulator/dist.build/Objects-normal/x86_64/dist_dependency_info.dat" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/dist.build/Debug-iphonesimulator/dist.build/Objects-normal/x86_64/dist_dependency_info.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/dist.build/Debug-iphonesimulator/dist.build/Objects-normal/x86_64/main.o" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/dist.build/Debug-iphonesimulator/dist.build/Objects-normal/x86_64/main.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/dist.build/Debug-iphonesimulator/dist.build/TNSWidgets.framework.xcent" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/dist.build/Debug-iphonesimulator/dist.build/TNSWidgets.framework.xcent" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/dist.build/Debug-iphonesimulator/dist.build/assetcatalog_dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/dist.build/Debug-iphonesimulator/dist.build/assetcatalog_dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/dist.build/Debug-iphonesimulator/dist.build/dgph" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/dist.build/Debug-iphonesimulator/dist.build/dgph" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/dist.build/Debug-iphonesimulator/dist.build/dist.app.xcent" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/dist.build/Debug-iphonesimulator/dist.build/dist.app.xcent" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/.nsbuildinfo" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/.nsbuildinfo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app.dSYM/Contents/Resources/DWARF/dist" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app.dSYM/Contents/Resources/DWARF/dist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/AppIcon29x29.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/AppIcon29x29.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/AppIcon29x29@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/AppIcon29x29@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/AppIcon29x29@2x~ipad.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/AppIcon29x29@2x~ipad.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/AppIcon29x29@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/AppIcon29x29@3x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/AppIcon29x29~ipad.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/AppIcon29x29~ipad.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/AppIcon40x40@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/AppIcon40x40@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/AppIcon40x40@2x~ipad.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/AppIcon40x40@2x~ipad.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/AppIcon40x40@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/AppIcon40x40@3x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/AppIcon40x40~ipad.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/AppIcon40x40~ipad.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/AppIcon60x60@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/AppIcon60x60@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/AppIcon60x60@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/AppIcon60x60@3x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/AppIcon76x76@2x~ipad.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/AppIcon76x76@2x~ipad.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/AppIcon76x76~ipad.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/AppIcon76x76~ipad.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/AppIcon83.5x83.5@2x~ipad.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/AppIcon83.5x83.5@2x~ipad.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/Assets.car" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/Assets.car" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/LaunchImage-1100-Portrait-2436h@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/LaunchImage-1100-Portrait-2436h@3x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/LaunchImage-568h@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/LaunchImage-568h@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/LaunchImage-700-568h@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/LaunchImage-700-568h@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/LaunchImage-700@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/LaunchImage-700@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/LaunchImage-800-667h@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/LaunchImage-800-667h@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/LaunchImage-800-Portrait-736h@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/LaunchImage-800-Portrait-736h@3x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/LaunchImage.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/LaunchImage.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/LaunchImage@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/LaunchImage@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/_CodeSignature/CodeResources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/homepage/store.svg" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/homepage/store.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/dist" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/dist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/metadata-generation-stderr-i386.txt" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/metadata-generation-stderr-i386.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/metadata-generation-stderr-x86_64.txt" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/metadata-generation-stderr-x86_64.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/metadata-i386.bin" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/metadata-i386.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/metadata-x86_64.bin" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/metadata-x86_64.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/umbrella-i386.h" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/umbrella-i386.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/umbrella-x86_64.h" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/build/emulator/umbrella-x86_64.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/sharedpch/dist-Prefix-fzbnlgpuhuglsrglqnpiodsozzqv/dist-Prefix.pch.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/sharedpch/dist-Prefix-fzbnlgpuhuglsrglqnpiodsozzqv/dist-Prefix.pch.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/sharedpch/dist-Prefix-fzbnlgpuhuglsrglqnpiodsozzqv/dist-Prefix.pch.dia" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/sharedpch/dist-Prefix-fzbnlgpuhuglsrglqnpiodsozzqv/dist-Prefix.pch.pch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/sharedpch/dist-Prefix-fzbnlgpuhuglsrglqnpiodsozzqv/dist-Prefix.pch.pch.hash-criteria" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/sharedpch/dist-Prefix-gjjoqlcizkrxsubzojjalrgeklgx/dist-Prefix.pch.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/sharedpch/dist-Prefix-gjjoqlcizkrxsubzojjalrgeklgx/dist-Prefix.pch.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/sharedpch/dist-Prefix-gjjoqlcizkrxsubzojjalrgeklgx/dist-Prefix.pch.dia" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/sharedpch/dist-Prefix-gjjoqlcizkrxsubzojjalrgeklgx/dist-Prefix.pch.pch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/build/sharedpch/dist-Prefix-gjjoqlcizkrxsubzojjalrgeklgx/dist-Prefix.pch.pch.hash-criteria" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/dist.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/dist.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/dist/Resources/Assets.xcassets/AppIcon.appiconset/Contents.json" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/dist/Resources/Assets.xcassets/AppIcon.appiconset/Contents.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/dist/Resources/Assets.xcassets/AppIcon.appiconset/icon-1024.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/dist/Resources/Assets.xcassets/AppIcon.appiconset/icon-29.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/dist/Resources/Assets.xcassets/AppIcon.appiconset/icon-29.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/dist/Resources/Assets.xcassets/AppIcon.appiconset/icon-29@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/dist/Resources/Assets.xcassets/AppIcon.appiconset/icon-29@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/dist/Resources/Assets.xcassets/AppIcon.appiconset/icon-29@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/dist/Resources/Assets.xcassets/AppIcon.appiconset/icon-29@3x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/dist/Resources/Assets.xcassets/AppIcon.appiconset/icon-40.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/dist/Resources/Assets.xcassets/AppIcon.appiconset/icon-40.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/dist/Resources/Assets.xcassets/AppIcon.appiconset/icon-40@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/dist/Resources/Assets.xcassets/AppIcon.appiconset/icon-40@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/dist/Resources/Assets.xcassets/AppIcon.appiconset/icon-40@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/dist/Resources/Assets.xcassets/AppIcon.appiconset/icon-40@3x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/dist/Resources/Assets.xcassets/AppIcon.appiconset/icon-60@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/dist/Resources/Assets.xcassets/AppIcon.appiconset/icon-60@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/dist/Resources/Assets.xcassets/AppIcon.appiconset/icon-60@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/dist/Resources/Assets.xcassets/AppIcon.appiconset/icon-60@3x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/dist/Resources/Assets.xcassets/AppIcon.appiconset/icon-76.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/dist/Resources/Assets.xcassets/AppIcon.appiconset/icon-76.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/dist/Resources/Assets.xcassets/AppIcon.appiconset/icon-76@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/dist/Resources/Assets.xcassets/AppIcon.appiconset/icon-76@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/dist/Resources/Assets.xcassets/AppIcon.appiconset/icon-83.5@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/dist/Resources/Assets.xcassets/AppIcon.appiconset/icon-83.5@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/dist/Resources/Assets.xcassets/LaunchImage.launchimage/Default-1125h.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/dist/Resources/Assets.xcassets/LaunchImage.launchimage/Default-1125h.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/dist/Resources/Assets.xcassets/LaunchImage.launchimage/Default-568h@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/dist/Resources/Assets.xcassets/LaunchImage.launchimage/Default-568h@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/dist/Resources/Assets.xcassets/LaunchImage.launchimage/Default-667h@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/dist/Resources/Assets.xcassets/LaunchImage.launchimage/Default-667h@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/dist/Resources/Assets.xcassets/LaunchImage.launchimage/Default-736h@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/dist/Resources/Assets.xcassets/LaunchImage.launchimage/Default-736h@3x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/dist/Resources/Assets.xcassets/LaunchImage.launchimage/Default.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/dist/Resources/Assets.xcassets/LaunchImage.launchimage/Default.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/dist/Resources/Assets.xcassets/LaunchImage.launchimage/Default@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/dist/Resources/Assets.xcassets/LaunchImage.launchimage/Default@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/dist/Resources/Assets.xcassets/LaunchScreen.AspectFill.imageset/LaunchScreen-AspectFill.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/dist/Resources/Assets.xcassets/LaunchScreen.AspectFill.imageset/LaunchScreen-AspectFill.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/dist/Resources/Assets.xcassets/LaunchScreen.AspectFill.imageset/LaunchScreen-AspectFill@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/dist/Resources/Assets.xcassets/LaunchScreen.AspectFill.imageset/LaunchScreen-AspectFill@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/dist/Resources/Assets.xcassets/LaunchScreen.Center.imageset/LaunchScreen-Center.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/dist/Resources/Assets.xcassets/LaunchScreen.Center.imageset/LaunchScreen-Center.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/dist/Resources/Assets.xcassets/LaunchScreen.Center.imageset/LaunchScreen-Center@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/dist/Resources/Assets.xcassets/LaunchScreen.Center.imageset/LaunchScreen-Center@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/dist/Resources/LaunchScreen.storyboard" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/dist/Resources/LaunchScreen.storyboard" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/dist/app/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/dist/app/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/dist/app/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/dist/app/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/dist/app/homepage/store.svg" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/dist/app/homepage/store.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/dist/app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/dist/app/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/platforms/ios/dist/dist-Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/dist/platforms/ios/dist/dist-Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/homepage/store.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/homepage/store.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/fc5Topbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/fc5Topbar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/app/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/Contents.json" beforeDir="false" afterPath="$PROJECT_DIR$/template/app/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/Contents.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/app/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-1024.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/app/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-29.png" beforeDir="false" afterPath="$PROJECT_DIR$/template/app/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-29.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/app/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-29@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/template/app/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-29@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/app/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-29@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/template/app/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-29@3x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/app/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-40.png" beforeDir="false" afterPath="$PROJECT_DIR$/template/app/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-40.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/app/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-40@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/template/app/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-40@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/app/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-40@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/template/app/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-40@3x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/app/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-60@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/template/app/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-60@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/app/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-60@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/template/app/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-60@3x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/app/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-76.png" beforeDir="false" afterPath="$PROJECT_DIR$/template/app/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-76.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/app/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-76@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/template/app/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-76@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/app/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-83.5@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/template/app/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-83.5@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/app/App_Resources/iOS/Assets.xcassets/LaunchImage.launchimage/Default-1125h.png" beforeDir="false" afterPath="$PROJECT_DIR$/template/app/App_Resources/iOS/Assets.xcassets/LaunchImage.launchimage/Default-1125h.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/app/App_Resources/iOS/Assets.xcassets/LaunchImage.launchimage/Default-568h@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/template/app/App_Resources/iOS/Assets.xcassets/LaunchImage.launchimage/Default-568h@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/app/App_Resources/iOS/Assets.xcassets/LaunchImage.launchimage/Default-667h@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/template/app/App_Resources/iOS/Assets.xcassets/LaunchImage.launchimage/Default-667h@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/app/App_Resources/iOS/Assets.xcassets/LaunchImage.launchimage/Default-736h@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/template/app/App_Resources/iOS/Assets.xcassets/LaunchImage.launchimage/Default-736h@3x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/app/App_Resources/iOS/Assets.xcassets/LaunchImage.launchimage/Default.png" beforeDir="false" afterPath="$PROJECT_DIR$/template/app/App_Resources/iOS/Assets.xcassets/LaunchImage.launchimage/Default.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/app/App_Resources/iOS/Assets.xcassets/LaunchImage.launchimage/Default@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/template/app/App_Resources/iOS/Assets.xcassets/LaunchImage.launchimage/Default@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/app/App_Resources/iOS/Assets.xcassets/LaunchScreen.AspectFill.imageset/LaunchScreen-AspectFill.png" beforeDir="false" afterPath="$PROJECT_DIR$/template/app/App_Resources/iOS/Assets.xcassets/LaunchScreen.AspectFill.imageset/LaunchScreen-AspectFill.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/app/App_Resources/iOS/Assets.xcassets/LaunchScreen.AspectFill.imageset/LaunchScreen-AspectFill@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/template/app/App_Resources/iOS/Assets.xcassets/LaunchScreen.AspectFill.imageset/LaunchScreen-AspectFill@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/app/App_Resources/iOS/Assets.xcassets/LaunchScreen.Center.imageset/LaunchScreen-Center.png" beforeDir="false" afterPath="$PROJECT_DIR$/template/app/App_Resources/iOS/Assets.xcassets/LaunchScreen.Center.imageset/LaunchScreen-Center.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/app/App_Resources/iOS/Assets.xcassets/LaunchScreen.Center.imageset/LaunchScreen-Center@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/template/app/App_Resources/iOS/Assets.xcassets/LaunchScreen.Center.imageset/LaunchScreen-Center@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/app/App_Resources/iOS/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/template/app/App_Resources/iOS/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/app/App_Resources/iOS/LaunchScreen.storyboard" beforeDir="false" afterPath="$PROJECT_DIR$/template/app/App_Resources/iOS/LaunchScreen.storyboard" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/dist/app/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -59,32 +180,74 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/router/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="23">
+              <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SearchPlayers.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/pages/SearchPlayers.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1118">
+              <caret line="41" column="12" selection-start-line="41" selection-start-column="12" selection-end-line="47" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.xcconfig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/template/app/App_Resources/iOS/build.xcconfig">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/template/app/package.json">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/template/package.json">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="23">
+              <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Info.plist" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/template/app/App_Resources/iOS/Info.plist">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="197">
+              <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="69">
+              <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Home.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/pages/Home.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="134">
-              <caret line="21" column="27" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".babelrc" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.babelrc">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="5" column="1" lean-forward="false" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.ios.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dist/app/app.ios.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="0" column="434756" lean-forward="false" selection-start-line="0" selection-start-column="434756" selection-end-line="0" selection-end-column="434756" />
-              <folding />
+            <state relative-caret-position="1265">
+              <caret line="59" column="18" selection-start-line="59" selection-start-column="18" selection-end-line="59" selection-end-column="18" />
+              <folding>
+                <element signature="e#1220#1243#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -92,63 +255,11 @@
       <file leaf-file-name="fc5Topbar.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/fc5Topbar.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="667">
-              <caret line="29" column="43" lean-forward="false" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
+            <state relative-caret-position="1357">
+              <caret line="60" column="32" selection-start-line="60" selection-start-column="32" selection-end-line="60" selection-end-column="32" />
               <folding>
-                <element signature="e#1496#2463#0" expanded="false" />
+                <element signature="e#1261#1286#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/store/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="17" column="29" lean-forward="false" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-              <folding>
-                <element signature="e#0#35#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="1" column="18" lean-forward="false" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dist/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/template/app/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="5" column="16" lean-forward="false" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="webpack.config.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webpack.config.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="444">
-              <caret line="159" column="0" lean-forward="false" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -175,30 +286,30 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/components/HelloWorld.vue" />
-        <option value="$PROJECT_DIR$/src/components/Home.vue" />
         <option value="$PROJECT_DIR$/src/components/pages/SearchPlayer.vue" />
-        <option value="$PROJECT_DIR$/src/router/index.js" />
         <option value="$PROJECT_DIR$/src/assets/topbar/fc5logo.svg" />
         <option value="$PROJECT_DIR$/src/assets/topbar/friends.svg" />
-        <option value="$PROJECT_DIR$/src/styles.scss" />
         <option value="$PROJECT_DIR$/src/store/modules/user.js" />
-        <option value="$PROJECT_DIR$/src/components/fc5Topbar.vue" />
-        <option value="$PROJECT_DIR$/src/main.js" />
-        <option value="$PROJECT_DIR$/src/store/index.js" />
-        <option value="$PROJECT_DIR$/template/app/App_Resources/iOS/Info.plist" />
-        <option value="$PROJECT_DIR$/src/components/pages/Home.vue" />
-        <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/template/package.json" />
-        <option value="$PROJECT_DIR$/template/app/package.json" />
         <option value="$PROJECT_DIR$/webpack.config.js" />
+        <option value="$PROJECT_DIR$/src/store/index.js" />
         <option value="$PROJECT_DIR$/.babelrc" />
+        <option value="$PROJECT_DIR$/src/components/Home.vue" />
+        <option value="$PROJECT_DIR$/src/router/index.js" />
+        <option value="$PROJECT_DIR$/src/assets/bg.svg" />
+        <option value="$PROJECT_DIR$/src/assets/player.svg" />
+        <option value="$PROJECT_DIR$/src/styles.scss" />
+        <option value="$PROJECT_DIR$/src/components/pages/Home.vue" />
+        <option value="$PROJECT_DIR$/src/components/pages/MODELSEARCH_TEMP.vue" />
+        <option value="$PROJECT_DIR$/src/main.js" />
+        <option value="$PROJECT_DIR$/src/components/fc5Topbar.vue" />
+        <option value="$PROJECT_DIR$/template/app/App_Resources/iOS/Info.plist" />
+        <option value="$PROJECT_DIR$/src/components/pages/SearchPlayers.vue" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
-    <package-json value="$PROJECT_DIR$/package.json" />
-  </component>
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsFlowSettings">
     <service-enabled>false</service-enabled>
     <exe-path />
@@ -213,22 +324,207 @@
     <handled-path value="$PROJECT_DIR$/dist/node_modules" />
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/dist/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/nativescript-theme-core/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/nativescript-vue/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules-widgets/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/application-settings/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/application/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/color/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/connectivity/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/console/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/css-value/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/css/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/data/observable-array/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/data/observable/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/data/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/data/virtual-array/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/debugger/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/fetch/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/file-system/file-name-resolver/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/file-system/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/fps-meter/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/globals/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/http/http-request/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/http/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/image-asset/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/image-source/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/js-libs/easysax/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/js-libs/esprima/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/js-libs/polymer-expressions/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/matrix/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/platform/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/profiling/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/text/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/timer/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/trace/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/ui/action-bar/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/ui/activity-indicator/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/ui/animation/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/ui/border/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/ui/builder/component-builder/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/ui/builder/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/ui/button/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/ui/content-view/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/ui/core/bindable/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/ui/core/control-state-change/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/ui/core/dependency-observable/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/ui/core/properties/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/ui/core/view-base/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/ui/core/view/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/ui/core/weak-event-listener/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/ui/date-picker/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/ui/dialogs/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/ui/editable-text-base/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/ui/enums/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/ui/frame/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/ui/gestures/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/ui/html-view/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/ui/image-cache/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/ui/image/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/ui/label/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/ui/layouts/absolute-layout/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/ui/layouts/dock-layout/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/ui/layouts/flexbox-layout/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/ui/layouts/grid-layout/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/ui/layouts/stack-layout/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/ui/layouts/wrap-layout/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/ui/list-picker/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/ui/list-view/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/ui/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/ui/page/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/ui/placeholder/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/ui/progress/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/ui/proxy-view-container/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/ui/repeater/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/ui/scroll-view/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/ui/search-bar/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/ui/segmented-bar/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/ui/slider/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/ui/styling/css-selector/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/ui/styling/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/ui/styling/style/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/ui/switch/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/ui/tab-view/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/ui/text-base/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/ui/text-field/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/ui/text-view/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/ui/time-picker/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/ui/transition/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/ui/web-view/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/utils/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/xhr/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/tns_modules/tns-core-modules/xml/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/nativescript-theme-core/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/nativescript-vue/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules-widgets/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/application-settings/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/application/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/color/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/connectivity/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/console/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/css-value/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/css/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/data/observable-array/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/data/observable/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/data/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/data/virtual-array/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/debugger/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/fetch/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/file-system/file-name-resolver/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/file-system/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/fps-meter/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/globals/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/http/http-request/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/http/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/image-asset/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/image-source/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/js-libs/easysax/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/js-libs/esprima/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/js-libs/polymer-expressions/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/matrix/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/platform/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/profiling/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/text/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/timer/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/trace/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/ui/action-bar/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/ui/activity-indicator/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/ui/animation/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/ui/border/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/ui/builder/component-builder/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/ui/builder/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/ui/button/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/ui/content-view/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/ui/core/bindable/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/ui/core/control-state-change/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/ui/core/dependency-observable/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/ui/core/properties/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/ui/core/view-base/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/ui/core/view/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/ui/core/weak-event-listener/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/ui/date-picker/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/ui/dialogs/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/ui/editable-text-base/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/ui/enums/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/ui/frame/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/ui/gestures/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/ui/html-view/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/ui/image-cache/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/ui/image/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/ui/label/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/ui/layouts/absolute-layout/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/ui/layouts/dock-layout/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/ui/layouts/flexbox-layout/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/ui/layouts/grid-layout/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/ui/layouts/stack-layout/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/ui/layouts/wrap-layout/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/ui/list-picker/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/ui/list-view/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/ui/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/ui/page/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/ui/placeholder/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/ui/progress/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/ui/proxy-view-container/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/ui/repeater/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/ui/scroll-view/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/ui/search-bar/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/ui/segmented-bar/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/ui/slider/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/ui/styling/css-selector/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/ui/styling/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/ui/styling/style/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/ui/switch/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/ui/tab-view/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/ui/text-base/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/ui/text-field/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/ui/text-view/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/ui/time-picker/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/ui/transition/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/ui/web-view/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/utils/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/xhr/package.json" />
+      <path value="$PROJECT_DIR$/dist/platforms/ios/dist/app/tns_modules/tns-core-modules/xml/package.json" />
+      <path value="$PROJECT_DIR$/package.json" />
+      <path value="$PROJECT_DIR$/template/app/package.json" />
+      <path value="$PROJECT_DIR$/template/package.json" />
+    </packageJsonPaths>
+  </component>
   <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1280" />
     <option name="height" value="800" />
   </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
@@ -236,34 +532,43 @@
         <subPane>
           <expand>
             <path>
-              <item name="nsfc52" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nsfc52" type="462c0819:PsiDirectoryNode" />
+              <item name="nsfc5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nsfc5" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nsfc5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nsfc5" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Other File Types" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/local/bin/node" />
+    <property name="SearchEverywhereHistoryKey" value="info.pl&#9;FILE&#9;file:///root/app/nsfc5/template/app/App_Resources/iOS/Info.plist" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="SearchEverywhereHistoryKey" value="info.pl&#9;FILE&#9;file:///root/app/nsfc5/template/app/App_Resources/iOS/Info.plist" />
+    <property name="node.js.detected.package.prettier" value="true" />
+    <property name="node.js.path.for.package.prettier" value="project" />
+    <property name="node.js.selected.package.prettier" value="$PROJECT_DIR$/node_modules/prettier" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/local/bin/node" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/components/pages" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/pages" />
+      <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/src/assets/homepage" />
       <recent name="$PROJECT_DIR$/src/assets/" />
-      <recent name="$PROJECT_DIR$/src/components" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -278,9 +583,6 @@
       </list>
     </option>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -292,35 +594,49 @@
       <option name="presentableId" value="Default" />
       <updated>1522318796552</updated>
       <workItem from="1522318802372" duration="22983000" />
-      <workItem from="1523004488585" duration="1051000" />
+      <workItem from="1523261116335" duration="16633000" />
+      <workItem from="1523440474614" duration="9592000" />
+      <workItem from="1523545723516" duration="351000" />
+      <workItem from="1523546221466" duration="63000" />
+      <workItem from="1523546325594" duration="2329000" />
+      <workItem from="1523610033497" duration="1389000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28499000" />
+    <option name="totallyTimeSpent" value="59795000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19221604" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32784638" sideWeight="0.11675933" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921812" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3884993" sideWeight="0.88324064" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18665607" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.22708039" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.11675933" side_tool="true" weight="0.32678822" />
+      <window_info anchor="bottom" id="NativeScript" order="8" weight="0.32863188" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32722145" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32819074" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.88324064" visible="true" weight="0.19464034" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -331,246 +647,246 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="6" />
     </breakpoint-manager>
-    <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/pages/Home.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.babelrc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="29" lean-forward="false" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/app/app.ios.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="652740">
-          <caret line="28380" column="31" lean-forward="false" selection-start-line="28380" selection-start-column="31" selection-end-line="28380" selection-end-column="31" />
-          <folding />
+        <state relative-caret-position="1357">
+          <caret line="59" column="18" selection-start-line="59" selection-start-column="18" selection-end-line="59" selection-end-column="18" />
+          <folding>
+            <element signature="e#1220#1243#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/fc5Topbar.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="667">
-          <caret line="29" column="43" lean-forward="false" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
+        <state relative-caret-position="1380">
+          <caret line="60" column="32" selection-start-line="60" selection-start-column="32" selection-end-line="60" selection-end-column="32" />
           <folding>
-            <element signature="e#1496#2463#0" expanded="false" />
+            <element signature="e#1261#1286#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/index.js">
+    <entry file="file://$PROJECT_DIR$/src/styles.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="17" column="29" lean-forward="false" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="414">
+          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
+    <entry file="file://$PROJECT_DIR$/src/components/pages/SearchPlayers.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="920">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dist/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/homepage/store.svg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/topbar/friends.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Counter.vue" />
-    <entry file="file://$PROJECT_DIR$/src/components/HelloWorld.vue" />
-    <entry file="file://$PROJECT_DIR$/src/components/pages/SearchPlayer.vue" />
     <entry file="file://$PROJECT_DIR$/src/router/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="16" column="10" lean-forward="false" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+        <state relative-caret-position="23">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/topbar/fc5logo.svg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/topbar/friends.svg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/platforms/ios/build/emulator/dist.app/app/app.js">
+    <entry file="file://$PROJECT_DIR$/src/components/pages/Home.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="0" column="433287" lean-forward="false" selection-start-line="0" selection-start-column="433287" selection-end-line="0" selection-end-column="433287" />
+        <state relative-caret-position="1357">
+          <caret line="59" column="18" selection-start-line="59" selection-start-column="18" selection-end-line="59" selection-end-column="18" />
+          <folding>
+            <element signature="e#1220#1243#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/modules/user.js">
+    <entry file="file://$PROJECT_DIR$/src/components/fc5Topbar.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="24" column="12" lean-forward="true" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="33" />
+        <state relative-caret-position="1610">
+          <caret line="70" column="40" selection-start-line="70" selection-start-column="40" selection-end-line="70" selection-end-column="40" />
+          <folding>
+            <element signature="e#1261#1286#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/pages/SearchPlayers.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1541">
+          <caret line="67" column="32" selection-start-line="67" selection-start-column="32" selection-end-line="67" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/store/modules/counter.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
-          <caret line="2" column="2" lean-forward="false" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="22" column="1" lean-forward="false" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/launch.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template/app/App_Resources/iOS/Info.plist">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="6" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template/app/App_Resources/Android/app.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dist/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
+        <state relative-caret-position="-4" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/store/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="17" column="29" lean-forward="false" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="391">
+          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dist/app/app.ios.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="0" column="434756" lean-forward="false" selection-start-line="0" selection-start-column="434756" selection-end-line="0" selection-end-column="434756" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/fc5Topbar.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="667">
-          <caret line="29" column="43" lean-forward="false" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
-          <folding>
-            <element signature="e#1496#2463#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/pages/Home.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="21" column="27" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Home.vue" />
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="18" lean-forward="false" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="17" column="20" lean-forward="false" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template/app/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="16" lean-forward="false" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="159" column="0" lean-forward="false" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
-          <folding />
+        <state>
+          <caret line="17" column="4" selection-end-line="50" />
+          <folding>
+            <marker date="1523037773305" expanded="true" signature="1810:1813" ph="{&quot;babel-core&quot;: &quot;^6.26.0&quot;...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.babelrc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
-          <caret line="5" column="1" lean-forward="false" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-          <folding />
+          <caret line="5" column="1" selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="154" lean-forward="true" selection-start-line="154" selection-end-line="154" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/pages/Search.vue" />
+    <entry file="file://$PROJECT_DIR$/src/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-939" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/app/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/icon-1024.png" />
+    <entry file="file://$PROJECT_DIR$/src/styles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/app/App_Resources/iOS/Assets.xcassets/AppIcon.appiconset/Contents.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/dist/platforms/ios/build/emulator/dist.app/app/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="11840" selection-start-line="11840" selection-end-line="11840" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/dist/platforms/ios/dist/app/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-308843" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/app/app.ios.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret column="432577" selection-start-column="432577" selection-end-column="432577" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/pages/MODELSearchPlayers.vue" />
+    <entry file="file://$PROJECT_DIR$/src/components/pages/MODELSEARCH_TEMP.vue" />
+    <entry file="file://$PROJECT_DIR$/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/pages/Home.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1265">
+          <caret line="59" column="18" selection-start-line="59" selection-start-column="18" selection-end-line="59" selection-end-column="18" />
+          <folding>
+            <element signature="e#1220#1243#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/fc5Topbar.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1357">
+          <caret line="60" column="32" selection-start-line="60" selection-start-column="32" selection-end-line="60" selection-end-column="32" />
+          <folding>
+            <element signature="e#1261#1286#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/app/App_Resources/iOS/Info.plist">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/pages/SearchPlayers.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1118">
+          <caret line="41" column="12" selection-start-line="41" selection-start-column="12" selection-end-line="47" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/app/App_Resources/iOS/build.xcconfig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/app/package.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/package.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
         </state>
       </provider>
     </entry>
