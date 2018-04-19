@@ -4,6 +4,7 @@ import VueRouter from 'vue-router';
 Vue.use(VueRouter);
 
 import Home from '../components/pages/Home';
+import SearchPlayer from '../components/pages/SearchPlayers';
 
 const router = new VueRouter({
     pageRouting: true,
@@ -13,6 +14,13 @@ const router = new VueRouter({
             component: Home,
             meta: {
                 title: 'Home',
+            },
+        },
+        {
+            path: '/search',
+            component: SearchPlayer,
+            meta: {
+                title: 'Search',
             },
         },
         {path: '*', redirect: '/home'},
