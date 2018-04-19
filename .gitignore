@@ -1,5 +1,6 @@
 .idea/
 dist/
+template/
 # Logs
 logs
 *.log
