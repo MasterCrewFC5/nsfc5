@@ -1,6 +1,5 @@
 <template>
-    <GridLayout columns="auto, *, auto" rows="45" backgroundColor="#F0F0F0">
-
+    <GridLayout columns="auto, *, auto" rows="60" backgroundColor="#F0F0F0">
         <GridLayout row="0" col="0" rows="*,*" columns="30,auto" >
             <Image src="~/topbar/userlogo.png" stretch="aspectFit" class="userlogo" row="0" col="0" rowSpan="2" verticalAlignment="center"></Image>
             <Label :text="user.username" class="test" row="0" col="1" />
@@ -8,7 +7,7 @@
         </GridLayout>
 
 
-        <StackLayout row="0" col="1" @tap="getUser">
+        <StackLayout row="0" col="1" @tap="$router.push('/home')">
             <Image src="~/topbar/fc5logo.png" stretch="aspectFit" class="fc5logo" verticalAlignment="center" />
         </StackLayout>
 
@@ -77,9 +76,11 @@
         },
         async created(){
             try {
-                const response = await axios.get('http://localhost:3001/user', {
-                    responseType: 'json'
-                });
+                const response = await http.request({
+                    url: 'http://localhost:3001/user',
+                    method: 'GET'
+                })
+
                 console.dir("response: " + response);
 
                 this.user = response
@@ -88,6 +89,7 @@
             } catch (error) {
                 console.error(error)
             }
+            console.dir('<=============================================== created ')
 
 
         },

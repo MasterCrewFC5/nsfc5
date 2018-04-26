@@ -1,5 +1,5 @@
 <template>
-    <Page class="page home" >
+    <Page class="page home" actionBarHidden="true" >
 
         <StackLayout >
             <fc5topbar></fc5topbar>

@@ -1,51 +1,99 @@
 <template>
-    <Page class="page">
+    <Page class="page" actionBarHidden="true">
 
         <StackLayout>
             <fc5topbar></fc5topbar>
 
-            <GridLayout colums="*,*,auto" rows="auto" >
-                <TextField col="0" row="0" v-model="form.searchValue" hint="Search..." />
-                <Image col="1" row="0" @tap="searchPlayers"  stretch="none" src="~/searchplayer/searchButton.png"/>
-                <Image col="2" row="0" @tap="setFilterActive"  stretch="none" src="~/searchplayer/filterActive.png" v-if="filterIsActive"/>
-                <Image col="2" row="0"  @tap="setFilterActive"  stretch="none" src="~/searchplayer/filter.png" v-else/>
-            </GridLayout>
+            <WrapLayout >
+                <TextField width="30%" v-model="form.searchValue" hint="Search..." />
+                <Label :text='form.searchValue'/>
+
+                <Image  @tap="searchPlayers"  stretch="none" src="~/searchplayer/searchButton.png"/>
+                <Image  @tap="setFilterActive"  stretch="none" src="~/searchplayer/filterActive.png" v-if="filterIsActive === true"/>
+                <Image  @tap="setFilterActive"  stretch="none" src="~/searchplayer/filter.png" v-else/>
+            </WrapLayout>
+
+            <!--<GridLayout colums="*,*,auto" rows="auto" >-->
+                <!--<TextField col="0" row="0" v-model="searchValue" hint="Search..." />-->
+                <!--<Image col="1" row="0" @tap="searchPlayers"  stretch="none" src="~/searchplayer/searchButton.png"/>-->
+                <!--<Image col="2" row="0" @tap="setFilterActive"  stretch="none" src="~/searchplayer/filterActive.png" if="filterIsActive"/>-->
+                <!--<Image col="2" row="0"  @tap="setFilterActive"  stretch="none" src="~/searchplayer/filter.png"/>-->
+            <!--</GridLayout>-->
 
 
-            <GridLayout columns="*,*,*,*" rows="auto,auto,auto,auto,auto,auto" class="filters" v-if="filterIsActive">
-                <Label text="Position" col="0" row="0"/>
-                <TextField col="1" row="0" hint="Min" v-model="form.position"/>
+                <GridLayout columns="*,*,*,*" rows="auto,auto,auto,auto,auto,auto" class="filters" v-if="filterIsActive">
+                    <Label text="Position" col="0" row="0"/>
+                    <ListPicker col="1" row="0" :items="listOfItems" v-model="form.position" />
 
-                <Label text="Age" col="0" row="1"/>
-                <TextField col="1" row="1" hint="Min" v-model="form.ageMin"/>
-                <TextField col="2" row="1" hint="Max" v-model="form.ageMax"/>/
+                    <Label text="Age" col="0" row="1"/>
+                    <TextField col="1" row="1" hint="Min" v-model="form.ageMin"/>
+                    <TextField col="2" row="1" hint="Max" v-model="form.ageMax"/>/
 
-                <Label text="ATQ" col="0" row="2"/>
-                <TextField col="1" row="2" hint="Min" v-model="form.atqMin"/>
-                <TextField col="2" row="2" hint="Max" v-model="form.atqMax"/>
+                    <Label text="ATQ" col="0" row="2"/>
+                    <TextField col="1" row="2" hint="Min" v-model="form.atqMin"/>
+                    <TextField col="2" row="2" hint="Max" v-model="form.atqMax"/>
 
-                <Label text="DEF" col="0" row="3"/>
-                <TextField col="1" row="3" hint="Min" v-model="form.defMin"/>
-                <TextField col="2" row="3" hint="Max" v-model="form.defMax"/>
+                    <Label text="DEF" col="0" row="3"/>
+                    <TextField col="1" row="3" hint="Min" v-model="form.defMin"/>
+                    <TextField col="2" row="3" hint="Max" v-model="form.defMax"/>
 
-                <Label text="SPE" col="0" row="4"/>
-                <TextField col="1" row="4" hint="Min" v-model="form.speMin"/>
-                <TextField col="2" row="4" hint="Max" v-model="form.speMax"/>
+                    <Label text="SPE" col="0" row="4"/>
+                    <TextField col="1" row="4" hint="Min" v-model="form.speMin"/>
+                    <TextField col="2" row="4" hint="Max" v-model="form.speMax"/>
 
-                <Label text="GK" col="0" row="5"/>
-                <TextField col="1" row="5" hint="Min" v-model="form.gkMin"/>
-                <TextField col="2" row="5" hint="Max" v-model="form.gkMax"/>
+                    <Label text="GK" col="0" row="5"/>
+                    <TextField col="1" row="5" hint="Min" v-model="form.gkMin"/>
+                    <TextField col="2" row="5" hint="Max" v-model="form.gkMax"/>
 
-            </GridLayout>
+                </GridLayout>
 
 
-            <ScrollView orientation="vertical">
-                <Label text="this" />
-                <Label text="text" />
-                <Label text="scrolls" />
-                <Label text="vertically" />
-                <Label text="if necessary" />
-            </ScrollView>
+
+            <ListView for="player in players" @itemTap="onItemTap" class="results">
+                <v-template>
+                    <!-- Shows the list item label in the default color and stye. -->
+                    <GridLayout columns="auto,*,auto"  class="card">
+
+                        <WrapLayout orientation="vertical" col="0" >
+                            <Label  class="name bold" :text="player.commonName || player.firstName +' '+ player.lastName" />
+                            <Label  :text="player.club.name" />
+                            <Label  :text="player.age" />
+                            <Label  :text="player.height" />
+                            <Label  :text="player.weight" />
+                        </WrapLayout>
+
+                        <WrapLayout orientation="vertical" col="1">
+                            <WrapLayout>
+                                <Label class="bold" text="ATQ "/>
+                                <Label class="bold" text="DEF "/>
+                                <Label class="bold" text="SPE "/>
+                                <Label class="bold" text="GK"/>
+                            </WrapLayout>
+
+                            <WrapLayout>
+                                <Label class="bold red" text="90 "/>
+                                <Label class="bold green" text="90 "/>
+                                <Label class="bold blue" text="90 "/>
+                                <Label class="bold yellow" :text="player.gkdiving"/>
+                            </WrapLayout>
+                        </WrapLayout>
+
+                        <WrapLayout col="2">
+                            <Label  class="" :text="player.rating"/>
+                            <Label  class="" :text="player.position"/>
+                        </WrapLayout>
+                        <!--<GridLayout col="2"  colums="auto,auto" rows="*" veticalAlignement="top">-->
+                            <!--<Label col="0" row="1" class="" :text="player.rating"/>-->
+                            <!--<Label col="1" row="1" class="" :text="player.position"/>-->
+                        <!--</GridLayout>-->
+
+                    </GridLayout>
+                </v-template>
+            </ListView>
+
+            <fc5modalplayer v-if="showModal" @close="showModal = false" :player="playerShownInModal">
+            </fc5modalplayer>
+
         </StackLayout>
 
 
@@ -55,19 +103,20 @@
 <script>
     import axios from 'axios'
     import store from '../../store/index'
+    import http from 'http'
 
-    //import fc5modalplayer from './../fc5ModalPlayer'
+    import fc5modalplayer from './../fc5ModalPlayer'
     //import fc5playerposition from './../fc5PlayerPosition'
     //import fc5svggraph from './../fc5SvgGraph'
-    //import vSelect from 'vue-select'
     import fc5topbar from './../fc5Topbar.vue'
+
 
     export default {
         store: store,
-        name: 'app',
-        components: {fc5topbar},
+        components: {fc5topbar, fc5modalplayer},
         data() {
             return {
+                listOfItems:['G','LF','LW','RW','ST','CAM','CB','CM'],
                 selected: '',
                 form: {
                     searchValue: "",
@@ -749,26 +798,50 @@
             }
         },
         methods:{
+            onItemTap(event) {
+                console.log(event.index)
+                console.log(event.item.position)
+                this.getPlayerModal(event.item.id)
+            },
             setFilterActive(){
                 this.filterIsActive = !this.filterIsActive
+                console.log(this.filterIsActive)
             },
             async searchPlayers(){
-                const dataReceived = await axios.get('http://localhost:3001/players?name_like='+this.form.searchValue+'&position_like='+this.selected+'&_limit=15', {
-                    responseType: 'json'
-                });
-                this.players = dataReceived.data
-                this.hideFilters()
+                try {
+                    const res = await http.request({
+                        url: 'http://localhost:3001/players?name_like='+this.form.searchValue+'&position_like='+this.selected+'&_limit=15',
+                        method: 'GET'
+                    })
+                    console.dir(res)
+
+                    this.players = res.data
+                    this.hideFilters()
+                }
+                catch(error) {
+                    console.error(error)
+                }
+
 
             },
             hideFilters(){
                 this.filterIsActive = false
             },
             async getPlayerModal(idPlayerClicked){
-                const dataReceived = await axios.get('http://localhost:3001/players?id='+ idPlayerClicked +'', {
-                    responseType: 'json'
-                });
-                this.playerShownInModal = dataReceived.data[0]
-                this.showModal = true;
+                try{
+                    const res = await http.request({
+                        url: 'http://localhost:3001/players?id='+ idPlayerClicked +'',
+                        method: 'GET'
+                    })
+                    console.dir(res)
+
+                    this.playerShownInModal = res.data[0]
+                    this.showModal = true;
+                }catch(error){
+                    console.error(error)
+                }
+
+
             }
         },
         async created(){
@@ -778,6 +851,25 @@
 </script>
 
 <style lang="scss" scoped>
+
+    .slide-toggle-enter-active,
+    .slide-toggle-leave-active {
+        transition: height .3s;
+        opacity:0;
+    }
+    .slide-toggle-enter-active {
+        height: 600px;
+    }
+    .slide-toggle-enter,
+    .slide-toggle-leave-active {
+        height: 0;
+        opacity: 0;
+    }
+    .slide-toggle-leave {
+        height: 600px;
+        opacity: 1;
+    }
+
     .page {
         background-color: #219653;
     }
@@ -791,223 +883,181 @@
         padding: 10px 0px 10px 0px;
         color: #F0F0F0;
         font-weight: bold;
-        input{
-            height:30px;
-        }
-        input[type=number]{
-            width: 50px;
-            font-family: Roboto;
-            font-weight: 700;
-            font-size: 15px;
-            text-align: center;
-        }
-        .searchinput{
-            background-color: #FFF;
-        }
-        .position{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-evenly;
-        }
-        .age{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-evenly;
-        }
-        .ATQ{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-evenly;
-        }
-        .DEF{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-evenly;
-        }
-        .SPE{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-evenly;
-        }
-        .GK{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-evenly;
-        }
     }
-
-    .card {
-        left: 0%;
-        height: 75px;
-        width: 100%;
+    .card{
         background-color: #F0F0F0;
-        margin-bottom: 8px;
-        box-shadow: 2px 0px 2px rgba(0,0,0, 0.24),0px 0px 2px rgba(0,0,0, 0.12);
-
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-content: space-between;
-        align-items: center;
-
-        .info{
-            order: 0;
-            width: 40%;
-
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-content: space-evenly;
-            align-items: center;
-
-
-            .name{
-                align-self: flex-start;
-                padding-left: 5px;
-                font-size:12px;
-            }
-            .clubname{
-                align-self: flex-start;
-                padding-left: 5px;
-                font-size:11px;
-            }
-            .age{
-                align-self: flex-start;
-                padding-left: 5px;
-                font-size:11px;
-            }
-            .height{
-                align-self: flex-start;
-                padding-left: 5px;
-                font-size:11px;
-            }
-            .weight{
-                align-self: flex-start;
-                padding-left: 5px;
-                font-size:11px;
-            }
-        }
-
-        .stats{
-            order: 1;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            align-items: center;
-
-            flex-grow: 2;
-            .atq, .def, .spe, .gk{
-                height:100%;
-                width: 25%;
-            }
-            .label{
-                vertical-align: bottom;
-            }
-            .value{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-
-                height: 50%;
-                font-size: 19px;
-                background-image: url("./../../assets/circle.svg");
-                background-repeat: no-repeat;
-                background-position: center ;
-                background-size: 79%;
-            }
-        }
-
-        .rightpart{
-            height: 90%;
-            order: 2;
-            display: flex;
-            flex-direction: column;
-            flex-grow: 1;
-            padding-right: 5px;
-            .values{
-                display: flex;
-                flex-direction: row;
-                justify-content: flex-end;
-                background-image: url("./../../assets/underline.svg");
-                background-repeat: no-repeat;
-                background-position: bottom right;
-                .overall{
-                    margin-right: 2px;
-                }
-            }
-        }
+        margin: 2% 0% 2% 0%;
     }
-
-    .searchplayers{
-        display:flex;
-
-        .content {
-
-            position: absolute;
-            height: 85%;
-            width: 100%;
-            left: 0;
-
-            display: flex;
-            flex-direction: column;
-
-            /*border: 1px solid black;*/
-            .search {
-               /* display: flex;
-                flex-direction: row;
-                justify-content: space-evenly;*/
-
-                .search-input{
-                    color: #595555;
-                    width: 60%;
-                    font-family: Roboto;
-                    font-size: 16px;
-                    font-weight: bold;
-                }
-                .find {
-
-                }
-                .filter {
-
-                }
-            }
-
-
-
-            .results {
-                padding: 10px 20px 10px 20px;
-                overflow: auto;
-                background-color: #5DB55B;
-            }
-
-        }
+    .results{
+        background-color: #219653;
+        height:100%;
     }
+    /*.card {*/
+        /*left: 0%;*/
+        /*height: 75px;*/
+        /*width: 100%;*/
+        /*background-color: #F0F0F0;*/
+        /*margin-bottom: 8px;*/
+        /*box-shadow: 2px 0px 2px rgba(0,0,0, 0.24),0px 0px 2px rgba(0,0,0, 0.12);*/
 
-    .selected-tag{
-        color: #595555 !important;
-    }
+        /*display: flex;*/
+        /*flex-direction: row;*/
+        /*justify-content: space-around;*/
+        /*align-content: space-between;*/
+        /*align-items: center;*/
 
-    .slide-toggle-enter-active,
-    .slide-toggle-leave-active {
-        transition: height .3s;
-        opacity:0;
-    }
-    .slide-toggle-enter-active {
-        height: 200px;
-    }
-    .slide-toggle-enter,
-    .slide-toggle-leave-active {
-        height: 0;
-        opacity: 0;
-    }
-    .slide-toggle-leave {
-        height: 200px;
-        opacity: 1;
-    }
+        /*.info{*/
+            /*order: 0;*/
+            /*width: 40%;*/
+
+            /*display: flex;*/
+            /*flex-direction: column;*/
+            /*justify-content: flex-start;*/
+            /*align-content: space-evenly;*/
+            /*align-items: center;*/
+
+
+            /*.name{*/
+                /*align-self: flex-start;*/
+                /*padding-left: 5px;*/
+                /*font-size:12px;*/
+            /*}*/
+            /*.clubname{*/
+                /*align-self: flex-start;*/
+                /*padding-left: 5px;*/
+                /*font-size:11px;*/
+            /*}*/
+            /*.age{*/
+                /*align-self: flex-start;*/
+                /*padding-left: 5px;*/
+                /*font-size:11px;*/
+            /*}*/
+            /*.height{*/
+                /*align-self: flex-start;*/
+                /*padding-left: 5px;*/
+                /*font-size:11px;*/
+            /*}*/
+            /*.weight{*/
+                /*align-self: flex-start;*/
+                /*padding-left: 5px;*/
+                /*font-size:11px;*/
+            /*}*/
+        /*}*/
+
+        /*.stats{*/
+            /*order: 1;*/
+            /*display: flex;*/
+            /*flex-direction: row;*/
+            /*justify-content: space-evenly;*/
+            /*align-items: center;*/
+
+            /*flex-grow: 2;*/
+            /*.atq, .def, .spe, .gk{*/
+                /*height:100%;*/
+                /*width: 25%;*/
+            /*}*/
+            /*.label{*/
+                /*vertical-align: bottom;*/
+            /*}*/
+            /*.value{*/
+                /*display: flex;*/
+                /*align-items: center;*/
+                /*justify-content: center;*/
+
+                /*height: 50%;*/
+                /*font-size: 19px;*/
+                /*background-image: url("./../../assets/circle.svg");*/
+                /*background-repeat: no-repeat;*/
+                /*background-position: center ;*/
+                /*background-size: 79%;*/
+            /*}*/
+        /*}*/
+
+        /*.rightpart{*/
+            /*height: 90%;*/
+            /*order: 2;*/
+            /*display: flex;*/
+            /*flex-direction: column;*/
+            /*flex-grow: 1;*/
+            /*padding-right: 5px;*/
+            /*.values{*/
+                /*display: flex;*/
+                /*flex-direction: row;*/
+                /*justify-content: flex-end;*/
+                /*background-image: url("./../../assets/underline.svg");*/
+                /*background-repeat: no-repeat;*/
+                /*background-position: bottom right;*/
+                /*.overall{*/
+                    /*margin-right: 2px;*/
+                /*}*/
+            /*}*/
+        /*}*/
+    /*}*/
+
+    /*.searchplayers{*/
+        /*display:flex;*/
+
+        /*.content {*/
+
+            /*position: absolute;*/
+            /*height: 85%;*/
+            /*width: 100%;*/
+            /*left: 0;*/
+
+            /*display: flex;*/
+            /*flex-direction: column;*/
+
+            /*!*border: 1px solid black;*!*/
+            /*.search {*/
+               /*!* display: flex;*/
+                /*flex-direction: row;*/
+                /*justify-content: space-evenly;*!*/
+
+                /*.search-input{*/
+                    /*color: #595555;*/
+                    /*width: 60%;*/
+                    /*font-family: Roboto;*/
+                    /*font-size: 16px;*/
+                    /*font-weight: bold;*/
+                /*}*/
+                /*.find {*/
+
+                /*}*/
+                /*.filter {*/
+
+                /*}*/
+            /*}*/
+
+
+
+            /*.results {*/
+                /*padding: 10px 20px 10px 20px;*/
+                /*overflow: auto;*/
+                /*background-color: #5DB55B;*/
+            /*}*/
+
+        /*}*/
+    /*}*/
+
+    /*.selected-tag{*/
+        /*color: #595555 !important;*/
+    /*}*/
+
+    /*.slide-toggle-enter-active,*/
+    /*.slide-toggle-leave-active {*/
+        /*transition: height .3s;*/
+        /*opacity:0;*/
+    /*}*/
+    /*.slide-toggle-enter-active {*/
+        /*height: 200px;*/
+    /*}*/
+    /*.slide-toggle-enter,*/
+    /*.slide-toggle-leave-active {*/
+        /*height: 0;*/
+        /*opacity: 0;*/
+    /*}*/
+    /*.slide-toggle-leave {*/
+        /*height: 200px;*/
+        /*opacity: 1;*/
+    /*}*/
 </style>
