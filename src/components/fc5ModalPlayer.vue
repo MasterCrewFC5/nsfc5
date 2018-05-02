@@ -1,5 +1,7 @@
 <template>
-
+    <StackLayout height="10%" width="100%" backgroundColor="grey" top="10" left="10" @click.self="$emit('close')">
+        <Label text="player.rating"></Label>
+    </StackLayout>
 </template>
 
 <script>

@@ -23,7 +23,7 @@
 
                 <GridLayout columns="*,*,*,*" rows="auto,auto,auto,auto,auto,auto" class="filters" v-if="filterIsActive">
                     <Label text="Position" col="0" row="0"/>
-                    <ListPicker col="1" row="0" :items="listOfItems" v-model="form.position" />
+                    <ListPicker col="1" row="0" :items="listOfItems" v-model="form.position" height="50"/>
 
                     <Label text="Age" col="0" row="1"/>
                     <TextField col="1" row="1" hint="Min" v-model="form.ageMin"/>
@@ -49,10 +49,16 @@
 
 
 
-            <ListView for="player in players" @itemTap="onItemTap" class="results">
+            <ListView for="player in players"
+                      class="results"
+                      separatorColor="green"
+                      @itemTap="onItemTap"
+                      @loaded="onLoaded"
+                      @loadMoreItems="onLoadMoreItems"
+            >
                 <v-template>
                     <!-- Shows the list item label in the default color and stye. -->
-                    <GridLayout columns="auto,*,auto"  class="card">
+                    <GridLayout columns="*,*,*"  class="card">
 
                         <WrapLayout orientation="vertical" col="0" >
                             <Label  class="name bold" :text="player.commonName || player.firstName +' '+ player.lastName" />
@@ -80,7 +86,7 @@
 
                         <WrapLayout col="2">
                             <Label  class="" :text="player.rating"/>
-                            <Label  class="" :text="player.position"/>
+                            <fc5playerposition :position="player.position"></fc5playerposition>
                         </WrapLayout>
                         <!--<GridLayout col="2"  colums="auto,auto" rows="*" veticalAlignement="top">-->
                             <!--<Label col="0" row="1" class="" :text="player.rating"/>-->
@@ -91,8 +97,11 @@
                 </v-template>
             </ListView>
 
-            <fc5modalplayer v-if="showModal" @close="showModal = false" :player="playerShownInModal">
-            </fc5modalplayer>
+            <AbsoluteLayout height="80%" width="80%" backgroundColor="red" top="10" left="10" >
+                <fc5modalplayer v-if="showModal" @close="showModal = false" :player="playerShownInModal">
+                </fc5modalplayer>
+            </AbsoluteLayout>
+
 
         </StackLayout>
 
@@ -106,14 +115,14 @@
     import http from 'http'
 
     import fc5modalplayer from './../fc5ModalPlayer'
-    //import fc5playerposition from './../fc5PlayerPosition'
+    import fc5playerposition from './../fc5PlayerPosition'
     //import fc5svggraph from './../fc5SvgGraph'
     import fc5topbar from './../fc5Topbar.vue'
 
 
     export default {
         store: store,
-        components: {fc5topbar, fc5modalplayer},
+        components: {fc5topbar, fc5modalplayer, fc5playerposition},
         data() {
             return {
                 listOfItems:['G','LF','LW','RW','ST','CAM','CB','CM'],
@@ -801,11 +810,22 @@
             onItemTap(event) {
                 console.log(event.index)
                 console.log(event.item.position)
+                this.showModal
                 this.getPlayerModal(event.item.id)
+                this.showModal
+            },
+            onLoadMoreItems(event){
+              console.dir('Load more items. event : ' + event)
+            },
+            onLoaded(event){
+              console.dir('Loaded. event: ' + event)
             },
             setFilterActive(){
                 this.filterIsActive = !this.filterIsActive
                 console.log(this.filterIsActive)
+            },
+            hideFilters(){
+                this.filterIsActive = false
             },
             async searchPlayers(){
                 try {
@@ -824,18 +844,17 @@
 
 
             },
-            hideFilters(){
-                this.filterIsActive = false
-            },
             async getPlayerModal(idPlayerClicked){
                 try{
-                    const res = await http.request({
-                        url: 'http://localhost:3001/players?id='+ idPlayerClicked +'',
-                        method: 'GET'
-                    })
-                    console.dir(res)
+                    // const res = await http.request({
+                    //     url: 'http://localhost:3001/players?id='+ idPlayerClicked +'',
+                    //     method: 'GET'
+                    // })
+                    // console.dir(res)
+                    //
+                    // this.playerShownInModal = res.data[0]
 
-                    this.playerShownInModal = res.data[0]
+                    console.dir(idPlayerClicked)
                     this.showModal = true;
                 }catch(error){
                     console.error(error)
@@ -886,11 +905,12 @@
     }
     .card{
         background-color: #F0F0F0;
-        margin: 2% 0% 2% 0%;
+        /*margin: 2% 0% 2% 0%;*/
+        padding: 2% 2% 2% 2%;
     }
     .results{
-        background-color: #219653;
-        height:100%;
+        //background-color: #219653;
+        //height:80%;
     }
     /*.card {*/
         /*left: 0%;*/
