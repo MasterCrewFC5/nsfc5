@@ -11,7 +11,7 @@
                 </GridLayout>
 
                 <GridLayout col="0" row="1" horizontalAlignment="left" >
-                    <Image src="~/homepage/store.png" stretch="none"  class="menu-icon" @tap="$router.replace('/store')"/>
+                    <Image src="~/homepage/store.png" stretch="none"  class="menu-icon" @tap="$router.push('/store')"/>
                 </GridLayout>
 
                 <GridLayout col="1" row="1" horizontalAlignment="right" >
@@ -19,7 +19,7 @@
                 </GridLayout>
 
                 <GridLayout col="0" row="2" colSpan="2" horizontalAlignment="center" >
-                    <Image src="~/homepage/findgame.png" stretch="none"  class="menu-icon" @tap="$router.replace('/findgame')"/>
+                    <Image src="~/homepage/findgame.png" stretch="none"  class="menu-icon" @tap="$router.push('/findgame')"/>
                 </GridLayout>
 
             </GridLayout>

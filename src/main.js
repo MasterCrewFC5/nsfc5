@@ -5,6 +5,7 @@ import './styles.scss';
 import http from 'http'
 
 Vue.prototype.$http = http
+Vue.use(router)
 
 // Uncommment the following to see NativeScript-Vue output logs
 Vue.config.silent = false;
