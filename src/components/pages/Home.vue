@@ -1,20 +1,32 @@
 <template>
-  <Page class="page">
-    <ActionBar class="action-bar" title="Home"/>
+    <Page class="page home" actionBarHidden="true" >
 
-    <StackLayout >
-        <fc5topbar></fc5topbar>
-        <Button class="btn btn-primary" @tap="$router.push('/store')">Store</Button>
-        <Button class="btn btn-primary" @tap="$router.push('/search')">Search</Button>
-        <Button class="btn btn-primary" @tap="$router.push('/manage')">Manage</Button>
-        <Button class="btn btn-primary" @tap="$router.push('/findgame')">Find game</Button>
-        <Button class="btn btn-primary" @tap="getUser">axios</Button>
-        <Button class="btn btn-primary" @tap="makeRequest">http</Button>
-        <Label :text="user" />
-    </StackLayout>
+        <StackLayout >
+            <fc5topbar></fc5topbar>
+
+            <GridLayout columns="*,*" rows="*,*,*" class="menu" >
+
+                <GridLayout col="0" row="0" colSpan="2" horizontalAlignment="center" verticalAlignment="center">
+                    <Image src="~/homepage/manage.png" stretch="none"  class="menu-icon" @tap="makeRequest"/>
+                </GridLayout>
+
+                <GridLayout col="0" row="1" horizontalAlignment="left" >
+                    <Image src="~/homepage/store.png" stretch="none"  class="menu-icon" @tap="$router.push('/store')"/>
+                </GridLayout>
+
+                <GridLayout col="1" row="1" horizontalAlignment="right" >
+                    <Image src="~/homepage/searchplayer.png" stretch="none"  class="menu-icon" @tap="$router.push('/search')"/>
+                </GridLayout>
+
+                <GridLayout col="0" row="2" colSpan="2" horizontalAlignment="center" >
+                    <Image src="~/homepage/findgame.png" stretch="none"  class="menu-icon" @tap="$router.push('/findgame')"/>
+                </GridLayout>
+
+            </GridLayout>
+        </StackLayout>
 
 
-  </Page>
+    </Page>
 </template>
 
 
@@ -39,7 +51,6 @@
                 const dataReceived = await axios.get('http://localhost:3001/user', {
                     responseType: 'json'
                 });
-                console.dir(dataReceived.data);
                 this.user = dataReceived.data[0]
             },
             async makeRequest() {
@@ -47,11 +58,6 @@
                     url: 'http://localhost:3001/user',
                     method: 'GET'
                 })
-                console.dir(res)
-                console.dir(await http.request({
-                    url: 'http://localhost:3001/user',
-                    method: 'GET'
-                }))
                 this.user = res
             }
 
@@ -59,18 +65,30 @@
     }
 </script>
 
-<style lang="scss">
+<style scoped>
+
     .page{
-        background-color: red;
+        background-image: ~/homepage/HomeBackground.png;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
     }
 
-    html, body{
-        height: 100%;
+
+    .menu-icon{
+        height:auto;
+        width:auto;
     }
-    body{
-        background: url("../../assets/homepage/HomeBackground.png")  no-repeat center center fixed;
-        background-size: cover;
+    .menu-label{
+        color:white;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        text-align: center;
+        letter-spacing: -0.1em;
+        font-size: 17px;
     }
+
     .pub{
         position: absolute;
         top: 8%;
@@ -80,53 +98,5 @@
         width: 100%;
         background: grey;
     }
-
-    .home{
-        height: 100%;
-
-        .content{
-            margin-top: -15%;
-            height:100%;
-
-            /* display: flex;
-             align-items: center;
-             justify-content: center;*/
-
-            /*border: 1px solid black;*/
-            label{
-                font-family: Roboto;
-                font-style: normal;
-                font-weight: bold;
-                font-size: 16px;
-                color:white;
-                letter-spacing: -0.06em;
-            }
-            .manage{
-                top: 16%;
-                left: 50%;
-                transform: translateX(-50%);
-                position: absolute;
-            }
-            .store{
-                top: 50%;
-                left: 0;
-                transform: translateY(-50%);
-                position: absolute;
-            }
-            .searchplayer{
-                position: absolute;
-                right: 0;
-                top: 50%;
-                transform: translateY(-50%);
-            }
-            .findgame{
-                position: absolute;
-                bottom: 15%;
-                left: 50%;
-                transform: translateX(-50%);
-            }
-        }
-    }
-
 
 </style>
