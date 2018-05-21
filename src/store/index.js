@@ -1,8 +1,8 @@
 import Vue from 'nativescript-vue';
 import Vuex from 'vuex';
+import myPlug from '../plugins';
 
-import counter from './modules/counter';
-//import user from './modules/user';
+import user from './modules/user';
 
 Vue.use(Vuex);
 
@@ -10,8 +10,9 @@ const debug = process.env.NODE_ENV !== 'production';
 
 const store = new Vuex.Store({
     modules: {
-        counter
+        user
     },
+    plugins: [myPlug],
     strict: debug,
 });
 

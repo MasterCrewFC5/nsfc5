@@ -1,33 +1,60 @@
-
+import Vue from 'nativescript-vue';
 import axios from'axios'
-import jwtDecode from 'jwt-decode'
 
 const state = { // data
-    isLoggedIn:  false, //!!localStorage.getItem(“token”)
-    user:{}
+    isLoggedIn: false, //!!localStorage.getItem(“token”)
+    user: {},
+    error: ''
 };
 
 const mutations = { // on ne modifie le state qu'ici
-    SET_USER: ( state, token )=>{
-        let user = jwtDecode(token)
-        if(token) state.isLoggedIn = true
-        state.user = user
+    /**
+     * @param payload : { email, token }
+     */
+    fetchUserSuccess: ( state, payload ) => {
+        if(payload.email && payload.token) {
+            Vue.set(state, 'isLoggedIn', true);
+            Vue.set(state, 'user', {email: payload.email, token: payload.token});
+        }
+    },
+    fetchUserFailed: (state) => {
+        Vue.set(state, 'error', 'Sorry, your mail or password was wrong.');
+    },
+    cleanErrors: (state) => {
+        Vue.set(state, 'error', '');
     },
 };
 
 const getters = { // permet de recup les data
-    events: state => state.events
-}
+    fetchCurrentUser: state => state.user,
+    fetchIsLoggedIn: state => state.isLoggedIn,
+    fetchError: state => state.error
+};
 
 const actions = { // on appel les mutations. si besoin on peut faire les appels ajax ici
-    async connexion( store, username, password ){
-        const res = await axios.post('http:fc5api/connexion',{
-            responseType: 'Json',
-            username: username,
-            password: password
-        })
-        if(res) store.commit('SET_USER', res.data.token)
-    }
+    async fetchUser({commit}, user) {
+        try{
+            commit('cleanErrors');
+            const result = await axios.post(
+               'http://172.25.0.1:8080/app_dev.php/api/users/login',
+                {
+                    "email": user.email,
+                    "password": user.password
+                },
+                {
+                    'Content-Type': 'application/json'
+                }
+            );
+
+            if(typeof result.data.token !== "undefined"){
+                commit('fetchUserSuccess', {email: user.email, token: result.data.token});
+            }else{
+                commit('fetchUserFailed');
+            }
+        }catch (e){
+            commit('fetchUserFailed');
+        }
+    },
 };
 
 export default {
