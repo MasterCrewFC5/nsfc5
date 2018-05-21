@@ -1,6 +1,6 @@
 import Vue from 'nativescript-vue';
 import Vuex from 'vuex';
-import myPlug from '../plugins';
+//import myPlug from '../plugins';
 
 import user from './modules/user';
 
@@ -12,7 +12,7 @@ const store = new Vuex.Store({
     modules: {
         user
     },
-    plugins: [myPlug],
+    //plugins: [myPlug],
     strict: debug,
 });
 
