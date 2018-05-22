@@ -7,6 +7,7 @@ Vue.use(VueRouter);
 import Home from '../components/pages/Home';
 import SearchPlayer from '../components/pages/SearchPlayers';
 import FindGame from '../components/pages/FindGame';
+import Store from '../components/pages/Store';
 
 const router = new VueRouter({
     pageRouting: true,
@@ -30,6 +31,13 @@ const router = new VueRouter({
             component: SearchPlayer,
             meta: {
                 title: 'Search',
+            },
+        },
+        {
+            path: '/store',
+            component: Store,
+            meta: {
+                title: 'Store',
             },
         },
         {path: '*', redirect: '/home'},
