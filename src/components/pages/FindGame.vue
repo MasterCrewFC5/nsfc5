@@ -92,9 +92,9 @@
         },
         methods:{
             searchGame(){
-                confirm('Your message')
+                confirm('Do you want start a game ?')
                     .then(result => {
-                        console.log(result);
+                        if(result) this.$router.push('waitroom');
                     });
             },
             activateBonus(index){

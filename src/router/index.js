@@ -9,6 +9,8 @@ import SearchPlayer from '../components/pages/SearchPlayers';
 import FindGame from '../components/pages/FindGame';
 import SignUp from '../components/pages/SignUp';
 import SignIn from '../components/pages/SignIn';
+import WaitRoom from '../components/pages/WaitRoom.vue';
+
 // import SeeFriends from '../components/pages/SeeFriends';
 
 const router = new VueRouter({
@@ -47,6 +49,13 @@ const router = new VueRouter({
             component: SignIn,
             meta: {
                 title: 'Sign in',
+            },
+        },
+        {
+            path: '/waitroom',
+            component: WaitRoom,
+            meta: {
+                title: 'Wait room',
             },
         },
         // {

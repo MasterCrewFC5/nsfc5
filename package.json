@@ -22,9 +22,12 @@
         "nativescript-theme-core": "^1.0.4",
         "nativescript-toast": "^1.4.6",
         "nativescript-vue": "^1.3.1",
+        "socket.io": "^2.1.1",
+        "socket.io-client": "^2.1.1",
         "tns-core-modules": "^3.4.1",
         "tns-ios": "^4.0.1",
         "vue-router": "^3.0.1",
+        "vue-socket.io": "^2.1.1-b",
         "vuex": "^3.0.1"
     },
     "devDependencies": {
