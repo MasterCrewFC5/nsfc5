@@ -7,7 +7,7 @@
             <GridLayout columns="*,*" rows="*,*,*" class="menu" >
 
                 <GridLayout col="0" row="0" colSpan="2" horizontalAlignment="center" verticalAlignment="center">
-                    <Image src="~/homepage/manage.png" stretch="none"  class="menu-icon" @tap="makeRequest"/>
+                    <Image src="~/homepage/manage.png" stretch="none"  class="menu-icon" @tap="$router.push('/manage')"/>
                 </GridLayout>
 
                 <GridLayout col="0" row="1" horizontalAlignment="left" >
