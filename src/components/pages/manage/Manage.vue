@@ -4,79 +4,203 @@
         <WrapLayout>
             <fc5topbar></fc5topbar>
 
-            <StackLayout orientation="vertical" class="menu" >
+            <!---------------------------- MENU MENU ----------------------------->
+            <StackLayout orientation="vertical" class="menu">
                 <WrapLayout v-for="menu in menus">
-                    <Image  v-if="currentPage === menu.title " :src=" menu.activatedImage" class="menu-image" @tap="setCurrentPage(menu.title)" stretch="none"  horizontalAlignment="center"/>
-                    <Image  v-else :src=" menu.image" @tap="setCurrentPage(menu.title)" class="menu-image" stretch="none"  horizontalAlignment="center"/>
+                    <Image v-if="currentPage === menu.title " :src=" menu.activatedImage" class="menu-image"
+                           @tap="setCurrentPage(menu.title)" stretch="none" horizontalAlignment="center"/>
+                    <Image v-else :src=" menu.image" @tap="setCurrentPage(menu.title)" class="menu-image" stretch="none"
+                           horizontalAlignment="center"/>
                 </WrapLayout>
             </StackLayout>
 
-            <WrapLayout backgroundImage="~/manage/tactics/background.png" v-if="currentPage === 'tactics'" class="tactics" width="269" height="425">
-                <GridLayout height="100%" width="100%" class="field" columns="*,*,*,*,*,*,*" rows="*,*,*,*,*,*,*,*,*"  >
 
-                    <!--<template v-for=" col in colums" >-->
-                        <!--<template v-for=" row in rows">-->
-                            <!---->
-                        <!--</template>-->
-                    <!--</template>-->
+            <!----------------------------TACTICS TACTICS ----------------------------->
+            <WrapLayout backgroundImage="~/manage/tactics/background.png" v-show="currentPage === 'tactics'"
+                        class="tactics" width="269" height="425">
+                <!--fIELD-->
+                <GridLayout height="100%" width="100%" class="field" columns="*,*,*,*,*,*,*" rows="*,*,*,*,*,*,*,*,*">
 
-                    <Image col="0" row="1"  :src="field.c01.isPlayer === true ? fieldImg.player : fieldImg.empty" @tap="addPlayerOnField('c01')" />
-                    <Image col="0" row="2"  :src="field.c02.isPlayer === true ? fieldImg.player : fieldImg.empty" @tap="addPlayerOnField('c02')" />
-                    <Image col="0" row="3"  :src="field.c03.isPlayer === true ? fieldImg.player : fieldImg.empty" @tap="addPlayerOnField('c03')" />
-                    <Image col="0" row="4"  :src="field.c04.isPlayer === true ? fieldImg.player : fieldImg.empty" @tap="addPlayerOnField('c04')" />
-                    <Image col="0" row="5"  :src="field.c05.isPlayer === true ? fieldImg.player : fieldImg.empty" @tap="addPlayerOnField('c05')" />
-                    <Image col="0" row="6"  :src="field.c06.isPlayer === true ? fieldImg.player : fieldImg.empty" @tap="addPlayerOnField('c06')" />
-                    <Image col="0" row="7"  :src="field.c07.isPlayer === true ? fieldImg.player : fieldImg.empty" @tap="addPlayerOnField('c07')" />
 
-                    <Image col="1" row="1"  :src="field.c11.isPlayer === true ? fieldImg.player : fieldImg.empty" @tap="addPlayerOnField('c1')" />
-                    <Image col="1" row="2"  :src="field.c12.isPlayer === true ? fieldImg.player : fieldImg.empty" @tap="addPlayerOnField('c12')" />
-                    <Image col="1" row="3"  :src="field.c13.isPlayer === true ? fieldImg.player : fieldImg.empty" @tap="addPlayerOnField('c13')" />
-                    <Image col="1" row="4"  :src="field.c14.isPlayer === true ? fieldImg.player : fieldImg.empty" @tap="addPlayerOnField('c14')" />
-                    <Image col="1" row="5"  :src="field.c15.isPlayer === true ? fieldImg.player : fieldImg.empty" @tap="addPlayerOnField('c15')" />
-                    <Image col="1" row="6"  :src="field.c16.isPlayer === true ? fieldImg.player : fieldImg.empty" @tap="addPlayerOnField('c16')" />
-                    <Image col="1" row="7"  :src="field.c17.isPlayer === true ? fieldImg.player : fieldImg.empty" @tap="addPlayerOnField('c17')" />
+                    <Image col="0" row="1" :src="field.c01.isPlayer === true ? fieldImg.player : fieldImg.empty"
+                           @tap="addPlayerOnField('c01')"/>
+                    <Image col="0" row="2" :src="field.c02.isPlayer === true ? fieldImg.player : fieldImg.empty"
+                           @tap="addPlayerOnField('c02')"/>
+                    <Image col="0" row="3" :src="field.c03.isPlayer === true ? fieldImg.player : fieldImg.empty"
+                           @tap="addPlayerOnField('c03')"/>
+                    <Image col="0" row="4" :src="field.c04.isPlayer === true ? fieldImg.player : fieldImg.empty"
+                           @tap="addPlayerOnField('c04')"/>
+                    <Image col="0" row="5" :src="field.c05.isPlayer === true ? fieldImg.player : fieldImg.empty"
+                           @tap="addPlayerOnField('c05')"/>
+                    <Image col="0" row="6" :src="field.c06.isPlayer === true ? fieldImg.player : fieldImg.empty"
+                           @tap="addPlayerOnField('c06')"/>
+                    <Image col="0" row="7" :src="field.c07.isPlayer === true ? fieldImg.player : fieldImg.empty"
+                           @tap="addPlayerOnField('c07')"/>
 
-                    <Image col="2" row="1"  :src="field.c21.isPlayer === true ? fieldImg.player : fieldImg.empty" @tap="addPlayerOnField('c21')" />
-                    <Image col="2" row="2"  :src="field.c22.isPlayer === true ? fieldImg.player : fieldImg.empty" @tap="addPlayerOnField('c22')" />
-                    <Image col="2" row="3"  :src="field.c23.isPlayer === true ? fieldImg.player : fieldImg.empty" @tap="addPlayerOnField('c23')" />
-                    <Image col="2" row="4"  :src="field.c24.isPlayer === true ? fieldImg.player : fieldImg.empty" @tap="addPlayerOnField('c24')" />
-                    <Image col="2" row="5"  :src="field.c25.isPlayer === true ? fieldImg.player : fieldImg.empty" @tap="addPlayerOnField('c25')" />
-                    <Image col="2" row="6"  :src="field.c26.isPlayer === true ? fieldImg.player : fieldImg.empty" @tap="addPlayerOnField('c26')" />
-                    <Image col="2" row="7"  :src="field.c27.isPlayer === true ? fieldImg.player : fieldImg.empty" @tap="addPlayerOnField('c27')" />
+                    <Image col="1" row="1" :src="field.c11.isPlayer === true ? fieldImg.player : fieldImg.empty"
+                           @tap="addPlayerOnField('c1')"/>
+                    <Image col="1" row="2" :src="field.c12.isPlayer === true ? fieldImg.player : fieldImg.empty"
+                           @tap="addPlayerOnField('c12')"/>
+                    <Image col="1" row="3" :src="field.c13.isPlayer === true ? fieldImg.player : fieldImg.empty"
+                           @tap="addPlayerOnField('c13')"/>
+                    <Image col="1" row="4" :src="field.c14.isPlayer === true ? fieldImg.player : fieldImg.empty"
+                           @tap="addPlayerOnField('c14')"/>
+                    <Image col="1" row="5" :src="field.c15.isPlayer === true ? fieldImg.player : fieldImg.empty"
+                           @tap="addPlayerOnField('c15')"/>
+                    <Image col="1" row="6" :src="field.c16.isPlayer === true ? fieldImg.player : fieldImg.empty"
+                           @tap="addPlayerOnField('c16')"/>
+                    <Image col="1" row="7" :src="field.c17.isPlayer === true ? fieldImg.player : fieldImg.empty"
+                           @tap="addPlayerOnField('c17')"/>
 
-                    <Image col="3" row="1"  :src="field.c31.isPlayer === true ? fieldImg.player : fieldImg.empty" @tap="addPlayerOnField('c31')" />
-                    <Image col="3" row="2"  :src="field.c32.isPlayer === true ? fieldImg.player : fieldImg.empty" @tap="addPlayerOnField('c32')" />
-                    <Image col="3" row="3"  :src="field.c33.isPlayer === true ? fieldImg.player : fieldImg.empty" @tap="addPlayerOnField('c33')" />
-                    <Image col="3" row="4"  :src="field.c34.isPlayer === true ? fieldImg.player : fieldImg.empty" @tap="addPlayerOnField('c34')" />
-                    <Image col="3" row="5"  :src="field.c35.isPlayer === true ? fieldImg.player : fieldImg.empty" @tap="addPlayerOnField('c35')" />
-                    <Image col="3" row="6"  :src="field.c36.isPlayer === true ? fieldImg.player : fieldImg.empty" @tap="addPlayerOnField('c36')" />
-                    <Image col="3" row="7"  :src="field.c37.isPlayer === true ? fieldImg.player : fieldImg.empty" @tap="addPlayerOnField('c37')" />
-                    <Image col="3" row="8"  :src="field.c38.isPlayer === true ? fieldImg.player : fieldImg.empty" @tap="addPlayerOnField('c38')" />
+                    <Image col="2" row="1" :src="field.c21.isPlayer === true ? fieldImg.player : fieldImg.empty"
+                           @tap="addPlayerOnField('c21')"/>
+                    <Image col="2" row="2" :src="field.c22.isPlayer === true ? fieldImg.player : fieldImg.empty"
+                           @tap="addPlayerOnField('c22')"/>
+                    <Image col="2" row="3" :src="field.c23.isPlayer === true ? fieldImg.player : fieldImg.empty"
+                           @tap="addPlayerOnField('c23')"/>
+                    <Image col="2" row="4" :src="field.c24.isPlayer === true ? fieldImg.player : fieldImg.empty"
+                           @tap="addPlayerOnField('c24')"/>
+                    <Image col="2" row="5" :src="field.c25.isPlayer === true ? fieldImg.player : fieldImg.empty"
+                           @tap="addPlayerOnField('c25')"/>
+                    <Image col="2" row="6" :src="field.c26.isPlayer === true ? fieldImg.player : fieldImg.empty"
+                           @tap="addPlayerOnField('c26')"/>
+                    <Image col="2" row="7" :src="field.c27.isPlayer === true ? fieldImg.player : fieldImg.empty"
+                           @tap="addPlayerOnField('c27')"/>
 
-                    <Image col="4" row="1"  :src="field.c41.isPlayer === true ? fieldImg.player : fieldImg.empty" @tap="addPlayerOnField('c41')" />
-                    <Image col="4" row="2"  :src="field.c42.isPlayer === true ? fieldImg.player : fieldImg.empty" @tap="addPlayerOnField('c42')" />
-                    <Image col="4" row="3"  :src="field.c43.isPlayer === true ? fieldImg.player : fieldImg.empty" @tap="addPlayerOnField('c43')" />
-                    <Image col="4" row="4"  :src="field.c44.isPlayer === true ? fieldImg.player : fieldImg.empty" @tap="addPlayerOnField('c44')" />
-                    <Image col="4" row="5"  :src="field.c45.isPlayer === true ? fieldImg.player : fieldImg.empty" @tap="addPlayerOnField('c45')" />
-                    <Image col="4" row="6"  :src="field.c46.isPlayer === true ? fieldImg.player : fieldImg.empty" @tap="addPlayerOnField('c06')" />
-                    <Image col="4" row="7"  :src="field.c47.isPlayer === true ? fieldImg.player : fieldImg.empty" @tap="addPlayerOnField('c47')" />
+                    <Image col="3" row="1" :src="field.c31.isPlayer === true ? fieldImg.player : fieldImg.empty"
+                           @tap="addPlayerOnField('c31')"/>
+                    <Image col="3" row="2" :src="field.c32.isPlayer === true ? fieldImg.player : fieldImg.empty"
+                           @tap="addPlayerOnField('c32')"/>
+                    <Image col="3" row="3" :src="field.c33.isPlayer === true ? fieldImg.player : fieldImg.empty"
+                           @tap="addPlayerOnField('c33')"/>
+                    <Image col="3" row="4" :src="field.c34.isPlayer === true ? fieldImg.player : fieldImg.empty"
+                           @tap="addPlayerOnField('c34')"/>
+                    <Image col="3" row="5" :src="field.c35.isPlayer === true ? fieldImg.player : fieldImg.empty"
+                           @tap="addPlayerOnField('c35')"/>
+                    <Image col="3" row="6" :src="field.c36.isPlayer === true ? fieldImg.player : fieldImg.empty"
+                           @tap="addPlayerOnField('c36')"/>
+                    <Image col="3" row="7" :src="field.c37.isPlayer === true ? fieldImg.player : fieldImg.empty"
+                           @tap="addPlayerOnField('c37')"/>
+                    <Image col="3" row="8" :src="field.c38.isPlayer === true ? fieldImg.player : fieldImg.empty"
+                           @tap="addPlayerOnField('c38')"/>
 
-                    <Image col="5" row="1"  :src="field.c51.isPlayer === true ? fieldImg.player : fieldImg.empty" @tap="addPlayerOnField('c51')" />
-                    <Image col="5" row="2"  :src="field.c52.isPlayer === true ? fieldImg.player : fieldImg.empty" @tap="addPlayerOnField('c52')" />
-                    <Image col="5" row="3"  :src="field.c53.isPlayer === true ? fieldImg.player : fieldImg.empty" @tap="addPlayerOnField('c53')" />
-                    <Image col="5" row="4"  :src="field.c54.isPlayer === true ? fieldImg.player : fieldImg.empty" @tap="addPlayerOnField('c54')" />
-                    <Image col="5" row="5"  :src="field.c55.isPlayer === true ? fieldImg.player : fieldImg.empty" @tap="addPlayerOnField('c55')" />
-                    <Image col="5" row="6"  :src="field.c56.isPlayer === true ? fieldImg.player : fieldImg.empty" @tap="addPlayerOnField('c56')" />
-                    <Image col="5" row="7"  :src="field.c57.isPlayer === true ? fieldImg.player : fieldImg.empty" @tap="addPlayerOnField('c57')" />
+                    <Image col="4" row="1" :src="field.c41.isPlayer === true ? fieldImg.player : fieldImg.empty"
+                           @tap="addPlayerOnField('c41')"/>
+                    <Image col="4" row="2" :src="field.c42.isPlayer === true ? fieldImg.player : fieldImg.empty"
+                           @tap="addPlayerOnField('c42')"/>
+                    <Image col="4" row="3" :src="field.c43.isPlayer === true ? fieldImg.player : fieldImg.empty"
+                           @tap="addPlayerOnField('c43')"/>
+                    <Image col="4" row="4" :src="field.c44.isPlayer === true ? fieldImg.player : fieldImg.empty"
+                           @tap="addPlayerOnField('c44')"/>
+                    <Image col="4" row="5" :src="field.c45.isPlayer === true ? fieldImg.player : fieldImg.empty"
+                           @tap="addPlayerOnField('c45')"/>
+                    <Image col="4" row="6" :src="field.c46.isPlayer === true ? fieldImg.player : fieldImg.empty"
+                           @tap="addPlayerOnField('c06')"/>
+                    <Image col="4" row="7" :src="field.c47.isPlayer === true ? fieldImg.player : fieldImg.empty"
+                           @tap="addPlayerOnField('c47')"/>
 
-                    <Image col="6" row="1"  :src="field.c61.isPlayer === true ? fieldImg.player : fieldImg.empty" @tap="addPlayerOnField('c61')" />
-                    <Image col="6" row="2"  :src="field.c62.isPlayer === true ? fieldImg.player : fieldImg.empty" @tap="addPlayerOnField('c62')" />
-                    <Image col="6" row="3"  :src="field.c63.isPlayer === true ? fieldImg.player : fieldImg.empty" @tap="addPlayerOnField('c63')" />
-                    <Image col="6" row="4"  :src="field.c64.isPlayer === true ? fieldImg.player : fieldImg.empty" @tap="addPlayerOnField('c64')" />
-                    <Image col="6" row="5"  :src="field.c65.isPlayer === true ? fieldImg.player : fieldImg.empty" @tap="addPlayerOnField('c65')" />
-                    <Image col="6" row="6"  :src="field.c66.isPlayer === true ? fieldImg.player : fieldImg.empty" @tap="addPlayerOnField('c66')" />
-                    <Image col="6" row="7"  :src="field.c67.isPlayer === true ? fieldImg.player : fieldImg.empty" @tap="addPlayerOnField('c67')" />
-                </GridLayout>>
+                    <Image col="5" row="1" :src="field.c51.isPlayer === true ? fieldImg.player : fieldImg.empty"
+                           @tap="addPlayerOnField('c51')"/>
+                    <Image col="5" row="2" :src="field.c52.isPlayer === true ? fieldImg.player : fieldImg.empty"
+                           @tap="addPlayerOnField('c52')"/>
+                    <Image col="5" row="3" :src="field.c53.isPlayer === true ? fieldImg.player : fieldImg.empty"
+                           @tap="addPlayerOnField('c53')"/>
+                    <Image col="5" row="4" :src="field.c54.isPlayer === true ? fieldImg.player : fieldImg.empty"
+                           @tap="addPlayerOnField('c54')"/>
+                    <Image col="5" row="5" :src="field.c55.isPlayer === true ? fieldImg.player : fieldImg.empty"
+                           @tap="addPlayerOnField('c55')"/>
+                    <Image col="5" row="6" :src="field.c56.isPlayer === true ? fieldImg.player : fieldImg.empty"
+                           @tap="addPlayerOnField('c56')"/>
+                    <Image col="5" row="7" :src="field.c57.isPlayer === true ? fieldImg.player : fieldImg.empty"
+                           @tap="addPlayerOnField('c57')"/>
+
+                    <Image col="6" row="1" :src="field.c61.isPlayer === true ? fieldImg.player : fieldImg.empty"
+                           @tap="addPlayerOnField('c61')"/>
+                    <Image col="6" row="2" :src="field.c62.isPlayer === true ? fieldImg.player : fieldImg.empty"
+                           @tap="addPlayerOnField('c62')"/>
+                    <Image col="6" row="3" :src="field.c63.isPlayer === true ? fieldImg.player : fieldImg.empty"
+                           @tap="addPlayerOnField('c63')"/>
+                    <Image col="6" row="4" :src="field.c64.isPlayer === true ? fieldImg.player : fieldImg.empty"
+                           @tap="addPlayerOnField('c64')"/>
+                    <Image col="6" row="5" :src="field.c65.isPlayer === true ? fieldImg.player : fieldImg.empty"
+                           @tap="addPlayerOnField('c65')"/>
+                    <Image col="6" row="6" :src="field.c66.isPlayer === true ? fieldImg.player : fieldImg.empty"
+                           @tap="addPlayerOnField('c66')"/>
+                    <Image col="6" row="7" :src="field.c67.isPlayer === true ? fieldImg.player : fieldImg.empty"
+                           @tap="addPlayerOnField('c67')"/>
+                </GridLayout>
+
+            </WrapLayout>
+
+
+            <!---------------------------- STADIUM STADIUM ----------------------------->
+            <WrapLayout  v-show="currentPage === 'stadium'" class="stadium" width="269" height="425" orientation="vertical">
+                <Label text="Name" class="thin"/>
+                <Label :text="stadium.name" class="bold"/>
+                <Label text="Places" class="thin"/>
+                <Label :text="stadium.places.toLocaleString()" class="bold"/>
+                <Label text="Swagger score" class="thin"/>
+                <Label :text="swaggerScore" class="bold"/>
+                <Label text="Tickets price" class="thin"/>
+                <Label :text="stadium.tickets + ' $'" class="bold green"/>
+            </WrapLayout>
+
+            <!---------------------------- TREASURY TREASURY ----------------------------->
+            <WrapLayout  v-show="currentPage === 'treasury'" class="treasury" width="269" height="425" orientation="vertical">
+                <Label text="TREASURY" class="thin bigger" horizontalAlignment="center"/>
+
+                <Label text="Swagger score" class="thin"/>
+                <Label :text="treasury.swaggerScore" class="bold"/>
+
+                <Label text="Contracts" class="thin"/>
+                <Label :text="localeString(treasury.commercialContracts) + ' $'" class="bold green"/>
+
+                <Label text="Total Salary cost" class="thin"/>
+                <Label :text="localeString(treasury.salary.staff) + ' $'" class="bold red"/>
+                <Label text="Staff salary" class="thin"/>
+                <Label :text="localeString(treasury.salary.staff) + ' $'" class="bold red "/>
+                <Label text="Players salary" class="thin"/>
+                <Label :text="localeString(treasury.salary.players) + ' $'" class="bold red"/>
+
+                <Label text="Total Stadium cost" class="thin"/>
+                <Label :text="localeString(treasury.stadium.costPerGame) + ' $'" class="bold red"/>
+                <Label text="Revenus from tickets" class="thin"/>
+                <Label :text="localeString(treasury.stadium.tickets) + ' $'" class="bold green"/>
+                <Label text="Cost per game" class="thin"/>
+                <Label :text="localeString(treasury.stadium.costPerGame) + ' $'" class="bold red"/>
+            </WrapLayout>
+
+            <!---------------------------- CONTRACTS CONTRACTS ----------------------------->
+            <WrapLayout  v-show="currentPage === 'contracts'" class="contracts" width="269" height="425" orientation="vertical">
+                <Label text="Total Budget" class="thin"/>
+                <Label :text="localeString(treasury.netRevenus) + ' $'" class="bold"/>
+                <Label text="Available budget" class="thin"/>
+                <Label :text="localeString(treasury.netRevenus - treasury.salary.total) + ' $'" class="bold"/>
+
+
+                <Label text="Players under contracts" class="thin under-contract" horizontalAlignment="center"/>
+                <WrapLayout v-for="player in players" class="under-contract-list" orientation="horizontal">
+                    <Label :text="player.name"/>
+                </WrapLayout>
+
+
+            </WrapLayout>
+
+            <!---------------------------- SHOOTERS SHOOTERS ----------------------------->
+            <WrapLayout  v-show="currentPage === 'shooters'" class="shooters" width="269" height="425" orientation="vertical">
+                <Label text="Penalty" class="thin"/>
+                <ListPicker :items="shootersList" v-model="shooters.penalty"height="45" />
+                <Label text="Short Range" class="thin"/>
+                <ListPicker :items="shootersList" v-model="shooters.short" height="45"/>
+                <Label text="Long Range" class="thin"/>
+                <ListPicker :items="shootersList" v-model="shooters.long" height="45"/>
+                <Label text="Left Corner" class="thin"/>
+                <ListPicker :items="shootersList" v-model="shooters.leftCorner" height="45"/>
+                <Label text="Right Corner" class="thin"/>
+                <ListPicker :items="shootersList" v-model="shooters.rightCorner" height="45"/>
+                <Label text="Captain" class="thin"/>
+                <ListPicker :items="shootersList" v-model="shooters.captain" height="45"/>
+                <Button text="Save" @tap="saveShooters" class="save-button"/>
             </WrapLayout>
 
             <WrapLayout backgroundColor="#3c495e" class="entete" horizontalAlignment="center">
@@ -94,14 +218,15 @@
                 <ListView for="player in players" @itemTap="onItemTap">
                     <v-template>
                         <!-- Shows the list item label in the default color and style. :class="player.isSelected === true ? 'selected' : 'not-activated' -->
-                       <WrapLayout orientation="horizontal" horizontalAlignment="center" :class="{ 'selected' : player.isSelected , 'activated': player.isActivated }">
-                           <Label width="24%" class="bold" :text="player.name"/>
-                           <Label width="15%" :text="player.finishing"/>
-                           <Label width="15%" :text="player.marking"/>
-                           <Label width="15%" :text="player.dribbling"/>
-                           <Label width="15%" :text="player.gkhandling"/>
-                           <fc5playerposition width="15%" :position="player.position"/>
-                       </WrapLayout>
+                        <WrapLayout orientation="horizontal" horizontalAlignment="center"
+                                    :class="{ 'selected' : player.isSelected , 'activated': player.isActivated }">
+                            <Label width="24%" class="bold" :text="player.name"/>
+                            <Label width="15%" :text="player.finishing"/>
+                            <Label width="15%" :text="player.marking"/>
+                            <Label width="15%" :text="player.dribbling"/>
+                            <Label width="15%" :text="player.gkhandling"/>
+                            <fc5playerposition width="15%" :position="player.position"/>
+                        </WrapLayout>
                     </v-template>
                 </ListView>
             </WrapLayout>
@@ -115,18 +240,19 @@
 <script>
     import fc5topbar from './../../fc5Topbar.vue'
     import fc5playerposition from './../../fc5PlayerPosition.vue'
+    import _ from 'lodash'
     //import router from './../../router/index'
 
     export default {
-        components:{ fc5topbar, fc5playerposition},
+        components: {fc5topbar, fc5playerposition},
         name: "Manage",
-        data(){
-            return{
-                currentPage: "tactics",
-                fieldImg:{
-                  "empty":"~/manage/tactics/empty24.png",
-                  "gk":"~/manage/tactics/player.png",
-                  "player":"~/manage/tactics/player.png"
+        data() {
+            return {
+                currentPage: "stadium",
+                fieldImg: {
+                    "empty": "~/manage/tactics/empty24.png",
+                    "gk": "~/manage/tactics/player.png",
+                    "player": "~/manage/tactics/player.png"
                 },
                 menus: [
                     {
@@ -172,6 +298,7 @@
                 ],
                 players: [
                     {
+                        "fieldPosition": '',
                         "isSelected": false,
                         "isActivated": false,
                         "commonName": "Cristiano Ronaldo",
@@ -349,6 +476,7 @@
                         "rating": 94
                     },
                     {
+                        "fieldPosition": '',
                         "isSelected": false,
                         "isActivated": false,
                         "commonName": "",
@@ -525,6 +653,7 @@
                         "rating": 93
                     },
                     {
+                        "fieldPosition": '',
                         "isSelected": false,
                         "isActivated": false,
                         "commonName": "",
@@ -698,6 +827,7 @@
                         "rating": 92
                     },
                     {
+                        "fieldPosition": '',
                         "isSelected": false,
                         "isActivated": false,
                         "commonName": "Neymar",
@@ -871,6 +1001,7 @@
                         "rating": 92
                     },
                     {
+                        "fieldPosition": '',
                         "isSelected": false,
                         "isActivated": false,
                         "commonName": "",
@@ -1041,6 +1172,7 @@
                         "rating": 91
                     },
                     {
+                        "fieldPosition": '',
                         "isSelected": false,
                         "isActivated": false,
                         "commonName": "",
@@ -1216,6 +1348,7 @@
                         "rating": 91
                     },
                     {
+                        "fieldPosition": '',
                         "isSelected": false,
                         "isActivated": false,
                         "commonName": "",
@@ -1389,9 +1522,9 @@
                         "rating": 91
                     },
                     {
-
+                        "fieldPosition": '',
                         "isSelected": false,
-                        "isActivated": false,    "commonName": "Sergio Ramos",
+                        "isActivated": false, "commonName": "Sergio Ramos",
                         "firstName": "Sergio",
                         "headshotImgUrl": "https://fifa17.content.easports.com/fifa/fltOnlineAssets/B1BA185F-AD7C-4128-8A64-746DE4EC5A82/2018/fut/items/images/players/html5/134x134/155862.png",
                         "lastName": "Ramos García",
@@ -1562,9 +1695,9 @@
                         "rating": 90
                     },
                     {
-
+                        "fieldPosition": '',
                         "isSelected": false,
-                        "isActivated": false,    "commonName": "",
+                        "isActivated": false, "commonName": "",
                         "firstName": "Gonzalo",
                         "headshotImgUrl": "https://fifa17.content.easports.com/fifa/fltOnlineAssets/B1BA185F-AD7C-4128-8A64-746DE4EC5A82/2018/fut/items/images/players/html5/134x134/167664.png",
                         "lastName": "Higuaín",
@@ -1731,6 +1864,7 @@
                         "rating": 90
                     },
                     {
+                        "fieldPosition": '',
                         "isSelected": false,
                         "isActivated": false,
                         "commonName": "",
@@ -1903,6 +2037,7 @@
                         "rating": 90
                     },
                     {
+                        "fieldPosition": '',
                         "isSelected": false,
                         "isActivated": false,
                         "commonName": "",
@@ -2076,6 +2211,7 @@
                         "rating": 90
                     },
                     {
+                        "fieldPosition": '',
                         "isSelected": false,
                         "isActivated": false,
                         "commonName": "",
@@ -2250,704 +2386,7 @@
                         "rating": 89
                     },
                     {
-
-                        "isSelected": false,
-                        "isActivated": false,
-                        "commonName": "",
-                        "firstName": "Alexis",
-                        "headshotImgUrl": "https://fifa17.content.easports.com/fifa/fltOnlineAssets/B1BA185F-AD7C-4128-8A64-746DE4EC5A82/2018/fut/items/images/players/html5/134x134/184941.png",
-                        "lastName": "Sánchez",
-                        "league": {
-                            "abbrName": "ENG 1",
-                            "id": 13,
-                            "imgUrl": null,
-                            "name": "Premier League"
-                        },
-                        "nation": {
-                            "imageUrls": {
-                                "small": "https://fifa17.content.easports.com/fifa/fltOnlineAssets/B1BA185F-AD7C-4128-8A64-746DE4EC5A82/2018/fut/items/images/flags/html5/24x14/55.png",
-                                "medium": "https://fifa17.content.easports.com/fifa/fltOnlineAssets/B1BA185F-AD7C-4128-8A64-746DE4EC5A82/2018/fut/items/images/flags/html5/30x19/55.png",
-                                "large": "https://fifa17.content.easports.com/fifa/fltOnlineAssets/B1BA185F-AD7C-4128-8A64-746DE4EC5A82/2018/fut/items/images/flags/html5/40x25/55.png"
-                            },
-                            "abbrName": "Chile",
-                            "id": 55,
-                            "imgUrl": null,
-                            "name": "Chile"
-                        },
-                        "club": {
-                            "imageUrls": {
-                                "dark": {
-                                    "small": "https://fifa17.content.easports.com/fifa/fltOnlineAssets/B1BA185F-AD7C-4128-8A64-746DE4EC5A82/2018/fut/items/images/clubbadges/html5/dark/24x24/l11.png",
-                                    "medium": "https://fifa17.content.easports.com/fifa/fltOnlineAssets/B1BA185F-AD7C-4128-8A64-746DE4EC5A82/2018/fut/items/images/clubbadges/html5/dark/27x27/l11.png",
-                                    "large": "https://fifa17.content.easports.com/fifa/fltOnlineAssets/B1BA185F-AD7C-4128-8A64-746DE4EC5A82/2018/fut/items/images/clubbadges/html5/dark/34x34/l11.png"
-                                },
-                                "normal": {
-                                    "small": "https://fifa17.content.easports.com/fifa/fltOnlineAssets/B1BA185F-AD7C-4128-8A64-746DE4EC5A82/2018/fut/items/images/clubbadges/html5/normal/24x24/l11.png",
-                                    "medium": "https://fifa17.content.easports.com/fifa/fltOnlineAssets/B1BA185F-AD7C-4128-8A64-746DE4EC5A82/2018/fut/items/images/clubbadges/html5/normal/27x27/l11.png",
-                                    "large": "https://fifa17.content.easports.com/fifa/fltOnlineAssets/B1BA185F-AD7C-4128-8A64-746DE4EC5A82/2018/fut/items/images/clubbadges/html5/normal/34x34/l11.png"
-                                }
-                            },
-                            "abbrName": "Man Utd",
-                            "id": 11,
-                            "imgUrl": null,
-                            "name": "Manchester United"
-                        },
-                        "headshot": {
-                            "largeImgUrl": "https://fifa17.content.easports.com/fifa/fltOnlineAssets/B1BA185F-AD7C-4128-8A64-746DE4EC5A82/2018/fut/items/images/players/html5/134x134/184941.png",
-                            "medImgUrl": "https://fifa17.content.easports.com/fifa/fltOnlineAssets/B1BA185F-AD7C-4128-8A64-746DE4EC5A82/2018/fut/items/images/players/html5/105x105/184941.png",
-                            "smallImgUrl": "https://fifa17.content.easports.com/fifa/fltOnlineAssets/B1BA185F-AD7C-4128-8A64-746DE4EC5A82/2018/fut/items/images/players/html5/40x40/184941.png"
-                        },
-                        "specialImages": {
-                            "largeTOTWImgUrl": null,
-                            "medTOTWImgUrl": null
-                        },
-                        "position": "LM",
-                        "composure": 86,
-                        "playStyle": "Basic",
-                        "playStyleId": null,
-                        "height": 169,
-                        "weight": 62,
-                        "birthdate": "1988-12-19",
-                        "age": 29,
-                        "acceleration": 88,
-                        "aggression": 80,
-                        "agility": 90,
-                        "balance": 87,
-                        "ballcontrol": 87,
-                        "foot": "Right",
-                        "skillMoves": 4,
-                        "crossing": 80,
-                        "curve": 78,
-                        "dribbling": 90,
-                        "finishing": 85,
-                        "freekickaccuracy": 78,
-                        "gkdiving": 10,
-                        "gkhandling": 10,
-                        "gkkicking": 15,
-                        "gkpositioning": 12,
-                        "gkreflexes": 13,
-                        "headingaccuracy": 70,
-                        "interceptions": 42,
-                        "jumping": 85,
-                        "longpassing": 73,
-                        "longshots": 82,
-                        "marking": 30,
-                        "penalties": 77,
-                        "positioning": 86,
-                        "potential": 89,
-                        "reactions": 87,
-                        "shortpassing": 81,
-                        "shotpower": 84,
-                        "slidingtackle": 35,
-                        "sprintspeed": 84,
-                        "standingtackle": 39,
-                        "stamina": 85,
-                        "strength": 72,
-                        "vision": 83,
-                        "volleys": 83,
-                        "weakFoot": 3,
-                        "traits": [
-                            "Flair",
-                            "Shooting - Long Shot Taker",
-                            "Technical Dribbler"
-                        ],
-                        "specialities": [
-                            "Dribbler",
-                            "Acrobat"
-                        ],
-                        "atkWorkRate": "High",
-                        "defWorkRate": "High",
-                        "playerType": "rare",
-                        "attributes": [
-                            {
-                                "name": "fut.attribute.PAC",
-                                "value": 86,
-                                "chemistryBonus": [
-                                    0
-                                ]
-                            },
-                            {
-                                "name": "fut.attribute.SHO",
-                                "value": 84,
-                                "chemistryBonus": [
-                                    0
-                                ]
-                            },
-                            {
-                                "name": "fut.attribute.PAS",
-                                "value": 80,
-                                "chemistryBonus": [
-                                    0
-                                ]
-                            },
-                            {
-                                "name": "fut.attribute.DRI",
-                                "value": 89,
-                                "chemistryBonus": [
-                                    0
-                                ]
-                            },
-                            {
-                                "name": "fut.attribute.DEF",
-                                "value": 40,
-                                "chemistryBonus": [
-                                    0
-                                ]
-                            },
-                            {
-                                "name": "fut.attribute.PHY",
-                                "value": 78,
-                                "chemistryBonus": [
-                                    0
-                                ]
-                            }
-                        ],
-                        "name": "Sánchez",
-                        "quality": "gold",
-                        "color": "rare_gold",
-                        "isGK": false,
-                        "positionFull": "Left Midfielder",
-                        "isSpecialType": false,
-                        "contracts": null,
-                        "fitness": null,
-                        "rawAttributeChemistryBonus": null,
-                        "isLoan": null,
-                        "squadPosition": null,
-                        "iconAttributes": null,
-                        "itemType": "player",
-                        "discardValue": null,
-                        "id": "117625453",
-                        "modelName": "FUTPlayerItem",
-                        "baseId": 184941,
-                        "rating": 89
-                    },
-                    {
-                        "isSelected": false,
-                        "isActivated": false,
-                        "commonName": "David Silva",
-                        "firstName": "David Josué",
-                        "headshotImgUrl": "https://fifa17.content.easports.com/fifa/fltOnlineAssets/B1BA185F-AD7C-4128-8A64-746DE4EC5A82/2018/fut/items/images/players/html5/134x134/168542.png",
-                        "lastName": "Jimenez Silva",
-                        "league": {
-                            "abbrName": "ENG 1",
-                            "id": 13,
-                            "imgUrl": null,
-                            "name": "Premier League"
-                        },
-                        "nation": {
-                            "imageUrls": {
-                                "small": "https://fifa17.content.easports.com/fifa/fltOnlineAssets/B1BA185F-AD7C-4128-8A64-746DE4EC5A82/2018/fut/items/images/flags/html5/24x14/45.png",
-                                "medium": "https://fifa17.content.easports.com/fifa/fltOnlineAssets/B1BA185F-AD7C-4128-8A64-746DE4EC5A82/2018/fut/items/images/flags/html5/30x19/45.png",
-                                "large": "https://fifa17.content.easports.com/fifa/fltOnlineAssets/B1BA185F-AD7C-4128-8A64-746DE4EC5A82/2018/fut/items/images/flags/html5/40x25/45.png"
-                            },
-                            "abbrName": "Spain",
-                            "id": 45,
-                            "imgUrl": null,
-                            "name": "Spain"
-                        },
-                        "club": {
-                            "imageUrls": {
-                                "dark": {
-                                    "small": "https://fifa17.content.easports.com/fifa/fltOnlineAssets/B1BA185F-AD7C-4128-8A64-746DE4EC5A82/2018/fut/items/images/clubbadges/html5/dark/24x24/l10.png",
-                                    "medium": "https://fifa17.content.easports.com/fifa/fltOnlineAssets/B1BA185F-AD7C-4128-8A64-746DE4EC5A82/2018/fut/items/images/clubbadges/html5/dark/27x27/l10.png",
-                                    "large": "https://fifa17.content.easports.com/fifa/fltOnlineAssets/B1BA185F-AD7C-4128-8A64-746DE4EC5A82/2018/fut/items/images/clubbadges/html5/dark/34x34/l10.png"
-                                },
-                                "normal": {
-                                    "small": "https://fifa17.content.easports.com/fifa/fltOnlineAssets/B1BA185F-AD7C-4128-8A64-746DE4EC5A82/2018/fut/items/images/clubbadges/html5/normal/24x24/l10.png",
-                                    "medium": "https://fifa17.content.easports.com/fifa/fltOnlineAssets/B1BA185F-AD7C-4128-8A64-746DE4EC5A82/2018/fut/items/images/clubbadges/html5/normal/27x27/l10.png",
-                                    "large": "https://fifa17.content.easports.com/fifa/fltOnlineAssets/B1BA185F-AD7C-4128-8A64-746DE4EC5A82/2018/fut/items/images/clubbadges/html5/normal/34x34/l10.png"
-                                }
-                            },
-                            "abbrName": "Man City",
-                            "id": 10,
-                            "imgUrl": null,
-                            "name": "Manchester City"
-                        },
-                        "headshot": {
-                            "largeImgUrl": "https://fifa17.content.easports.com/fifa/fltOnlineAssets/B1BA185F-AD7C-4128-8A64-746DE4EC5A82/2018/fut/items/images/players/html5/134x134/168542.png",
-                            "medImgUrl": "https://fifa17.content.easports.com/fifa/fltOnlineAssets/B1BA185F-AD7C-4128-8A64-746DE4EC5A82/2018/fut/items/images/players/html5/105x105/168542.png",
-                            "smallImgUrl": "https://fifa17.content.easports.com/fifa/fltOnlineAssets/B1BA185F-AD7C-4128-8A64-746DE4EC5A82/2018/fut/items/images/players/html5/40x40/168542.png"
-                        },
-                        "specialImages": {
-                            "largeTOTWImgUrl": null,
-                            "medTOTWImgUrl": null
-                        },
-                        "position": "CAM",
-                        "composure": 94,
-                        "playStyle": "Basic",
-                        "playStyleId": null,
-                        "height": 173,
-                        "weight": 67,
-                        "birthdate": "1986-01-08",
-                        "age": 32,
-                        "acceleration": 72,
-                        "aggression": 51,
-                        "agility": 94,
-                        "balance": 91,
-                        "ballcontrol": 92,
-                        "foot": "Left",
-                        "skillMoves": 4,
-                        "crossing": 83,
-                        "curve": 82,
-                        "dribbling": 85,
-                        "finishing": 72,
-                        "freekickaccuracy": 75,
-                        "gkdiving": 1,
-                        "gkhandling": 1,
-                        "gkkicking": 1,
-                        "gkpositioning": 1,
-                        "gkreflexes": 1,
-                        "headingaccuracy": 55,
-                        "interceptions": 44,
-                        "jumping": 67,
-                        "longpassing": 79,
-                        "longshots": 75,
-                        "marking": 25,
-                        "penalties": 75,
-                        "positioning": 83,
-                        "potential": 87,
-                        "reactions": 85,
-                        "shortpassing": 92,
-                        "shotpower": 72,
-                        "slidingtackle": 29,
-                        "sprintspeed": 65,
-                        "standingtackle": 45,
-                        "stamina": 79,
-                        "strength": 56,
-                        "vision": 93,
-                        "volleys": 81,
-                        "weakFoot": 2,
-                        "traits": [
-                            "Avoids Using Weaker Foot",
-                            "Shooting - Finesse Shot",
-                            "Flair",
-                            "Playmaker",
-                            "Takes Finesse Style Free Kicks"
-                        ],
-                        "specialities": [
-                            "Play Maker",
-                            "Acrobat"
-                        ],
-                        "atkWorkRate": "High",
-                        "defWorkRate": "Low",
-                        "playerType": "rare",
-                        "attributes": [
-                            {
-                                "name": "fut.attribute.PAC",
-                                "value": 68,
-                                "chemistryBonus": [
-                                    0
-                                ]
-                            },
-                            {
-                                "name": "fut.attribute.SHO",
-                                "value": 74,
-                                "chemistryBonus": [
-                                    0
-                                ]
-                            },
-                            {
-                                "name": "fut.attribute.PAS",
-                                "value": 88,
-                                "chemistryBonus": [
-                                    0
-                                ]
-                            },
-                            {
-                                "name": "fut.attribute.DRI",
-                                "value": 89,
-                                "chemistryBonus": [
-                                    0
-                                ]
-                            },
-                            {
-                                "name": "fut.attribute.DEF",
-                                "value": 39,
-                                "chemistryBonus": [
-                                    0
-                                ]
-                            },
-                            {
-                                "name": "fut.attribute.PHY",
-                                "value": 62,
-                                "chemistryBonus": [
-                                    0
-                                ]
-                            }
-                        ],
-                        "name": "David Silva",
-                        "quality": "gold",
-                        "color": "rare_gold",
-                        "isGK": false,
-                        "positionFull": "Centre Attacking Midfielder",
-                        "isSpecialType": false,
-                        "contracts": null,
-                        "fitness": null,
-                        "rawAttributeChemistryBonus": null,
-                        "isLoan": null,
-                        "squadPosition": null,
-                        "iconAttributes": null,
-                        "itemType": "player",
-                        "discardValue": null,
-                        "id": "134386270",
-                        "modelName": "FUTPlayerItem",
-                        "baseId": 168542,
-                        "rating": 89
-                    },
-                    {
-                        "isSelected": false,
-                        "isActivated": false,
-                        "commonName": "",
-                        "firstName": "Arjen",
-                        "headshotImgUrl": "https://fifa17.content.easports.com/fifa/fltOnlineAssets/B1BA185F-AD7C-4128-8A64-746DE4EC5A82/2018/fut/items/images/players/html5/134x134/9014.png",
-                        "lastName": "Robben",
-                        "league": {
-                            "abbrName": "GER 1",
-                            "id": 19,
-                            "imgUrl": null,
-                            "name": "Bundesliga"
-                        },
-                        "nation": {
-                            "imageUrls": {
-                                "small": "https://fifa17.content.easports.com/fifa/fltOnlineAssets/B1BA185F-AD7C-4128-8A64-746DE4EC5A82/2018/fut/items/images/flags/html5/24x14/34.png",
-                                "medium": "https://fifa17.content.easports.com/fifa/fltOnlineAssets/B1BA185F-AD7C-4128-8A64-746DE4EC5A82/2018/fut/items/images/flags/html5/30x19/34.png",
-                                "large": "https://fifa17.content.easports.com/fifa/fltOnlineAssets/B1BA185F-AD7C-4128-8A64-746DE4EC5A82/2018/fut/items/images/flags/html5/40x25/34.png"
-                            },
-                            "abbrName": "Holland",
-                            "id": 34,
-                            "imgUrl": null,
-                            "name": "Holland"
-                        },
-                        "club": {
-                            "imageUrls": {
-                                "dark": {
-                                    "small": "https://fifa17.content.easports.com/fifa/fltOnlineAssets/B1BA185F-AD7C-4128-8A64-746DE4EC5A82/2018/fut/items/images/clubbadges/html5/dark/24x24/l21.png",
-                                    "medium": "https://fifa17.content.easports.com/fifa/fltOnlineAssets/B1BA185F-AD7C-4128-8A64-746DE4EC5A82/2018/fut/items/images/clubbadges/html5/dark/27x27/l21.png",
-                                    "large": "https://fifa17.content.easports.com/fifa/fltOnlineAssets/B1BA185F-AD7C-4128-8A64-746DE4EC5A82/2018/fut/items/images/clubbadges/html5/dark/34x34/l21.png"
-                                },
-                                "normal": {
-                                    "small": "https://fifa17.content.easports.com/fifa/fltOnlineAssets/B1BA185F-AD7C-4128-8A64-746DE4EC5A82/2018/fut/items/images/clubbadges/html5/normal/24x24/l21.png",
-                                    "medium": "https://fifa17.content.easports.com/fifa/fltOnlineAssets/B1BA185F-AD7C-4128-8A64-746DE4EC5A82/2018/fut/items/images/clubbadges/html5/normal/27x27/l21.png",
-                                    "large": "https://fifa17.content.easports.com/fifa/fltOnlineAssets/B1BA185F-AD7C-4128-8A64-746DE4EC5A82/2018/fut/items/images/clubbadges/html5/normal/34x34/l21.png"
-                                }
-                            },
-                            "abbrName": "Bayern",
-                            "id": 21,
-                            "imgUrl": null,
-                            "name": "FC Bayern München"
-                        },
-                        "headshot": {
-                            "largeImgUrl": "https://fifa17.content.easports.com/fifa/fltOnlineAssets/B1BA185F-AD7C-4128-8A64-746DE4EC5A82/2018/fut/items/images/players/html5/134x134/9014.png",
-                            "medImgUrl": "https://fifa17.content.easports.com/fifa/fltOnlineAssets/B1BA185F-AD7C-4128-8A64-746DE4EC5A82/2018/fut/items/images/players/html5/105x105/9014.png",
-                            "smallImgUrl": "https://fifa17.content.easports.com/fifa/fltOnlineAssets/B1BA185F-AD7C-4128-8A64-746DE4EC5A82/2018/fut/items/images/players/html5/40x40/9014.png"
-                        },
-                        "specialImages": {
-                            "largeTOTWImgUrl": null,
-                            "medTOTWImgUrl": null
-                        },
-                        "position": "RM",
-                        "composure": 86,
-                        "playStyle": "Basic",
-                        "playStyleId": null,
-                        "height": 180,
-                        "weight": 80,
-                        "birthdate": "1984-01-23",
-                        "age": 34,
-                        "acceleration": 87,
-                        "aggression": 47,
-                        "agility": 89,
-                        "balance": 91,
-                        "ballcontrol": 89,
-                        "foot": "Left",
-                        "skillMoves": 4,
-                        "crossing": 80,
-                        "curve": 87,
-                        "dribbling": 92,
-                        "finishing": 85,
-                        "freekickaccuracy": 81,
-                        "gkdiving": 10,
-                        "gkhandling": 8,
-                        "gkkicking": 11,
-                        "gkpositioning": 5,
-                        "gkreflexes": 15,
-                        "headingaccuracy": 51,
-                        "interceptions": 39,
-                        "jumping": 61,
-                        "longpassing": 71,
-                        "longshots": 88,
-                        "marking": 29,
-                        "penalties": 80,
-                        "positioning": 85,
-                        "potential": 88,
-                        "reactions": 87,
-                        "shortpassing": 84,
-                        "shotpower": 87,
-                        "slidingtackle": 26,
-                        "sprintspeed": 86,
-                        "standingtackle": 26,
-                        "stamina": 68,
-                        "strength": 67,
-                        "vision": 83,
-                        "volleys": 86,
-                        "weakFoot": 2,
-                        "traits": [
-                            "Injury Prone",
-                            "Avoids Using Weaker Foot",
-                            "Selfish",
-                            "Shooting - Long Shot Taker",
-                            "Dribbler - Speed Dribbler",
-                            "Shooting - Chip Shot"
-                        ],
-                        "specialities": [
-                            "Dribbler",
-                            "Distance Shooter",
-                            "Acrobat"
-                        ],
-                        "atkWorkRate": "High",
-                        "defWorkRate": "Low",
-                        "playerType": "rare",
-                        "attributes": [
-                            {
-                                "name": "fut.attribute.PAC",
-                                "value": 86,
-                                "chemistryBonus": [
-                                    0
-                                ]
-                            },
-                            {
-                                "name": "fut.attribute.SHO",
-                                "value": 86,
-                                "chemistryBonus": [
-                                    0
-                                ]
-                            },
-                            {
-                                "name": "fut.attribute.PAS",
-                                "value": 81,
-                                "chemistryBonus": [
-                                    0
-                                ]
-                            },
-                            {
-                                "name": "fut.attribute.DRI",
-                                "value": 90,
-                                "chemistryBonus": [
-                                    0
-                                ]
-                            },
-                            {
-                                "name": "fut.attribute.DEF",
-                                "value": 32,
-                                "chemistryBonus": [
-                                    0
-                                ]
-                            },
-                            {
-                                "name": "fut.attribute.PHY",
-                                "value": 63,
-                                "chemistryBonus": [
-                                    0
-                                ]
-                            }
-                        ],
-                        "name": "Robben",
-                        "quality": "gold",
-                        "color": "rare_gold",
-                        "isGK": false,
-                        "positionFull": "Right Midfielder",
-                        "isSpecialType": false,
-                        "contracts": null,
-                        "fitness": null,
-                        "rawAttributeChemistryBonus": null,
-                        "isLoan": null,
-                        "squadPosition": null,
-                        "iconAttributes": null,
-                        "itemType": "player",
-                        "discardValue": null,
-                        "id": "9014",
-                        "modelName": "FUTPlayerItem",
-                        "baseId": 9014,
-                        "rating": 88
-                    },
-                    {
-                        "isSelected": false,
-                        "isActivated": false,
-                        "commonName": "",
-                        "firstName": "Zlatan",
-                        "headshotImgUrl": "https://fifa17.content.easports.com/fifa/fltOnlineAssets/B1BA185F-AD7C-4128-8A64-746DE4EC5A82/2018/fut/items/images/players/html5/134x134/41236.png",
-                        "lastName": "Ibrahimović",
-                        "league": {
-                            "abbrName": "ENG 1",
-                            "id": 13,
-                            "imgUrl": null,
-                            "name": "Premier League"
-                        },
-                        "nation": {
-                            "imageUrls": {
-                                "small": "https://fifa17.content.easports.com/fifa/fltOnlineAssets/B1BA185F-AD7C-4128-8A64-746DE4EC5A82/2018/fut/items/images/flags/html5/24x14/46.png",
-                                "medium": "https://fifa17.content.easports.com/fifa/fltOnlineAssets/B1BA185F-AD7C-4128-8A64-746DE4EC5A82/2018/fut/items/images/flags/html5/30x19/46.png",
-                                "large": "https://fifa17.content.easports.com/fifa/fltOnlineAssets/B1BA185F-AD7C-4128-8A64-746DE4EC5A82/2018/fut/items/images/flags/html5/40x25/46.png"
-                            },
-                            "abbrName": "Sweden",
-                            "id": 46,
-                            "imgUrl": null,
-                            "name": "Sweden"
-                        },
-                        "club": {
-                            "imageUrls": {
-                                "dark": {
-                                    "small": "https://fifa17.content.easports.com/fifa/fltOnlineAssets/B1BA185F-AD7C-4128-8A64-746DE4EC5A82/2018/fut/items/images/clubbadges/html5/dark/24x24/l11.png",
-                                    "medium": "https://fifa17.content.easports.com/fifa/fltOnlineAssets/B1BA185F-AD7C-4128-8A64-746DE4EC5A82/2018/fut/items/images/clubbadges/html5/dark/27x27/l11.png",
-                                    "large": "https://fifa17.content.easports.com/fifa/fltOnlineAssets/B1BA185F-AD7C-4128-8A64-746DE4EC5A82/2018/fut/items/images/clubbadges/html5/dark/34x34/l11.png"
-                                },
-                                "normal": {
-                                    "small": "https://fifa17.content.easports.com/fifa/fltOnlineAssets/B1BA185F-AD7C-4128-8A64-746DE4EC5A82/2018/fut/items/images/clubbadges/html5/normal/24x24/l11.png",
-                                    "medium": "https://fifa17.content.easports.com/fifa/fltOnlineAssets/B1BA185F-AD7C-4128-8A64-746DE4EC5A82/2018/fut/items/images/clubbadges/html5/normal/27x27/l11.png",
-                                    "large": "https://fifa17.content.easports.com/fifa/fltOnlineAssets/B1BA185F-AD7C-4128-8A64-746DE4EC5A82/2018/fut/items/images/clubbadges/html5/normal/34x34/l11.png"
-                                }
-                            },
-                            "abbrName": "Man Utd",
-                            "id": 11,
-                            "imgUrl": null,
-                            "name": "Manchester United"
-                        },
-                        "headshot": {
-                            "largeImgUrl": "https://fifa17.content.easports.com/fifa/fltOnlineAssets/B1BA185F-AD7C-4128-8A64-746DE4EC5A82/2018/fut/items/images/players/html5/134x134/41236.png",
-                            "medImgUrl": "https://fifa17.content.easports.com/fifa/fltOnlineAssets/B1BA185F-AD7C-4128-8A64-746DE4EC5A82/2018/fut/items/images/players/html5/105x105/41236.png",
-                            "smallImgUrl": "https://fifa17.content.easports.com/fifa/fltOnlineAssets/B1BA185F-AD7C-4128-8A64-746DE4EC5A82/2018/fut/items/images/players/html5/40x40/41236.png"
-                        },
-                        "specialImages": {
-                            "largeTOTWImgUrl": null,
-                            "medTOTWImgUrl": null
-                        },
-                        "position": "ST",
-                        "composure": 91,
-                        "playStyle": "Basic",
-                        "playStyleId": null,
-                        "height": 195,
-                        "weight": 95,
-                        "birthdate": "1981-10-03",
-                        "age": 36,
-                        "acceleration": 63,
-                        "aggression": 84,
-                        "agility": 81,
-                        "balance": 41,
-                        "ballcontrol": 88,
-                        "foot": "Right",
-                        "skillMoves": 4,
-                        "crossing": 76,
-                        "curve": 82,
-                        "dribbling": 82,
-                        "finishing": 87,
-                        "freekickaccuracy": 82,
-                        "gkdiving": 13,
-                        "gkhandling": 15,
-                        "gkkicking": 10,
-                        "gkpositioning": 9,
-                        "gkreflexes": 12,
-                        "headingaccuracy": 80,
-                        "interceptions": 20,
-                        "jumping": 69,
-                        "longpassing": 76,
-                        "longshots": 85,
-                        "marking": 15,
-                        "penalties": 91,
-                        "positioning": 86,
-                        "potential": 88,
-                        "reactions": 86,
-                        "shortpassing": 84,
-                        "shotpower": 91,
-                        "slidingtackle": 27,
-                        "sprintspeed": 67,
-                        "standingtackle": 41,
-                        "stamina": 71,
-                        "strength": 88,
-                        "vision": 83,
-                        "volleys": 90,
-                        "weakFoot": 4,
-                        "traits": [
-                            "Flair",
-                            "Shooting - Long Shot Taker",
-                            "Power Header",
-                            "Technical Dribbler",
-                            "Backs Into Player",
-                            "Target Forward"
-                        ],
-                        "specialities": [
-                            "Aerial Threat",
-                            "Distance Shooter",
-                            "Strength",
-                            "Clinical Finisher",
-                            "Complete Forward",
-                            "Poacher"
-                        ],
-                        "atkWorkRate": "Medium",
-                        "defWorkRate": "Low",
-                        "playerType": "rare",
-                        "attributes": [
-                            {
-                                "name": "fut.attribute.PAC",
-                                "value": 65,
-                                "chemistryBonus": [
-                                    0
-                                ]
-                            },
-                            {
-                                "name": "fut.attribute.SHO",
-                                "value": 88,
-                                "chemistryBonus": [
-                                    0
-                                ]
-                            },
-                            {
-                                "name": "fut.attribute.PAS",
-                                "value": 81,
-                                "chemistryBonus": [
-                                    0
-                                ]
-                            },
-                            {
-                                "name": "fut.attribute.DRI",
-                                "value": 82,
-                                "chemistryBonus": [
-                                    0
-                                ]
-                            },
-                            {
-                                "name": "fut.attribute.DEF",
-                                "value": 32,
-                                "chemistryBonus": [
-                                    0
-                                ]
-                            },
-                            {
-                                "name": "fut.attribute.PHY",
-                                "value": 82,
-                                "chemistryBonus": [
-                                    0
-                                ]
-                            }
-                        ],
-                        "name": "Ibrahimović",
-                        "quality": "gold",
-                        "color": "rare_gold",
-                        "isGK": false,
-                        "positionFull": "Striker",
-                        "isSpecialType": false,
-                        "contracts": null,
-                        "fitness": null,
-                        "rawAttributeChemistryBonus": null,
-                        "isLoan": null,
-                        "squadPosition": null,
-                        "iconAttributes": null,
-                        "itemType": "player",
-                        "discardValue": null,
-                        "id": "41236",
-                        "modelName": "FUTPlayerItem",
-                        "baseId": 41236,
-                        "rating": 88
-                    },
-                    {
+                        "fieldPosition": '',
                         "isSelected": false,
                         "isActivated": false,
                         "commonName": "Thiago Silva",
@@ -3119,6 +2558,7 @@
                         "rating": 88
                     },
                     {
+                        "fieldPosition": '',
                         "isSelected": false,
                         "isActivated": false,
                         "commonName": "",
@@ -3287,284 +2727,484 @@
                         "rating": 92
                     }
                 ],
-                field:{
-                    c01:{
+                field: {
+                    c01: {
                         isPlayer: false,
                         idPlayer: ''
                     },
-                    c02:{
+                    c02: {
                         isPlayer: false,
                         idPlayer: ''
                     },
-                    c03:{
+                    c03: {
                         isPlayer: false,
                         idPlayer: ''
                     },
-                    c04:{
+                    c04: {
                         isPlayer: false,
                         idPlayer: ''
                     },
-                    c05:{
+                    c05: {
                         isPlayer: false,
                         idPlayer: ''
                     },
-                    c06:{
+                    c06: {
                         isPlayer: false,
                         idPlayer: ''
                     },
-                    c07:{
+                    c07: {
                         isPlayer: false,
                         idPlayer: ''
                     },
 
 
-                    c11:{
-                        "isPlayer": false
+                    c11: {
+                        isPlayer: false,
+                        idPlayer:''
                     },
-                    c12:{
-                        "isPlayer": false
+                    c12: {
+                        isPlayer: false,
+                        idPlayer:''
                     },
-                    c13:{
-                        "isPlayer": false
+                    c13: {
+                        isPlayer: false,
+                        idPlayer:''
                     },
-                    c14:{
-                        "isPlayer": false
+                    c14: {
+                        isPlayer: false,
+                        idPlayer:''
                     },
-                    c15:{
-                        "isPlayer": false
+                    c15: {
+                        isPlayer: false,
+                        idPlayer:''
                     },
-                    c16:{
-                        "isPlayer": false
+                    c16: {
+                        isPlayer: false,
+                        idPlayer:''
                     },
-                    c17:{
-                        "isPlayer": false
-                    },
-
-
-                    c21:{
-                        "isPlayer": false
-                    },
-                    c22:{
-                        "isPlayer": false
-                    },
-                    c23:{
-                        "isPlayer": false
-                    },
-                    c24:{
-                        "isPlayer": false
-                    },
-                    c25:{
-                        "isPlayer": false
-                    },
-                    c26:{
-                        "isPlayer": false
-                    },
-                    c27:{
-                        "isPlayer": false
+                    c17: {
+                        isPlayer: false,
+                        idPlayer:''
                     },
 
 
-                    c31:{
-                        "isPlayer": false
+                    c21: {
+                        isPlayer: false,
+                        idPlayer:''
                     },
-                    c32:{
-                        "isPlayer": false
+                    c22: {
+                        isPlayer: false,
+                        idPlayer:''
                     },
-                    c33:{
-                        "isPlayer": false
+                    c23: {
+                        isPlayer: false,
+                        idPlayer:''
                     },
-                    c34:{
-                        "isPlayer": false
+                    c24: {
+                        isPlayer: false,
+                        idPlayer:''
                     },
-                    c35:{
-                        "isPlayer": false
+                    c25: {
+                        isPlayer: false,
+                        idPlayer:''
                     },
-                    c36:{
-                        "isPlayer": false
+                    c26: {
+                        isPlayer: false,
+                        idPlayer:''
                     },
-                    c37:{
-                        "isPlayer": false
-                    },
-                    c38:{
-                        "isPlayer": false
-                    },
-
-
-                    c41:{
-                        "isPlayer": false
-                    },
-                    c42:{
-                        "isPlayer": false
-                    },
-                    c43:{
-                        "isPlayer": false
-                    },
-                    c44:{
-                        "isPlayer": false
-                    },
-                    c45:{
-                        "isPlayer": false
-                    },
-                    c46:{
-                        "isPlayer": false
-                    },
-                    c47:{
-                        "isPlayer": false
+                    c27: {
+                        isPlayer: false,
+                        idPlayer:''
                     },
 
 
-                    c51:{
-                        "isPlayer": false
+                    c31: {
+                        isPlayer: false,
+                        idPlayer:''
                     },
-                    c52:{
-                        "isPlayer": false
+                    c32: {
+                        isPlayer: false,
+                        idPlayer:''
                     },
-                    c53:{
-                        "isPlayer": false
+                    c33: {
+                        isPlayer: false,
+                        idPlayer:''
                     },
-                    c54:{
-                        "isPlayer": false
+                    c34: {
+                        isPlayer: false,
+                        idPlayer:''
                     },
-                    c55:{
-                        "isPlayer": false
+                    c35: {
+                        isPlayer: false,
+                        idPlayer:''
                     },
-                    c56:{
-                        "isPlayer": false
+                    c36: {
+                        isPlayer: false,
+                        idPlayer:''
                     },
-                    c57:{
-                        "isPlayer": false
+                    c37: {
+                        isPlayer: false,
+                        idPlayer:''
+                    },
+                    c38: {
+                        isPlayer: false,
+                        idPlayer:''
                     },
 
 
-                    c61:{
-                        "isPlayer": false
+                    c41: {
+                        isPlayer: false,
+                        idPlayer:''
                     },
-                    c62:{
-                        "isPlayer": false
+                    c42: {
+                        isPlayer: false,
+                        idPlayer:''
                     },
-                    c63:{
-                        "isPlayer": false
+                    c43: {
+                        isPlayer: false,
+                        idPlayer:''
                     },
-                    c64:{
-                        "isPlayer": false
+                    c44: {
+                        isPlayer: false,
+                        idPlayer:''
                     },
-                    c65:{
-                        "isPlayer": false
+                    c45: {
+                        isPlayer: false,
+                        idPlayer:''
                     },
-                    c66:{
-                        "isPlayer": false
+                    c46: {
+                        isPlayer: false,
+                        idPlayer:''
                     },
-                    c67:{
-                        "isPlayer": false
+                    c47: {
+                        isPlayer: false,
+                        idPlayer:''
+                    },
+
+
+                    c51: {
+                        isPlayer: false,
+                        idPlayer:''
+                    },
+                    c52: {
+                        isPlayer: false,
+                        idPlayer:''
+                    },
+                    c53: {
+                        isPlayer: false,
+                        idPlayer:''
+                    },
+                    c54: {
+                        isPlayer: false,
+                        idPlayer:''
+                    },
+                    c55: {
+                        isPlayer: false,
+                        idPlayer:''
+                    },
+                    c56: {
+                        isPlayer: false,
+                        idPlayer:''
+                    },
+                    c57: {
+                        isPlayer: false,
+                        idPlayer:''
+                    },
+
+
+                    c61: {
+                        isPlayer: false,
+                        idPlayer:''
+                    },
+                    c62: {
+                        isPlayer: false,
+                        idPlayer:''
+                    },
+                    c63: {
+                        isPlayer: false,
+                        idPlayer:''
+                    },
+                    c64: {
+                        isPlayer: false,
+                        idPlayer:''
+                    },
+                    c65: {
+                        isPlayer: false,
+                        idPlayer:''
+                    },
+                    c66: {
+                        isPlayer: false,
+                        idPlayer:''
+                    },
+                    c67: {
+                        isPlayer: false,
+                        idPlayer:''
                     },
 
                 },
-                compo:{
-                    GK:[
-
-                    ],
-                    DEF:[
-
-                    ],
-                    MID:[
-
-                    ],
-                    ATQ:[
-
-                    ]
+                compo: {
+                    GK: [],
+                    DEF: [],
+                    MID: [],
+                    ATQ: []
+                },
+                oldCell: '',
+                stadium:{
+                    name: 'José Alvalade XXI',
+                    places: 50000,
+                    tickets: 20
+                },
+                treasury:{
+                    swaggerScore: 1.09,
+                    netRevenus: 294300,
+                    commercialContracts: 20000,
+                    salary:{
+                        total: 450000,
+                        staff: 50000,
+                        players: '400000'
+                    },
+                    stadium:{
+                        tickets: 1000000,
+                        costPerGame: 750000
+                    }
+                },
+                swaggerScore: 1.08,
+                shooters:{
+                    penalty:'',
+                    short:'',
+                    long:'',
+                    leftCorner: '',
+                    rightCorner: '',
+                    captain:''
                 }
             }
         },
-        methods:{
-            onItemTap(event){
-                    console.log(event.index)
-                    console.log(event.item.position)
-                    this.resetSelected()
-                    event.item.isSelected = true
+        methods: {
+            onItemTap(event) {
+                console.log(event.index)
+                console.log(event.item.position)
+                this.resetSelected()
+                event.item.isSelected = true
+                this.oldCell = ''
             },
-            setCurrentPage(page){
+            setCurrentPage(page) {
                 this.currentPage = page
             },
-            filterPlayers(col){
-                switch(col) {
+            filterPlayers(col) {
+                switch (col) {
                     case "name":
-                        this.players.sort(function(a, b){
-                            if(a.name < b.name) return -1;
-                            if(a.name > b.name) return 1;
+                        this.players.sort(function (a, b) {
+                            if (a.name < b.name) return -1;
+                            if (a.name > b.name) return 1;
                             return 0;
                         })
                         break;
                     case "atq":
-                        this.players.sort(function(a, b){
-                            if(a.finishing < b.finishing) return 1;
-                            if(a.finishing > b.finishing) return -1;
+                        this.players.sort(function (a, b) {
+                            if (a.finishing < b.finishing) return 1;
+                            if (a.finishing > b.finishing) return -1;
                             return 0;
                         })
                         break;
                     case "def":
-                        this.players.sort(function(a, b){
-                            if(a.marking< b.marking) return 1;
-                            if(a.marking> b.marking) return -1;
+                        this.players.sort(function (a, b) {
+                            if (a.marking < b.marking) return 1;
+                            if (a.marking > b.marking) return -1;
                             return 0;
                         })
                         break;
                     case "spe":
-                        this.players.sort(function(a, b){
-                            if(a.dribbling< b.dribbling) return 1;
-                            if(a.dribbling> b.dribbling) return -1;
+                        this.players.sort(function (a, b) {
+                            if (a.dribbling < b.dribbling) return 1;
+                            if (a.dribbling > b.dribbling) return -1;
                             return 0;
                         })
                         break;
                     case "gk":
-                        this.players.sort(function(a, b){
-                            if(a.gkhandling< b.gkhandling) return 1;
-                            if(a.gkhandling> b.gkhandling) return -1;
+                        this.players.sort(function (a, b) {
+                            if (a.gkhandling < b.gkhandling) return 1;
+                            if (a.gkhandling > b.gkhandling) return -1;
                             return 0;
                         })
                         break;
                     case "position":
-                        this.players.sort(function(a, b){
-                            if(a.position< b.position) return -1;
-                            if(a.position> b.position) return 1;
+                        this.players.sort(function (a, b) {
+                            if (a.position < b.position) return -1;
+                            if (a.position > b.position) return 1;
                             return 0;
                         })
                         break;
                     default:
-                        this.players.sort(function(a, b){
-                            if(a.name < b.name) return -1;
-                            if(a.name > b.name) return 1;
+                        this.players.sort(function (a, b) {
+                            if (a.name < b.name) return -1;
+                            if (a.name > b.name) return 1;
                             return 0;
                         })
                 }
             },
-            resetSelected(){
-                let playersReseted = this.players.map((val,index,array)=>{
-                    if( val.isSelected === true) val.isSelected = false
+            resetSelected() {
+                let playersReseted = this.players.map((val, index, array) => {
+                    if (val.isSelected === true) val.isSelected = false
                 })
             },
-            addPlayerOnField(playerPosition){
-               if(this.selectedPlayer.length === 0 ) return false // check if there is a selectedPlayer
+            addPlayerOnField(playerPosition) {
+                console.log(this.oldCell)
 
-                for (let cell in this.field){
-                    if( this.field.hasOwnProperty( cell ) ) {
-                        if (cell.toString() === playerPosition.toString()){
+                let flag = false
+
+                let temp_clickedCell = _.pick(this.field, playerPosition)
+                let clickedCell = temp_clickedCell[Object.keys(temp_clickedCell)[0]]
+
+                console.log('clickedCell.idPlayer: ',clickedCell.idPlayer)
+
+                if( typeof this.selectedPlayer[0] !== 'undefined'){
+                    console.log('this.selectedPlayer[0].id',this.selectedPlayer[0].id)
+                }
+
+                // if there is a player on cell
+                if (( this.selectedPlayer.length === 0 ) && ( clickedCell.isPlayer === true )){
+                    this.selectPlayer(clickedCell.idPlayer) //select player which is on cell clicked
+                    this.setInactive(idPlayer)
+                    console.log('B1 !!! this.selectedPlayer[0].id', this.selectedPlayer[0].id )
+                    flag = true
+                }
+
+                // if there is NO player on cell
+                if (( this.selectedPlayer.length === 0 ) && ( clickedCell.isPlayer === false ) && ( this.oldCell !== '' )) {
+                    console.log("boucle")
+                    for (let cell in this.field) {
+                        if (this.field.hasOwnProperty(cell)) {
+                            if (cell.toString() === this.oldCell.toString()) {
+                                this.field[cell].isPlayer = false // hide old player image
+                            }
+                        }
+                    }
+                }
+
+
+                // check if there is a selectedPlayer
+                if ( this.selectedPlayer.length === 0 ) return false
+
+
+                for (let cell in this.field) {
+                    if (this.field.hasOwnProperty(cell)) {
+                        if (cell.toString() === playerPosition.toString()) {
                             this.field[cell].isPlayer = true // show player image
-                            this.field[cell].idPlayer = this.selectedPlayer.id // set id player on field
+                            this.field[cell].idPlayer = this.selectedPlayer[0].id // set id player on field //NOT WORKING
+
+                            //console.log('2idPlayer aaaaa :',this.field[cell].idPlayer)
+                            //console.log('2isPlayer :',this.field[cell].isPlayer)
+
                             this.setActive(this.selectedPlayer[0].id)
                         }
                     }
                 }
-                this.resetSelected()
+
+                this.addPlayerOnComposition(playerPosition)
+
+                if(flag === false) this.resetSelected()
+                this.oldCell = playerPosition
+                console.log(this.oldCell)
             },
-            setActive(idPlayer){
-                let newPlayerStatus = this.players.map((val,index,array)=>{
-                    if( val.id === idPlayer) val.isActivated = true
+            addPlayerOnComposition(playerPosition){
+                const yPosition = playerPosition.slice(-1)
+                const playerToAdd = {
+                    idPlayer : this.selectedPlayer[0].id,
+                    fieldPosition: playerPosition
+                }
+
+                if ((yPosition === '1') || (yPosition === '2')){
+                    this.compo.ATQ.push(playerToAdd)
+                }
+                if ((yPosition === '3') || (yPosition === '4') || (yPosition === '5')){
+                    this.compo.MID.push(playerToAdd)
+                }
+                if ((yPosition === '6') || (yPosition === '7')){
+                    this.compo.DEF.push(playerToAdd)
+                }
+                if ((yPosition === '8')){
+                    this.compo.GK.push(playerToAdd)
+                }
+                console.log(this.compo.toString())
+            },
+            setActive(idPlayer) {
+                let newPlayerStatus = this.players.map((val, index, array) => {
+                    if (val.id === idPlayer) val.isActivated = true
                 })
-            }
+            },
+            setInactive(idPlayer) {
+                let newPlayerStatus = this.players.map((val, index, array) => {
+                    if (val.id === idPlayer) val.isActivated = false
+                })
+            },
+            selectPlayer(idPlayer){
+                this.players.map((val,index,array)=>{
+                    if(val.id === idPlayer) {
+                        val.isSelected = true
+                    }
+                })
+            },
+            localeString(x, sep, grp) {
+                var sx = (''+x).split('.'), s = '', i, j;
+                sep || (sep = ' '); // default seperator
+                grp || grp === 0 || (grp = 3); // default grouping
+                i = sx[0].length;
+                while (i > grp) {
+                    j = i - grp;
+                    s = sep + sx[0].slice(j, i) + s;
+                    i = j;
+                }
+                s = sx[0].slice(0, i) + s;
+                sx[0] = s;
+                return sx.join('.');
+            },
+            saveShooters(){
+                confirm('Save your shooters?')
+                    .then(result => {
+                        console.log(result);
+                    });
+            },
         },
-        computed:{
-            selectedPlayer(){
-                return this.players.filter(val=>val.isSelected === true)
+        computed: {
+            selectedPlayer() { // returns array
+                return this.players.filter(val => val.isSelected === true)
+            },
+            cfield(){
+                const fieldWidth = 7;
+                const fieldHeight = 8;
+
+                let f = []
+
+                let obj = {
+                    "position": '',
+                    "isPlayer": false,
+                    "idPlayer": ''
+                }
+
+                for( let x = 0; x < fieldWidth; x++){
+                    for( let y = 1; y < fieldHeight; y++){
+                        obj.position = 'c'+ x + '' + y +''
+
+                        let playerOnCell = this.players.filter(val=>
+                            val.fieldPosition.toString() === obj.position.toString()
+                        )
+
+                        if(playerOnCell.length > 0){
+                            obj.isPlayer = true
+                            obj.idPlayer = playerOnCell[0].id
+                        }
+                        f.push(obj)
+                    }
+                }
+                return f
+            },
+            shootersList(){
+                const array = this.players.map(val => val.name)
+                return array
+            },
+            contracts(){
+
+
             }
         }
     }
@@ -3572,33 +3212,78 @@
 
 <style scoped>
 
-    .menu{
+    .menu {
         background-color: #DEDEDE;
         margin: 1% 3% 2% 2%;
         padding: 2px;
     }
-    .menu-image{
-        margin-top:3%;
+
+    .menu-image {
+        margin-top: 3%;
     }
-    .tactics{
-        margin-top:1%;
+
+    .tactics {
+        margin-top: 1%;
     }
-    .entete{
+
+    .stadium {
+        margin-top: 1%;
+        background-image: ~/manage/stadium/background.png;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        padding: 250px 70px 70px 130px;
+    }
+
+    .contracts {
+        margin-top: 1%;
+        background-image: ~/manage/contracts/background.png;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        padding: 250px 70px 70px 130px;
+    }
+
+    .under-contract{
+        padding-top: 10px ;
+    }
+
+    .treasury {
+        margin-top: 1%;
+        background-color: #DEDEDE;
+
+        padding: 150px 70px 70px 70px;
+    }
+
+    .shooters {
+        margin-top: 1%;
+        background-color: #DEDEDE;
+
+        padding: 50px 70px 70px 70px;
+    }
+
+    .entete {
         color: white;
         margin-top: 1%;
         padding-top: 2px;
         padding-bottom: 2px;
     }
-    .field{
+
+    .field {
         padding: 70px 70px 70px 70px;
     }
-    .selected{
+
+    .selected {
         background-color: lightgoldenrodyellow;
     }
-    .not-activated{
+
+    .not-activated {
         background-color: white;
     }
-    .activated{
-        background-color:lightskyblue;
+
+    .activated {
+        background-color: lightskyblue;
     }
 </style>
