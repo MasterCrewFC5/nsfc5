@@ -8,7 +8,7 @@ Vue.prototype.$http = http
 Vue.use(router)
 
 // Uncommment the following to see NativeScript-Vue output logs
-Vue.config.silent = false;
+//Vue.config.silent = false;
 
 new Vue({
 
