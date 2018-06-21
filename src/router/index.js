@@ -13,6 +13,7 @@ import WaitRoom from '../components/pages/WaitRoom.vue';
 
 // import SeeFriends from '../components/pages/SeeFriends';
 import Store from '../components/pages/Store';
+import Manage from '../components/pages/manage/Manage';
 
 const router = new VueRouter({
     pageRouting: true,
@@ -43,6 +44,13 @@ const router = new VueRouter({
             component: Store,
             meta: {
                 title: 'Store',
+            },
+        },
+        {
+            path: '/manage',
+            component: Manage,
+            meta: {
+                title: 'Manage',
             },
         },
         {
@@ -77,6 +85,6 @@ const router = new VueRouter({
     ],
 });
 
-router.replace('/signup');
+router.replace('/home');
 
 module.exports = router;
