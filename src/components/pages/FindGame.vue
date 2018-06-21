@@ -7,21 +7,21 @@
             <Image src="~/findgame/bgimg.png" stretch="none"/>
 
             <WrapLayout class="findgame" orientation="vertical" horizontalAlignment="center">
-                <Image src="~/findgame/ribbon.png" stretch="none" horizontalAlignment="center"/>
-                <Label class="title" text="Games left until end of season :"/>
-                <Label class="value big" :text="gamesLeft"/>
-                <Label class="title" text="Points needed to rank up :"/>
-                <Label class="value big" :text="neededPoints"/>
-                <Label class="title " text="Current points :"/>
-                <Label class="value big" :text="currentPoints"/>
+                    <Image src="~/findgame/ribbon.png" stretch="none" horizontalAlignment="center"/>
+                    <Label class="title" text="Games left until end of season :"/>
+                    <Label class="value big" :text="gamesLeft"/>
+                    <Label class="title" text="Points needed to rank up :"/>
+                    <Label class="value big" :text="neededPoints"/>
+                    <Label class="title " text="Current points :"/>
+                    <Label class="value big" :text="currentPoints"/>
 
-                <WrapLayout class="bonus" v-for="(bonus, index) in bonuses" orientation="vertical">
-                    <GridLayout columns="auto,*" rows="auto,auto" >
-                        <Image col="0" row="0"  :src=" bonus.isActivated === true ? bonus.activeImg : bonus.inactiveImg"   stretch="none" @tap="activateBonus(index)" horizontalAlignment="center"/>
-                        <Label col="1" row="0" class="bold" :text="bonus.description" />
-                        <Label col="0" row="1" class="thin" :text="bonus.available + ' Available'" />
+                    <WrapLayout class="bonus" v-for="(bonus, index) in bonuses" orientation="vertical">
+                        <GridLayout columns="auto,*" rows="auto,auto" >
+                            <Image col="0" row="0"  :src=" bonus.isActivated === true ? bonus.activeImg : bonus.inactiveImg"   stretch="none" @tap="activateBonus(index)" horizontalAlignment="center"/>
+                            <Label col="1" row="0" class="bold" :text="bonus.description" />
+                            <Label col="0" row="1" class="thin" :text="bonus.available + ' Available'" />
 
-                    </GridLayout>
+                        </GridLayout>
                 </WrapLayout>
 
 
@@ -106,7 +106,7 @@
                         cancelButtonText: "Cancel"
                     }).then(result => {
                         console.log(result);
-                         if (result === true)router.push('/search')
+                         if (result === true)this.$router.push('/search')
 
                     });
                 }else{

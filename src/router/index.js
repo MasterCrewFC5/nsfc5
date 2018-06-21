@@ -12,6 +12,7 @@ import SignIn from '../components/pages/SignIn';
 import WaitRoom from '../components/pages/WaitRoom.vue';
 
 // import SeeFriends from '../components/pages/SeeFriends';
+import Store from '../components/pages/Store';
 
 const router = new VueRouter({
     pageRouting: true,
@@ -35,6 +36,13 @@ const router = new VueRouter({
             component: SearchPlayer,
             meta: {
                 title: 'Search',
+            },
+        },
+        {
+            path: '/store',
+            component: Store,
+            meta: {
+                title: 'Store',
             },
         },
         {

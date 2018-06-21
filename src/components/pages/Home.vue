@@ -54,11 +54,17 @@
                 this.user = dataReceived.data[0]
             },
             async makeRequest() {
-                const res = await http.request({
-                    url: 'http://localhost:3001/user',
-                    method: 'GET'
-                })
-                this.user = res
+                try {
+                    const res = await http.request({
+                        url: 'http://localhost:3001/user',
+                        method: 'GET'
+                    })
+                    this.user = res
+                    console.dir(this.user)
+                }catch (e) {
+                    console.dir(e)
+                }
+
             }
 
         }
