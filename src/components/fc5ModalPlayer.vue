@@ -35,7 +35,7 @@
         </transition>
 
 
-    </StackLayout>
+
 
 </template>
 
