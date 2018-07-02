@@ -1,7 +1,42 @@
 <template>
-    <StackLayout height="10%" width="100%" backgroundColor="grey" top="10" left="10" @click.self="$emit('close')">
-        <Label text="player.rating"></Label>
+    <StackLayout width="80%">
+        <WrapLayout oriention="horizontal" width="80%" horizontalAlignment="center" class="modal-header">
+            <Label :text="player.firstName + ' ' + player.lastName + '      '" class ='bold' width="50%"/>
+            <Label :text="player.rating" class ='bold' width="20%"/>
+            <Image :src="player.nation.imageUrls.small" stretch="none" class="nation" width="20%"/>
+        </WrapLayout>
+
+        <WrapLayout oriention="horizontal" width="80%" horizontalAlignment="center" class="modal-content">
+            <Label :text="player.age + ' Years old'" width="25%"/>
+            <Label :text="player.weight + ' Kg'"  width="25%"/>
+            <Label :text="player.height + ' Cm'" width="25%"/>
+            <Label :text="player.foot + ' Foot'" width="25%"/>
+        </WrapLayout>
+
+
+        <Button text="Offer contract" class="button" @tap="contractIsShown = !contractIsShown" width="50%" horizontalAlignment="center"/>
+
+        <transition name="fade">
+            <WrapLayout v-if="contractIsShown" width="100%" horizontalAlignment="center" orientation="vertical" class="modal-contract">
+
+                <WrapLayout width="100%" horizontalAlignment="center" orientation="horizontal">
+                    <Label text="Salary" class="bold" width="40%"/>
+                    <TextField :text="textFieldValue" hint="Salary" v-model="contractForm.salary" class="text-input" width="50%"/>
+                </WrapLayout>
+
+                <WrapLayout width="100%" horizontalAlignment="center" orientation="horizontal">
+                    <Label text="Duration (months)" class="bold" width="40%"/>
+                    <TextField :text="textFieldValue" hint="Duration" v-model="contractForm.duration" class="text-input" width="50%" />
+                </WrapLayout>
+
+                <Button text="Buy Player" class="button buy-button" @tap="offerContract" horizontalAlignment="center" width="30%"/>
+            </WrapLayout>
+
+        </transition>
+
+
     </StackLayout>
+
 </template>
 
 <script>
@@ -15,7 +50,12 @@
         props: ['player'],
         data(){
           return{
-              graphIsShown: true
+              graphIsShown: true,
+              contractIsShown: false,
+              contractForm:{
+                  salary: 0,
+                  duration: 0
+              }
           }
         },
         computed: {
@@ -43,13 +83,55 @@
         },
         methods:{
             openContract(){
-                console.log("hide graph and show contract proposition")
+                this.contractIsShown = true
+            },
+            closeContract(){
+                this.contractIsShown = false
+            },
+            offerContract(){
+                console.log("contract salary and duration: " + this.contractForm.salary+ ' ' +this.contractForm.duration + ' months' + this.player.name )
             }
         }
     }
 </script>
 
 <style lang="scss" scoped>
+
+    .fade-enter-active, .fade-leave-active {
+        transition: opacity .5s;
+    }
+    .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+        opacity: 0;
+    }
+
+
+
+    .button{
+        background: #BBB;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .text-input{
+        background-color: white;
+        height: 110px;
+    }
+
+    .buy-button{
+        margin-top: 5px;
+    }
+    .modal-header{
+        margin: 10px 0px 10px 0px;
+        text-align:center;
+    }
+    .modal-content{
+        margin: 10px 0px 10px 0px;
+        text-align:center;
+    }
+    .modal-contract{
+        margin: 10px 0px 10px 0px;
+    }
+
     .modal-mask {
         position: fixed;
         z-index: 9998;

@@ -143,6 +143,8 @@
                 <Label :text="swaggerScore" class="bold"/>
                 <Label text="Tickets price" class="thin"/>
                 <Label :text="stadium.tickets + ' $'" class="bold green"/>
+
+                <Button text="Upgrade stadium" @tap="upgradeStadium"/>
             </WrapLayout>
 
             <!---------------------------- TREASURY TREASURY ----------------------------->
@@ -201,6 +203,16 @@
                 <Label text="Captain" class="thin"/>
                 <ListPicker :items="shootersList" v-model="shooters.captain" height="45"/>
                 <Button text="Save" @tap="saveShooters" class="save-button"/>
+            </WrapLayout>
+
+            <!---------------------------- CALENDAR CALENDAR ----------------------------->
+            <WrapLayout v-show="currentPage === 'calendar'" class="calendar" width="269" height="425" orientation="vertical">
+
+            </WrapLayout>
+
+            <!---------------------------- LEAGUE LEAGUE ----------------------------->
+            <WrapLayout v-show="currentPage === 'league'" class="league" width="269" height="425" orientation="vertical">
+
             </WrapLayout>
 
             <WrapLayout backgroundColor="#3c495e" class="entete" horizontalAlignment="center">
@@ -3164,6 +3176,12 @@
                         console.log(result);
                     });
             },
+            upgradeStadium(){
+                confirm('Upgrade Stadium for 2 000 000 $')
+                    .then(result => {
+                        console.log(result);
+                    });
+            }
         },
         computed: {
             selectedPlayer() { // returns array

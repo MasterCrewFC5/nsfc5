@@ -4,13 +4,12 @@
         <StackLayout>
             <fc5topbar></fc5topbar>
 
-            <WrapLayout >
-                <TextField width="30%" v-model="form.searchValue" hint="Search..." />
-                <Label :text='form.searchValue'/>
+            <WrapLayout horizontalAlignment="center">
+                <TextField width="50%" v-model="form.searchValue" hint="Search..." class="search-input"/>
 
-                <Image  @tap="searchPlayers"  stretch="none" src="~/searchplayer/searchButton.png"/>
-                <Image  @tap="setFilterActive"  stretch="none" src="~/searchplayer/filterActive.png" v-if="filterIsActive === true"/>
-                <Image  @tap="setFilterActive"  stretch="none" src="~/searchplayer/filter.png" v-else/>
+                <Image  @tap="searchPlayers"  stretch="none" src="~/searchplayer/searchButton.png" class="search-button" />
+                <Image  @tap="setFilterActive"  stretch="none" src="~/searchplayer/filterActive.png" class="search-button" v-if="filterIsActive === true" />
+                <Image  @tap="setFilterActive"  stretch="none" src="~/searchplayer/filter.png" class="search-button"  v-else/>
             </WrapLayout>
 
             <!--<GridLayout colums="*,*,auto" rows="auto" >-->
@@ -51,7 +50,7 @@
 
             <ListView for="player in players"
                       class="results"
-                      separatorColor="green"
+                      separatorColor="#219653"
                       @itemTap="onItemTap"
                       @loaded="onLoaded"
                       @loadMoreItems="onLoadMoreItems"
@@ -85,7 +84,7 @@
                         </WrapLayout>
 
                         <WrapLayout col="2">
-                            <Label  class="" :text="player.rating"/>
+                            <Label  class="" :text="player.rating + '  '"/>
                             <fc5playerposition :position="player.position"></fc5playerposition>
                         </WrapLayout>
                         <!--<GridLayout col="2"  colums="auto,auto" rows="*" veticalAlignement="top">-->
@@ -97,7 +96,7 @@
                 </v-template>
             </ListView>
 
-            <AbsoluteLayout height="80%" width="80%" backgroundColor="red" top="10" left="10" >
+            <AbsoluteLayout height="80%" width="100%" backgroundColor="#219653" top="10" left="10" class="modal" >
                 <fc5modalplayer v-if="showModal" @close="showModal = false" :player="playerShownInModal">
                 </fc5modalplayer>
             </AbsoluteLayout>
@@ -732,8 +731,7 @@
                 ],
                 filterIsActive: false,
                 showModal: false,
-                playerShownInModal:
-                    {
+                playerShownInModal: {
                 "commonName": "",
                 "firstName": "Eden",
                 "lastName": "Hazard",
@@ -810,9 +808,9 @@
             onItemTap(event) {
                 console.log(event.index)
                 console.log(event.item.position)
-                this.showModal
+                this.showModal =true
                 this.getPlayerModal(event.item.id)
-                this.showModal
+                this.playerShownInModal = this.players[event.index]
             },
             onLoadMoreItems(event){
               console.dir('Load more items. event : ' + event)
@@ -871,6 +869,13 @@
 
 <style lang="scss" scoped>
 
+    .fade-enter-active, .fade-leave-active {
+        transition: opacity .5s;
+    }
+    .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+        opacity: 0;
+    }
+
     .slide-toggle-enter-active,
     .slide-toggle-leave-active {
         transition: height .3s;
@@ -893,13 +898,16 @@
         background-color: #219653;
     }
 
+    .modal{
+        z-index: 10000000;
+    }
+
     .filters {
-        background-color: #449E42;
+        background-color: #188947;
         width: 100%;
-        line-height: 2.5;
         box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.12);
 
-        padding: 10px 0px 10px 0px;
+        padding: 10px 0px 30px 0px;
         color: #F0F0F0;
         font-weight: bold;
     }
@@ -909,8 +917,15 @@
         padding: 2% 2% 2% 2%;
     }
     .results{
-        //background-color: #219653;
-        //height:80%;
+        background-color: #DEDEDE;
+        height:30%;
+    }
+    .search-input{
+        background-color: white;
+        height: 110px;
+    }
+    .search-button{
+        margin: 3% 0% 3% 5%;
     }
     /*.card {*/
         /*left: 0%;*/
