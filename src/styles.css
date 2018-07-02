@@ -38,4 +38,13 @@ ActionBar {
 .white {
   color: #F0F0F0; }
 
+.row {
+  margin: 5px 0px 5px 0px; }
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s; }
+
+.fade-enter, .fade-leave-to {
+  opacity: 0; }
+
 /*# sourceMappingURL=styles.css.map */
