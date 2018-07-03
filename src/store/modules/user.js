@@ -45,9 +45,8 @@ const actions = { // on appel les mutations. si besoin on peut faire les appels 
                     'Content-Type': 'application/json'
                 }
             );
-
-            if(typeof result.data.token !== "undefined"){
-                commit('fetchUserSuccess', {email: user.email, token: result.data.token});
+            if(typeof result.data.result.token !== "undefined"){
+                commit('fetchUserSuccess', {email: user.email, token: result.data.result.token});
             }else{
                 commit('fetchUserFailed');
             }
