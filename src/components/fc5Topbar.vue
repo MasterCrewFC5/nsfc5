@@ -1,6 +1,6 @@
 <template>
     <GridLayout columns="auto, *, auto" rows="60" backgroundColor="#F0F0F0">
-        <GridLayout row="0" col="0" rows="*,*" columns="30,auto" >
+        <GridLayout row="0" col="0" rows="*,*" columns="30,auto" @tap="goToAccount()">
             <Image src="~/topbar/userlogo.png" stretch="aspectFit" class="userlogo" row="0" col="0" rowSpan="2" verticalAlignment="center"></Image>
             <Label :text="user.username" class="test" row="0" col="1" />
             <Label :text="user.teamname" class="teamname" row="1" col="1" />
@@ -13,7 +13,7 @@
 
 
         <GridLayout row="0" col="2" columns="auto,*" rows="*,*,*" >
-            <StackLayout row="1" col="0"  @tap="$router.push('/friends')">
+            <StackLayout row="1" col="0"  @tap="goToFriends()">
                 <Image src="~/topbar/friends.png" stretch="aspectFit" ></Image>
             </StackLayout>
             <Label :text="user.money[0].dollars + ' $'" class="revenus" row="0" col="1" />
@@ -72,6 +72,12 @@
                 this.user = dataReceived
                 console.dir(this.user.toString())
             },
+            goToAccount(){
+                this.$router.push('account');
+            },
+            goToFriends(){
+                this.$router.push('seefriends');
+            }
 
         },
         async created(){

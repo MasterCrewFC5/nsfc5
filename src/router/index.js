@@ -9,9 +9,10 @@ import SearchPlayer from '../components/pages/SearchPlayers';
 import FindGame from '../components/pages/FindGame';
 import SignUp from '../components/pages/SignUp';
 import SignIn from '../components/pages/SignIn';
+import Account from '../components/pages/Account';
 import WaitRoom from '../components/pages/WaitRoom.vue';
 
-// import SeeFriends from '../components/pages/SeeFriends';
+import SeeFriends from '../components/pages/SeeFriends';
 import Store from '../components/pages/Store';
 import Manage from '../components/pages/manage/Manage';
 
@@ -74,17 +75,24 @@ const router = new VueRouter({
                 title: 'Wait room',
             },
         },
-        // {
-        //     path: '/seefriends',
-        //     component: SeeFriends,
-        //     meta: {
-        //         title: 'See friends',
-        //     },
-        // },
+        {
+            path: '/seefriends',
+            component: SeeFriends,
+            meta: {
+                title: 'See friends',
+            },
+        },
+        {
+            path: '/account',
+            component: Account,
+            meta: {
+                title: 'Account',
+            },
+        },
         {path: '*', redirect: '/home'},
     ],
 });
 
-router.replace('/home');
+router.replace('/signup');
 
 module.exports = router;
