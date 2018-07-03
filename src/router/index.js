@@ -13,6 +13,8 @@ import Account from '../components/pages/Account';
 import WaitRoom from '../components/pages/WaitRoom.vue';
 
 import SeeFriends from '../components/pages/SeeFriends';
+import CreateTeamStep1 from '../components/pages/CreateTeam-Step1';
+import SelectLogo from '../components/pages/SelectLogo';
 import Store from '../components/pages/Store';
 import Manage from '../components/pages/manage/Manage';
 
@@ -59,6 +61,28 @@ const router = new VueRouter({
             component: SignUp,
             meta: {
                 title: 'Sign up',
+            },
+        },
+        {
+            path: '/createteam-step1',
+            component: CreateTeamStep1,
+            meta: {
+                title: 'Create team - step 1',
+            },
+        },
+        {
+            path: '/createteam-step1/:logoSelect',
+            component: CreateTeamStep1,
+            meta: {
+                title: 'Create team - step 1',
+            },
+            props: true,
+        },
+        {
+            path: '/selectlogo',
+            component: SelectLogo,
+            meta: {
+                title: 'Select logo',
             },
         },
         {

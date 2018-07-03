@@ -1,7 +1,7 @@
 <template>
     <StackLayout width="80%">
         <WrapLayout oriention="horizontal" width="80%" horizontalAlignment="center" class="modal-header">
-            <Label :text="player.firstName + ' ' + player.lastName + '      '" class ='bold' width="50%"/>
+            <Label :text="player.firstName + ' ' + player.lastName + '      '" class="bold" width="50%"/>
             <Label :text="player.rating" class ='bold' width="20%"/>
             <Image :src="player.nation.imageUrls.small" stretch="none" class="nation" width="20%"/>
         </WrapLayout>
@@ -34,7 +34,7 @@
 
         </transition>
 
-
+    </StackLayout>
 
 
 </template>
