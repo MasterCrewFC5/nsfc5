@@ -6,20 +6,20 @@
 
             <GridLayout columns="*,*" rows="*,*,*" class="menu" >
 
-                <GridLayout col="0" row="0" colSpan="2" horizontalAlignment="center" verticalAlignment="center">
-                    <Image src="~/homepage/manage.png" stretch="none"  class="menu-icon" @tap="$router.push('/manage')"/>
+                <GridLayout col="0" row="0" colSpan="2" horizontalAlignment="center" verticalAlignment="center" >
+                    <Image src="~/homepage/manage.png" stretch="none" android:stretch="aspectFit" class="menu-icon" @tap="$router.push('/manage')" android:style="width: 300px; height: 300px"/>
                 </GridLayout>
 
                 <GridLayout col="0" row="1" horizontalAlignment="left" >
-                    <Image src="~/homepage/store.png" stretch="none"  class="menu-icon" @tap="$router.push('/store')"/>
+                    <Image src="~/homepage/store.png" stretch="none" android:stretch="aspectFit" class="menu-icon" @tap="$router.push('/store')" android:style="width: 300px; height: 300px"/>
                 </GridLayout>
 
                 <GridLayout col="1" row="1" horizontalAlignment="right" >
-                    <Image src="~/homepage/searchplayer.png" stretch="none"  class="menu-icon" @tap="$router.push('/search')"/>
+                    <Image src="~/homepage/searchplayer.png" stretch="none" android:stretch="aspectFit" class="menu-icon" @tap="$router.push('/search')" android:style="width: 300px; height: 300px"/>
                 </GridLayout>
 
                 <GridLayout col="0" row="2" colSpan="2" horizontalAlignment="center" >
-                    <Image src="~/homepage/findgame.png" stretch="none"  class="menu-icon" @tap="$router.push('/findgame')"/>
+                    <Image src="~/homepage/findgame.png" stretch="none" android:stretch="aspectFit" class="menu-icon" @tap="$router.push('/findgame')" android:style="width: 300px; height: 300px"/>
                 </GridLayout>
 
             </GridLayout>
