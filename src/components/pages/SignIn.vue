@@ -36,6 +36,7 @@
     import http from 'http';
     import axios from 'axios';
     import toast from 'nativescript-toast';
+    import config from '../../config/index';
 
     export default {
         name: 'SignIn',
@@ -80,7 +81,7 @@
                 try {
                     this.errors = [];
                     const result = await axios.post(
-                        'http://172.25.0.1:8080/app_dev.php/api/users/register',
+                        config.apiUrl+'/api/users/register',
                         {
                             'username': user.username,
                             'email': user.email,

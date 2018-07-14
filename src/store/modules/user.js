@@ -1,5 +1,6 @@
 import Vue from 'nativescript-vue';
 import axios from'axios'
+import config from '../../config/index';
 
 const state = { // data
     isLoggedIn: false, //!!localStorage.getItem(“token”)
@@ -36,7 +37,7 @@ const actions = { // on appel les mutations. si besoin on peut faire les appels 
         try{
             commit('cleanErrors');
             const result = await axios.post(
-               'http://172.25.0.1:8080/app_dev.php/api/users/login',
+               config.apiUrl+'/api/users/login',
                 {
                     "email": user.email,
                     "password": user.password
