@@ -1,7 +1,7 @@
 <template>
     <GridLayout columns="auto, *, auto" rows="60" backgroundColor="#F0F0F0">
         <GridLayout row="0" col="0" rows="*,*" columns="30,auto" @tap="goToAccount()">
-            <Image src="~/topbar/userlogo.png" stretch="aspectFit" class="userlogo" row="0" col="0" rowSpan="2" verticalAlignment="center"></Image>
+            <Image :src="user.img[0].src" stretch="aspectFit" class="userlogo" row="0" col="0" rowSpan="2" verticalAlignment="center"></Image>
             <Label :text="user.username" class="test" row="0" col="1" />
             <Label :text="user.teamname" class="teamname" row="1" col="1" />
         </GridLayout>
@@ -37,8 +37,8 @@
                 user:
                     {
                         id: 1,
-                        username: "Negoraaa",
-                        teamname: "Olympique claqué",
+                        username: "Account",
+                        teamname: "Create team",
                         friends: [
                             {
                                 id: 1,
@@ -57,7 +57,7 @@
                         img: [
                             {
                                 id: 1,
-                                src: "assets/userlogo.png"
+                                src: "~/topbar/userlogo.png"
                             }
                         ]
                     }
@@ -65,39 +65,28 @@
             }
         },
         methods: {
-            async getUser(){
-                const dataReceived = await axios.get('http://localhost:3001/user', {
-                    responseType: 'json'
-                });
-                this.user = dataReceived
-                console.dir(this.user.toString())
-            },
             goToAccount(){
-                this.$router.push('account');
+                console.log('acount')
+                this.$router.push('/account');
             },
             goToFriends(){
-                this.$router.push('seefriends');
+                //this.$router.push('createteam-step1');
+                this.$router.push('/seefriends');
             }
 
         },
-        async created(){
-            try {
-                const response = await http.request({
-                    url: 'http://localhost:3001/user',
-                    method: 'GET'
-                })
-
-                console.dir("response: " + response);
-
-                this.user = response
-                console.dir("user: " + this.user.username)
-
-            } catch (error) {
-                console.error(error)
+        async mounted(){
+            console.log('test', this.$store.getters.fetchCurrentClub);
+            console.log('test', typeof this.$store.getters.fetchCurrentClub.blazon === 'undefined');
+            if(typeof this.$store.getters.fetchCurrentClub.blazon === 'undefined'){
+                await this.$store.dispatch('getClub', this.$store.getters.fetchCurrentUser.token);
             }
-            console.dir('<=============================================== created ')
-
-
+            if(typeof this.$store.getters.fetchCurrentClub.blazon !== 'undefined'){
+                const club = this.$store.getters.fetchCurrentClub;
+                this.user.img[0].src = club.blazon;
+                this.user.username = club.owner;
+                this.user.teamname = club.name;
+            }
         },
         computed: {}
     }

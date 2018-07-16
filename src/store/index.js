@@ -4,6 +4,7 @@ import myPlug from '../plugins';
 
 import user from './modules/user';
 import friend from './modules/friend';
+import club from './modules/club';
 
 Vue.use(Vuex);
 
@@ -12,7 +13,8 @@ const debug = process.env.NODE_ENV !== 'production';
 const store = new Vuex.Store({
     modules: {
         user,
-        friend
+        friend,
+        club
     },
     plugins: [myPlug],
     strict: debug,

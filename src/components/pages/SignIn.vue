@@ -151,14 +151,14 @@
     }
 
     .signButton {
-        background: #008255;
+        background: #219653;
         color: white;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         margin-top: 20;
     }
 
     .up {
-        color: #008255;
+        color: #219653;
     }
 
     .marginTop {

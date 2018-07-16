@@ -28,7 +28,6 @@
 <script>
     import 'babel-polyfill';
     import store from '../../store/index';
-    import http from 'http';
     import axios from 'axios';
 
     export default {
@@ -40,8 +39,8 @@
                 user: {},
                 errors: [],
                 isBusy: false,
-                emailAddress: '',
-                passwordInput: '',
+                emailAddress: 'toto@toto.com',
+                passwordInput: 'toto',
             };
         },
         methods: {
@@ -52,7 +51,10 @@
                     this.isBusy = true;
                     await this.$store.dispatch('fetchUser', {email, password});
                     this.isBusy = false;
+                    console.log('toto', this.$store.getters.fetchIsLoggedIn )
+                    console.log('toto', !this.$store.getters.fetchError)
                     if (this.$store.getters.fetchIsLoggedIn && !this.$store.getters.fetchError){
+                        console.log('yolo', this.$store.getters.fetchCurrentUser.token);
                         this.$router.replace('home');
                     }
                 }
@@ -95,13 +97,13 @@
         background: rgba(33, 150, 83, 0.25);
     }
     .logginButton{
-        background: #008255;
+        background: #219653;
         color: white;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         margin-top: 20;
     }
     .up{
-        color: #008255;
+        color: #219653;
     }
     .marginTop10{
         margin-top: 10;
